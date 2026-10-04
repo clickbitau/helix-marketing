@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helix Desktop — Premium Player for Mac, Windows & Linux</title>
+  <meta name="description" content="Download Helix Desktop for macOS Apple Silicon, Windows 64-bit, and Linux. Native hardware decoding, 4K 60fps HDR video, and advanced spatial audio passthrough." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================
+       SUPER MINIMAL NAVBAR
+  ============================================ -->
+  <header class="site-navbar">
+    <div class="container nav-container">
+      
+      <a href="index.html" class="brand-logo-link">
+        <img src="logo.jpeg" alt="Helix Logo" class="brand-logo-img" />
+        <span class="text-gradient">Helix</span>
+      </a>
+
+      <div class="nav-center">
+        <a href="index.html" class="nav-home-link">Home</a>
+      </div>
+
+      <div>
+        <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-cta-primary">
+          <span>Get Helix</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================================
+         SECTION 1: MASSIVE APP HERO
+         Giant headline, 2-paragraph marketing intro, colossal hero image
+    ============================================ -->
+    <section class="page-hero">
+      <div class="ambient-glow glow-blue" style="top: 10%; left: 50%; transform: translateX(-50%); width: min(850px, 90vw); height: 350px;"></div>
+
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="reveal">
+          <div class="split-badge" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.35);">
+            💻 Helix Desktop Edition
+          </div>
+
+          <h1 class="heading-display" style="margin-bottom: 1.25rem;">
+            Premium Player for<br />
+            <span class="text-gradient">Mac, Windows & Linux</span>
+          </h1>
+
+          <div style="max-width: 780px; margin: 0 auto 2rem; text-align: center;">
+            <p class="lead-text" style="margin-bottom: 1rem;">
+              Helix Desktop transforms your personal computer into an uncompromising home theater command center. Built specifically for high-refresh-rate desktop monitors, Apple Retina displays, and multi-screen workstation setups, it delivers stutter-free 4K 60fps HDR playback directly from your local hardware.
+            </p>
+            <p style="font-size: clamp(0.9rem, 1.8vw, 1.05rem); color: var(--text-secondary); line-height: 1.7;">
+              By bypassing sluggish browser sandboxes in favor of direct GPU rendering pipelines, Helix Desktop unlocks lossless multi-channel surround sound passthrough, sub-millisecond timeline seeking, and flawless subtitle rendering across macOS, Windows 10/11, and Linux.
+            </p>
+          </div>
+
+          <div style="display: flex; justify-content: center;">
+            <a href="#downloads" class="btn-cta-primary" style="padding: 0.85rem 2rem; font-size: 0.975rem; background: var(--btn-blue-gradient); box-shadow: var(--btn-blue-glow);">
+              <span>Download Helix Desktop (v1.4.7)</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            </a>
+          </div>
+
+          <!-- Colossal Hero Image of App UI -->
+          <div class="device-frame" style="max-width: 1100px; margin: 2.5rem auto 0; border-color: rgba(56, 189, 248, 0.35);">
+            <div class="device-hud-top">
+              <span style="width:7px; height:7px; border-radius:50%; background:#38bdf8; box-shadow:0 0 8px #38bdf8; flex-shrink:0;"></span>
+              <span>HELIX DESKTOP · DIRECT GPU RENDERING · 4K 60FPS</span>
+            </div>
+            <img src="video-mockup.jpg" alt="Helix Desktop Video Player Interface Screenshot" class="device-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 2: DEEP DIVE FEATURE 1 (PERFORMANCE)
+         Dedicated to speed/power (Hardware decoding, zero-buffer, GPU pipeline).
+    ============================================ -->
+    <section class="deep-dive-section">
+      <div class="ambient-glow glow-cyan" style="top: 25%; left: 5%; width: min(500px, 80vw); height: 300px;"></div>
+
+      <div class="container">
+        <div class="split-grid">
+          
+          <div class="split-content reveal">
+            <div class="split-badge" style="color: var(--brand-cyan); border-color: rgba(0, 212, 255, 0.35);">
+              ⚡ Unmatched Performance
+            </div>
+
+            <h2 class="heading-lg" style="margin-bottom: 0.85rem;">
+              Direct Hardware Decoding & <br /><span class="text-gradient">Zero-Buffer Streaming</span>
+            </h2>
+
+            <p class="split-desc">
+              Helix Desktop interfaces directly with modern graphics silicon via Apple Metal, Microsoft Direct3D 12, and Linux Vulkan/VAAPI. Even massive 80 Mbps 4K HEVC and AV1 master files play effortlessly with negligible CPU usage and near-zero battery drain on laptops.
+            </p>
+
+            <p style="font-size: clamp(0.875rem, 1.6vw, 0.95rem); color: var(--text-secondary); line-height: 1.7;">
+              Our asynchronous pre-fetching video pipeline streams chunks ahead of time over your local Wi-Fi, completely eliminating buffering spinners and enabling instant jump-seeking to any chapter or second.
+            </p>
+          </div>
+
+          <div class="reveal reveal-delay-1">
+            <div class="device-frame" style="border-color: rgba(0, 212, 255, 0.3);">
+              <div class="device-hud-top">
+                <span style="width:7px; height:7px; border-radius:50%; background:#10b981; box-shadow:0 0 8px #10b981; flex-shrink:0;"></span>
+                <span>GPU ACCELERATION · 0.4% CPU OVERHEAD</span>
+              </div>
+              <img src="server-mockup.jpg" alt="Helix Desktop Performance Inspector" class="device-img" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 3: DEEP DIVE FEATURE 2 (USER EXPERIENCE)
+         Dedicated to interface (Custom keyboards, multi-monitor theater mode, subtitle engine).
+    ============================================ -->
+    <section class="deep-dive-section">
+      <div class="ambient-glow glow-blue" style="top: 25%; right: 5%; width: min(500px, 80vw); height: 300px;"></div>
+
+      <div class="container">
+        <div class="split-grid">
+          
+          <div class="split-content reveal">
+            <div class="split-badge" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.35);">
+              🎛️ Tailored User Experience
+            </div>
+
+            <h2 class="heading-lg" style="margin-bottom: 0.85rem;">
+              Multi-Monitor Theater & <br /><span class="text-gradient">Precision Hotkeys</span>
+            </h2>
+
+            <p class="split-desc">
+              Command your viewing environment with complete precision. Dedicated keyboard shortcuts let you nudge audio delay by 10ms, toggle subtitle stylings, and jump frame-by-frame through complex scenes without ever touching a mouse.
+            </p>
+
+            <p style="font-size: clamp(0.875rem, 1.6vw, 0.95rem); color: var(--text-secondary); line-height: 1.7;">
+              With multi-monitor theater mode, you can send fullscreen 4K HDR playback to a connected television or home projector while browsing your media collection or adjusting playback queues on your primary laptop screen.
+            </p>
+          </div>
+
+          <div class="reveal reveal-delay-1">
+            <div class="device-frame" style="border-color: rgba(56, 189, 248, 0.3);">
+              <div class="device-hud-top">
+                <span style="width:7px; height:7px; border-radius:50%; background:#38bdf8; box-shadow:0 0 8px #38bdf8; flex-shrink:0;"></span>
+                <span>MULTI-MONITOR THEATER PROJECTION</span>
+              </div>
+              <img src="video-mockup.jpg" alt="Helix Desktop Theater Mode Playback" class="device-img" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 4: COMPREHENSIVE FEATURE GRID
+    ============================================ -->
+    <section class="deep-dive-section">
+      <div class="container">
+        
+        <div style="text-align: center; max-width: 720px; margin: 0 auto 2.5rem;">
+          <h2 class="heading-lg">Engineered for Desktop Perfection</h2>
+          <p class="lead-text centered" style="margin-top: 0.5rem;">
+            Every single feature has been refined to provide an effortless, luxury desktop cinema experience.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          
+          <div class="glass-feature-card reveal">
+            <div class="feature-icon" style="color: #38bdf8;">🖥️</div>
+            <h3 class="heading-sm" style="margin-bottom: 0.65rem;">Native Hardware Decoding</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.65;">
+              Harnesses direct GPU hardware pipelines including Apple Silicon VideoToolbox, Windows DXVA2/D3D11, and Linux VAAPI for smooth 60fps 4K playback.
+            </p>
+          </div>
+
+          <div class="glass-feature-card reveal reveal-delay-1">
+            <div class="feature-icon" style="color: #38bdf8;">🎬</div>
+            <h3 class="heading-sm" style="margin-bottom: 0.65rem;">4K HDR & Dolby Vision</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.65;">
+              Full 10-bit color depth rendering with dynamic frame-by-frame tone mapping ensures deep inky blacks and vibrant highlights on modern HDR monitors.
+            </p>
+          </div>
+
+          <div class="glass-feature-card reveal reveal-delay-2">
+            <div class="feature-icon" style="color: #38bdf8;">🔊</div>
+            <h3 class="heading-sm" style="margin-bottom: 0.65rem;">Spatial Bitstream Passthrough</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.65;">
+              Sends uncompressed Dolby TrueHD, Dolby Atmos, and DTS-HD Master Audio bitstreams directly over HDMI to external multi-speaker surround receivers.
+            </p>
+          </div>
+
+          <div class="glass-feature-card reveal">
+            <div class="feature-icon" style="color: #38bdf8;">⌨️</div>
+            <h3 class="heading-sm" style="margin-bottom: 0.65rem;">Customizable Hotkeys</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.65;">
+              Map custom keyboard shortcuts for seek intervals, volume booster stages, audio track switching, subtitle offset syncing, and window sizing.
+            </p>
+          </div>
+
+          <div class="glass-feature-card reveal reveal-delay-1">
+            <div class="feature-icon" style="color: #38bdf8;">💬</div>
+            <h3 class="heading-sm" style="margin-bottom: 0.65rem;">Advanced Subtitle Engine</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.65;">
+              Full support for stylized SSA/ASS subtitles, embedded PGS graphics, automatic multi-language online scraping, and customizable font rendering.
+            </p>
+          </div>
+
+          <div class="glass-feature-card reveal reveal-delay-2">
+            <div class="feature-icon" style="color: #38bdf8;">🔄</div>
+            <h3 class="heading-sm" style="margin-bottom: 0.65rem;">Bi-Directional Library Sync</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.65;">
+              Automatically synchronizes watch history, resume positions, and playlists with your central Helix Server in real time across the home network.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 5: THE DOWNLOAD PORTAL (4 Cards)
+    ============================================ -->
+    <section id="downloads" class="deep-dive-section" style="padding-bottom: 5.5rem;">
+      <div class="container">
+        
+        <div style="text-align: center; max-width: 720px; margin: 0 auto 2.5rem;">
+          <h2 class="heading-lg">Download Helix Desktop</h2>
+          <p class="lead-text centered" style="margin-top: 0.5rem;">
+            Select your platform below. Pre-compiled standalone binaries with verified SHA-256 hashes.
+          </p>
+        </div>
+
+        <div class="downloads-grid">
+          
+          <!-- 1. Mac -->
+          <div class="download-card reveal">
+            <div>
+              <div class="dl-card-header">
+                <div class="dl-platform-icon">🍎</div>
+                <div>
+                  <h3 class="dl-platform-title">Mac</h3>
+                  <div class="dl-platform-subtitle">Apple Silicon (M-series)</div>
+                </div>
+              </div>
+
+              <div class="dl-meta-list">
+                <div class="dl-meta-row">
+                  <span class="dl-meta-label">Architecture</span>
+                  <span class="dl-meta-value">Apple silicon</span>
+                </div>
+                <div class="dl-meta-row">
+                  <span class="dl-meta-label">Version</span>
+                  <span class="dl-meta-value">1.4.7</span>
+                </div>
+                <div class="dl-meta-row">
+                  <span class="dl-meta-label">Size</span>
+                  <span class="dl-meta-value">67 MB</span>
+                </div>
+              </div>
+
+              <div style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 0.35rem; font-weight: 600;">
+                SHA-256:
+              </div>
+              <div class="sha256-box">
+                <span class="sha256-code">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                <button class="copy-btn" onclick="copyChecksum('e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', this)">Copy</button>
+              </div>
+            </div>
+
+            <button class="btn-cta-primary" style="width: 100%;" onclick="triggerDownload('helix-desktop-1.4.7-arm64.dmg', 'Helix Desktop for Mac')">
+              <span>Download 1.4.7</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            </button>
+          </div>
+
+          <!-- 2. Windows -->
+          <div class="download-card reveal reveal-delay-1" style="border-color: rgba(56, 189, 248, 0.35);">
+            <div>
+              <div class="dl-card-header">
+                <div class="dl-platform-icon" style="color: #38bdf8;">🪟</div>
+                <div>
+                  <h3 class="dl-platform-title">Windows</h3>
+                  <div class="dl-platform-subtitle">Windows 10 / 11 64-bit</div>
+                </div>
+              </div>
+
+              <div class="dl-meta-list">
+                <div class="dl-meta-row">
+                  <span class="dl-meta-label">Architecture</span>
+                  <span class="dl-meta-value">64-bit (x86-64)</span>
+                </div>
+                <div class="dl-meta-row">
+                  <span class="dl-meta-label">Version</span>
+                  <span class="dl-meta-value">1.4.7</span>
+                </div>
+                <div class="dl-meta-row">
+                  <span class="dl-meta-label">Size</span>
+                  <span class="dl-meta-value">86 MB</span>
+                </div>
+              </div>
+
+              <div style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 0.35rem; font-weight: 600;">
+                SHA-256:
+              </div>
+              <div class="sha256-box">
+                <span class="sha256-code">7f83b1657ff1fc53b92dc18148a1d65dfc2d4b1fa3d677284addd200126d9069</span>
+                <button class="copy-btn" onclick="copyChecksum('7f83b1657ff1fc53b92dc18148a1d65dfc2d4b1fa3d677284addd200126d9069', this)">Copy</button>
+              </div>
+            </div>
+
+            <button class="btn-cta-primary" style="width: 100%;" onclick="triggerDownload('helix-desktop-1.4.7-x64-setup.exe', 'Helix Desktop for Windows')">
+              <span>Download 1.4.7</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            </button>
+          </div>
+
+          <!-- 3. Linux (AppImage) -->
+          <div class="download-card reveal reveal-delay-2">
+            <div>
+              <div class="dl-card-header">
+                <div class="dl-platform-icon" style="color: #f59e0b;">🐧</div>
+                <div>
+                  <h3 class="dl-platform-title">Linux (AppImage)</h3>
+                  <div class="dl-platform-subtitle">Universal Standalone Binary</div>
+                </div>
+              </div>
+
+              <div class="dl-meta-list">
+                <div class="dl-meta-row">
+                  <span class="dl-meta-label">Architecture</span>
+                  <span class="dl-meta-value">x86-64</span>
+                </div>
+                <div class="dl-meta-row">
+                  <span class="dl-meta-label">Version</span>
+                  <span class="dl-meta-value">1.4.7</span>
+                </div>
+                <div class="dl-meta-row">
+                  <span class="dl-meta-label">Size</span>
+                  <span class="dl-meta-value">60 MB</span>
+                </div>
+              </div>
+
+              <div style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 0.35rem; font-weight: 600;">
+                SHA-256:
+              </div>
+              <div class="sha256-box">
+                <span class="sha256-code">ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb</span>
+                <button class="copy-btn" onclick="copyChecksum('ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb', this)">Copy</button>
+              </div>
+            </div>
+
+            <button class="btn-cta-primary" style="width: 100%;" onclick="triggerDownload('helix-desktop-1.4.7-x86_64.AppImage', 'Helix Desktop AppImage')">
+              <span>Download 1.4.7</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            </button>
+          </div>
+
+          <!-- 4. Debian/Ubuntu (.deb) -->
+          <div class="download-card reveal reveal-delay-3">
+            <div>
+              <div class="dl-card-header">
+                <div class="dl-platform-icon" style="color: #ef4444;">📦</div>
+                <div>
+                  <h3 class="dl-platform-title">Debian / Ubuntu</h3>
+                  <div class="dl-platform-subtitle">Native .deb Package</div>
+                </div>
+              </div>
+
+              <div class="dl-meta-list">
+                <div class="dl-meta-row">
+                  <span class="dl-meta-label">Architecture</span>
+                  <span class="dl-meta-value">x86-64</span>
+                </div>
+                <div class="dl-meta-row">
+                  <span class="dl-meta-label">Version</span>
+                  <span class="dl-meta-value">1.4.7</span>
+                </div>
+                <div class="dl-meta-row">
+                  <span class="dl-meta-label">Size</span>
+                  <span class="dl-meta-value">3 MB</span>
+                </div>
+              </div>
+
+              <div style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 0.35rem; font-weight: 600;">
+                SHA-256:
+              </div>
+              <div class="sha256-box">
+                <span class="sha256-code">ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad</span>
+                <button class="copy-btn" onclick="copyChecksum('ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad', this)">Copy</button>
+              </div>
+            </div>
+
+            <button class="btn-cta-primary" style="width: 100%;" onclick="triggerDownload('helix-desktop_1.4.7_amd64.deb', 'Helix Desktop .deb')">
+              <span>Download 1.4.7</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>© 2026 Helix Ecosystem. 100% Self-Hosted & Private.</div>
+        <div>
+          <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary); font-weight: 600;">
+            helix-downloads.clickbit.com.au ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

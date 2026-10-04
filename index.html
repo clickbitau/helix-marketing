@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helix -- One Ecosystem. Infinite Entertainment.</title>
+  <meta name="description" content="Your movies, series, and audiophile music collection privately orchestrated across all your screens with original quality and zero subscriptions." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- ============================================
+       GLOBAL NAVBAR
+  ============================================ -->
+  <header class="site-navbar">
+    <div class="container nav-container">
+
+      <!-- Left: Logo -->
+      <a href="index.html" class="brand-logo-link" id="nav-brand-logo">
+        <img src="logo.jpeg" alt="Helix Logo" class="brand-logo-img" />
+        <span class="text-gradient">Helix</span>
+      </a>
+
+      <!-- Center: Desktop Nav Links -->
+      <nav class="nav-center" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link-item active">Home</a>
+        <a href="server.html" class="nav-link-item">Helix Server</a>
+        <a href="helix.html" class="nav-link-item">Helix</a>
+        <a href="music.html" class="nav-link-item">Helix Music</a>
+      </nav>
+
+      <!-- Right: CTA + Mobile Toggle -->
+      <div style="display: flex; align-items: center;">
+        <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-cta-primary" id="nav-get-helix-btn">
+          <span>Get Helix</span>
+          <i data-lucide="download" style="width: 15px; height: 15px;"></i>
+        </a>
+
+        <button class="mobile-nav-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <i data-lucide="menu" style="width: 20px; height: 20px;"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobile-nav-drawer">
+      <a href="index.html" class="mobile-nav-item active">
+        <i data-lucide="home" style="width: 18px; height: 18px; color: #a855f7;"></i>
+        <span>Home</span>
+      </a>
+      <a href="server.html" class="mobile-nav-item">
+        <i data-lucide="server" style="width: 18px; height: 18px; color: #38bdf8;"></i>
+        <span>Helix Server</span>
+      </a>
+      <a href="helix.html" class="mobile-nav-item">
+        <i data-lucide="film" style="width: 18px; height: 18px; color: #c084fc;"></i>
+        <span>Helix</span>
+      </a>
+      <a href="music.html" class="mobile-nav-item">
+        <i data-lucide="music" style="width: 18px; height: 18px; color: #fb7185;"></i>
+        <span>Helix Music</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================================
+         CINEMATIC HERO SECTION
+    ============================================ -->
+    <section class="home-hero-section">
+      <div class="ambient-glow glow-purple" style="top: 8%; left: 50%; transform: translateX(-50%); width: min(850px, 90vw); height: 350px;"></div>
+      <div class="ambient-glow glow-cyan" style="top: 30%; left: 5%; width: min(450px, 50vw); height: 260px;"></div>
+      <div class="ambient-glow glow-rose" style="top: 30%; right: 5%; width: min(450px, 50vw); height: 260px;"></div>
+
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="reveal">
+          <div class="split-badge" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.35); background: rgba(168, 85, 247, 0.08); margin: 0 auto 1.5rem;">
+            <i data-lucide="layers" style="width: 14px; height: 14px;"></i>
+            <span>The Unified Entertainment Ecosystem</span>
+          </div>
+
+          <h1 class="heading-display" style="margin-bottom: 1.25rem;">
+            One Ecosystem.<br />
+            <span class="text-gradient">Infinite Entertainment.</span>
+          </h1>
+
+          <p class="lead-text centered" style="margin-bottom: 2.25rem;">
+            Your movies, series, and audiophile music collection privately orchestrated across all your screens with original quality and zero subscriptions.
+          </p>
+
+          <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <a href="#server-pillar" class="btn-explore" style="background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.25);" id="hero-scroll-btn">
+              <span>Explore Ecosystem</span>
+              <i data-lucide="arrow-down" style="width: 16px; height: 16px;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PILLAR 1: HELIX SERVER
+    ============================================ -->
+    <section id="server-pillar" class="split-section">
+      <div class="ambient-glow glow-cyan" style="top: 20%; left: 5%; width: min(500px, 80vw); height: 300px;"></div>
+
+      <div class="container">
+        <div class="split-grid">
+
+          <!-- Text Content -->
+          <div class="split-content reveal">
+            <div class="split-badge" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.35); background: rgba(56, 189, 248, 0.08);">
+              <i data-lucide="server" style="width: 14px; height: 14px;"></i>
+              <span>Helix Server Engine</span>
+            </div>
+
+            <h2 class="heading-lg" style="margin-bottom: 0.85rem;">
+              The Central <span class="text-gradient">Hub.</span>
+            </h2>
+
+            <p class="split-desc">
+              The intelligent backend engine that powers your home theater. Helix Server indexes your local drives and streams zero-buffering media to all your devices.
+            </p>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 0.65rem; margin-bottom: 2rem;">
+              <span class="split-badge" style="font-size: 0.72rem; color: #94a3b8; margin-bottom: 0;">
+                <i data-lucide="folder-sync" style="width: 13px; height: 13px; color: #38bdf8;"></i> Intelligent Scanning
+              </span>
+              <span class="split-badge" style="font-size: 0.72rem; color: #94a3b8; margin-bottom: 0;">
+                <i data-lucide="zap" style="width: 13px; height: 13px; color: #38bdf8;"></i> Stream Optimization
+              </span>
+              <span class="split-badge" style="font-size: 0.72rem; color: #94a3b8; margin-bottom: 0;">
+                <i data-lucide="shield-check" style="width: 13px; height: 13px; color: #38bdf8;"></i> Multi-User Security
+              </span>
+            </div>
+
+            <a href="server.html" class="btn-explore blue" id="explore-server-btn">
+              <span>Explore Helix Server</span>
+              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+            </a>
+          </div>
+
+          <!-- UI Showcase -->
+          <div class="reveal reveal-delay-1">
+            <div class="device-frame" style="border-color: rgba(56, 189, 248, 0.25);">
+              <div class="device-hud-top">
+                <i data-lucide="server" style="width: 14px; height: 14px; color: #38bdf8;"></i>
+                <span>Helix Server Core Online &bull; Direct Stream Ready</span>
+              </div>
+              <img src="server-mockup.jpg" alt="Helix Server Management Interface" class="device-img" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PILLAR 2: HELIX (VIDEO) MEDIA PLAYER
+    ============================================ -->
+    <section id="helix-pillar" class="split-section">
+      <div class="ambient-glow glow-purple" style="top: 25%; right: 5%; width: min(500px, 80vw); height: 320px;"></div>
+
+      <div class="container">
+        <div class="split-grid">
+
+          <!-- Text Content -->
+          <div class="split-content reveal">
+            <div class="split-badge" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.35); background: rgba(168, 85, 247, 0.08);">
+              <i data-lucide="film" style="width: 14px; height: 14px;"></i>
+              <span>Universal Video Client</span>
+            </div>
+
+            <h2 class="heading-lg" style="margin-bottom: 0.85rem;">
+              Helix Media <span class="text-gradient">Player.</span>
+            </h2>
+
+            <p class="split-desc">
+              Cinematic 4K playback for Desktop, Mobile, and TV.
+            </p>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 0.65rem; margin-bottom: 2rem;">
+              <span class="split-badge" style="font-size: 0.72rem; color: #94a3b8; margin-bottom: 0;">
+                <i data-lucide="play-circle" style="width: 13px; height: 13px; color: #c084fc;"></i> Cinematic Direct Play
+              </span>
+              <span class="split-badge" style="font-size: 0.72rem; color: #94a3b8; margin-bottom: 0;">
+                <i data-lucide="speaker" style="width: 13px; height: 13px; color: #c084fc;"></i> Lossless Passthrough
+              </span>
+              <span class="split-badge" style="font-size: 0.72rem; color: #94a3b8; margin-bottom: 0;">
+                <i data-lucide="tv" style="width: 13px; height: 13px; color: #c084fc;"></i> Premium 10-Foot UI
+              </span>
+            </div>
+
+            <a href="helix.html" class="btn-explore purple" id="explore-helix-btn">
+              <span>Explore Helix Media</span>
+              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+            </a>
+          </div>
+
+          <!-- UI Showcase -->
+          <div class="reveal reveal-delay-1">
+            <div class="device-frame" style="border-color: rgba(168, 85, 247, 0.25);">
+              <div class="device-hud-top">
+                <i data-lucide="play" style="width: 14px; height: 14px; color: #c084fc;"></i>
+                <span>4K Dolby Vision Playback &bull; Direct Stream</span>
+              </div>
+              <img src="video-mockup.jpg" alt="Helix Video Player Interface" class="device-img" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PILLAR 3: HELIX MUSIC
+    ============================================ -->
+    <section id="music-pillar" class="split-section" style="border-bottom: none;">
+      <div class="ambient-glow glow-rose" style="top: 25%; left: 5%; width: min(500px, 80vw); height: 320px;"></div>
+
+      <div class="container">
+        <div class="split-grid">
+
+          <!-- Text Content -->
+          <div class="split-content reveal">
+            <div class="split-badge" style="color: #fb7185; border-color: rgba(244, 63, 94, 0.35); background: rgba(244, 63, 94, 0.08);">
+              <i data-lucide="disc" style="width: 14px; height: 14px;"></i>
+              <span>Audiophile Sound Engine</span>
+            </div>
+
+            <h2 class="heading-lg" style="margin-bottom: 0.85rem;">
+              Helix <span class="text-gradient">Music.</span>
+            </h2>
+
+            <p class="split-desc">
+              Pure bit-perfect audiophile sound with dynamic real-time lyrics.
+            </p>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 0.65rem; margin-bottom: 2rem;">
+              <span class="split-badge" style="font-size: 0.72rem; color: #94a3b8; margin-bottom: 0;">
+                <i data-lucide="disc" style="width: 13px; height: 13px; color: #fb7185;"></i> Custom Native Engine
+              </span>
+              <span class="split-badge" style="font-size: 0.72rem; color: #94a3b8; margin-bottom: 0;">
+                <i data-lucide="type" style="width: 13px; height: 13px; color: #fb7185;"></i> Dynamic Synced Lyrics
+              </span>
+              <span class="split-badge" style="font-size: 0.72rem; color: #94a3b8; margin-bottom: 0;">
+                <i data-lucide="car" style="width: 13px; height: 13px; color: #fb7185;"></i> CarPlay &amp; Android Auto
+              </span>
+            </div>
+
+            <a href="music.html" class="btn-explore rose" id="explore-music-btn">
+              <span>Explore Helix Music</span>
+              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+            </a>
+          </div>
+
+          <!-- UI Showcase -->
+          <div class="reveal reveal-delay-1">
+            <div class="device-frame" style="border-color: rgba(244, 63, 94, 0.25);">
+              <div class="device-hud-top">
+                <i data-lucide="headphones" style="width: 14px; height: 14px; color: #fb7185;"></i>
+                <span>Audiophile Master Quality &bull; Gapless Output</span>
+              </div>
+              <img src="music-mockup.jpg" alt="Helix Music Audiophile Player Interface" class="device-img" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================
+       GLOBAL FOOTER
+  ============================================ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <img src="logo.jpeg" alt="Helix Logo" style="width: 24px; height: 24px; border-radius: 6px;" />
+        <span style="font-weight: 700; color: #ffffff;">Helix Ecosystem</span>
+        <span style="color: var(--text-muted);">&mdash; Private, Sovereign Media Architecture</span>
+      </div>
+
+      <div style="display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap;">
+        <a href="index.html" style="color: var(--text-secondary); font-size: 0.825rem;">Home</a>
+        <a href="server.html" style="color: var(--text-secondary); font-size: 0.825rem;">Helix Server</a>
+        <a href="helix.html" style="color: var(--text-secondary); font-size: 0.825rem;">Helix</a>
+        <a href="music.html" style="color: var(--text-secondary); font-size: 0.825rem;">Helix Music</a>
+        <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" style="color: var(--brand-cyan); font-size: 0.825rem; font-weight: 600;">Releases</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

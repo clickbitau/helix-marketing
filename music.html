@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helix Music -- Audiophile Sound, Reimagined</title>
+  <meta name="description" content="A custom native audio engine with true gapless playback, dynamic synced lyrics, seamless CarPlay integration, smart radio mixes, and offline mode." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- ============================================
+       GLOBAL NAVBAR
+  ============================================ -->
+  <header class="site-navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo-link" id="nav-brand-logo">
+        <img src="logo.jpeg" alt="Helix Logo" class="brand-logo-img" />
+        <span class="text-gradient">Helix</span>
+      </a>
+
+      <nav class="nav-center" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link-item">Home</a>
+        <a href="server.html" class="nav-link-item">Helix Server</a>
+        <a href="helix.html" class="nav-link-item">Helix</a>
+        <a href="music.html" class="nav-link-item active">Helix Music</a>
+      </nav>
+
+      <div style="display: flex; align-items: center;">
+        <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-cta-primary" id="nav-get-helix-btn">
+          <span>Get Helix</span>
+          <i data-lucide="download" style="width: 15px; height: 15px;"></i>
+        </a>
+        <button class="mobile-nav-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <i data-lucide="menu" style="width: 20px; height: 20px;"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-nav-drawer">
+      <a href="index.html" class="mobile-nav-item">
+        <i data-lucide="home" style="width: 18px; height: 18px; color: #a855f7;"></i>
+        <span>Home</span>
+      </a>
+      <a href="server.html" class="mobile-nav-item">
+        <i data-lucide="server" style="width: 18px; height: 18px; color: #38bdf8;"></i>
+        <span>Helix Server</span>
+      </a>
+      <a href="helix.html" class="mobile-nav-item">
+        <i data-lucide="film" style="width: 18px; height: 18px; color: #c084fc;"></i>
+        <span>Helix</span>
+      </a>
+      <a href="music.html" class="mobile-nav-item active">
+        <i data-lucide="music" style="width: 18px; height: 18px; color: #fb7185;"></i>
+        <span>Helix Music</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================================
+         HERO SECTION
+    ============================================ -->
+    <section class="page-hero">
+      <div class="ambient-glow glow-rose" style="top: 5%; left: 50%; transform: translateX(-50%); width: min(800px, 90vw); height: 350px;"></div>
+      <div class="ambient-glow glow-purple" style="top: 40%; left: 8%; width: min(350px, 45vw); height: 220px;"></div>
+
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="reveal">
+          <div class="split-badge" style="color: #fb7185; border-color: rgba(244, 63, 94, 0.35); background: rgba(244, 63, 94, 0.08); margin: 0 auto 1.5rem;">
+            <i data-lucide="disc" style="width: 14px; height: 14px;"></i>
+            <span>Audiophile Sound Engine</span>
+          </div>
+
+          <h1 class="heading-display" style="margin-bottom: 1.25rem;">
+            Pure Sound.<br />
+            <span class="text-gradient">Zero Compromise.</span>
+          </h1>
+
+          <p class="lead-text centered" style="margin-bottom: 2rem;">
+            A music player built from the ground up for audiophiles. Custom native audio engine, dynamic synced lyrics, and seamless integration with your car and lock screen.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         FEATURES — STRICT 2-COLUMN GRID (6 FEATURES)
+    ============================================ -->
+    <section class="deep-dive-section">
+      <div class="ambient-glow glow-rose" style="top: 15%; right: 5%; width: min(400px, 50vw); height: 250px;"></div>
+
+      <div class="container">
+        <div class="section-title-block reveal">
+          <div class="split-badge" style="color: #fb7185; border-color: rgba(244, 63, 94, 0.35); background: rgba(244, 63, 94, 0.08);">
+            <i data-lucide="headphones" style="width: 14px; height: 14px;"></i>
+            <span>Sound Capabilities</span>
+          </div>
+          <h2 class="heading-lg">Engineered for <span class="text-gradient">Audiophiles.</span></h2>
+          <p class="section-subtitle">Six pillars of premium audio crafted for listeners who hear the difference.</p>
+        </div>
+
+        <div class="feature-grid-2">
+
+          <!-- Feature 1: Custom Native Audio Engine -->
+          <div class="glass-feature-card accent-rose reveal" id="feature-audio-engine">
+            <div class="feature-icon" style="border-color: rgba(244, 63, 94, 0.3);">
+              <i data-lucide="music" style="width: 24px; height: 24px; color: #fb7185;"></i>
+            </div>
+            <h3 class="feature-title">Custom Native Audio Engine</h3>
+            <p class="feature-desc">Engineered from the ground up for true, uninterrupted gapless playback. Every transition between tracks is seamless -- exactly as the artist intended the album to flow.</p>
+          </div>
+
+          <!-- Feature 2: Dynamic Synced Lyrics -->
+          <div class="glass-feature-card accent-rose reveal reveal-delay-1" id="feature-synced-lyrics">
+            <div class="feature-icon" style="border-color: rgba(244, 63, 94, 0.3);">
+              <i data-lucide="type" style="width: 24px; height: 24px; color: #fb7185;"></i>
+            </div>
+            <h3 class="feature-title">Dynamic Synced Lyrics</h3>
+            <p class="feature-desc">Beautiful, real-time typography lyrics syncing to the beat of every track. Watch words come alive with smooth animations that follow the rhythm of your music.</p>
+          </div>
+
+          <!-- Feature 3: Seamless Car & Lock Screen Sync -->
+          <div class="glass-feature-card accent-rose reveal" id="feature-car-sync">
+            <div class="feature-icon" style="border-color: rgba(244, 63, 94, 0.3);">
+              <i data-lucide="car" style="width: 24px; height: 24px; color: #fb7185;"></i>
+            </div>
+            <h3 class="feature-title">Seamless Car and Lock Screen Sync</h3>
+            <p class="feature-desc">Native integration with Apple CarPlay and Android Auto for effortless in-car listening. Full lock screen controls, album art, and media session support on every device.</p>
+          </div>
+
+          <!-- Feature 4: Smart Radio & Mixes -->
+          <div class="glass-feature-card accent-rose reveal reveal-delay-1" id="feature-smart-radio">
+            <div class="feature-icon" style="border-color: rgba(244, 63, 94, 0.3);">
+              <i data-lucide="radio" style="width: 24px; height: 24px; color: #fb7185;"></i>
+            </div>
+            <h3 class="feature-title">Smart Radio and Mixes</h3>
+            <p class="feature-desc">Generate endless, personalized radio stations on demand from any track or artist. Intelligent algorithms curate the perfect listening session -- every time you hit play.</p>
+          </div>
+
+          <!-- Feature 5: True Offline Mode -->
+          <div class="glass-feature-card accent-rose reveal" id="feature-offline-mode">
+            <div class="feature-icon" style="border-color: rgba(244, 63, 94, 0.3);">
+              <i data-lucide="download-cloud" style="width: 24px; height: 24px; color: #fb7185;"></i>
+            </div>
+            <h3 class="feature-title">True Offline Mode</h3>
+            <p class="feature-desc">Download entire albums and playlists locally for airplane-mode listening. Your entire music library travels with you -- no signal required, no interruptions.</p>
+          </div>
+
+          <!-- Feature 6: Lightning-Fast Search -->
+          <div class="glass-feature-card accent-rose reveal reveal-delay-1" id="feature-fast-search">
+            <div class="feature-icon" style="border-color: rgba(244, 63, 94, 0.3);">
+              <i data-lucide="search" style="width: 24px; height: 24px; color: #fb7185;"></i>
+            </div>
+            <h3 class="feature-title">Lightning-Fast Search</h3>
+            <p class="feature-desc">Instantly drill down through Artists, Albums, and Tracks with real-time results. The search index updates live as your library grows -- always fast, always accurate.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         DOWNLOADS — ANDROID CLIENT (2-COLUMN)
+    ============================================ -->
+    <section class="deep-dive-section">
+      <div class="ambient-glow glow-rose" style="top: 20%; left: 10%; width: min(400px, 50vw); height: 250px;"></div>
+
+      <div class="container">
+        <div class="section-title-block reveal">
+          <div class="split-badge" style="color: #fb7185; border-color: rgba(244, 63, 94, 0.35); background: rgba(244, 63, 94, 0.08);">
+            <i data-lucide="smartphone" style="width: 14px; height: 14px;"></i>
+            <span>Mobile Release</span>
+          </div>
+          <h2 class="heading-lg">Download Helix <span class="text-gradient">Music.</span></h2>
+          <p class="section-subtitle">The audiophile-grade music client for Android.</p>
+        </div>
+
+        <div class="downloads-grid-2">
+
+          <!-- Android Music APK -->
+          <div class="download-card reveal" id="dl-music-android">
+            <div class="dl-card-header">
+              <div class="dl-platform-icon" style="border-color: rgba(244, 63, 94, 0.3);">
+                <i data-lucide="smartphone" style="width: 24px; height: 24px; color: #fb7185;"></i>
+              </div>
+              <div>
+                <div class="dl-platform-title">Android Mobile</div>
+                <div class="dl-platform-subtitle">Helix Music APK</div>
+              </div>
+            </div>
+            <div class="dl-meta-list">
+              <div class="dl-meta-row">
+                <span class="dl-meta-label">Format</span>
+                <span class="dl-meta-value">.apk</span>
+              </div>
+              <div class="dl-meta-row">
+                <span class="dl-meta-label">Requires</span>
+                <span class="dl-meta-value">Android 8.0+</span>
+              </div>
+              <div class="dl-meta-row">
+                <span class="dl-meta-label">Audio</span>
+                <span class="dl-meta-value">FLAC / ALAC / MP3 / AAC / Opus</span>
+              </div>
+            </div>
+            <div class="sha256-box">
+              <code class="sha256-code">ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d</code>
+              <button class="copy-btn" onclick="copyChecksum('ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d', this)">
+                <i data-lucide="copy" style="width: 13px; height: 13px;"></i>
+              </button>
+            </div>
+            <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-download rose" onclick="triggerDownload('helix-music.apk', 'Helix Music Android')">
+              <i data-lucide="download" style="width: 16px; height: 16px;"></i>
+              <span>Download Music APK</span>
+            </a>
+          </div>
+
+          <!-- Placeholder: Coming Soon for iOS -->
+          <div class="download-card reveal reveal-delay-1" id="dl-music-ios-soon" style="border-color: rgba(244, 63, 94, 0.15);">
+            <div class="dl-card-header">
+              <div class="dl-platform-icon" style="border-color: rgba(244, 63, 94, 0.2);">
+                <i data-lucide="laptop" style="width: 24px; height: 24px; color: #64748b;"></i>
+              </div>
+              <div>
+                <div class="dl-platform-title" style="color: var(--text-secondary);">Desktop Client</div>
+                <div class="dl-platform-subtitle">Coming Soon</div>
+              </div>
+            </div>
+            <div class="dl-meta-list">
+              <div class="dl-meta-row">
+                <span class="dl-meta-label">Status</span>
+                <span class="dl-meta-value" style="color: #fb7185;">In Development</span>
+              </div>
+              <div class="dl-meta-row">
+                <span class="dl-meta-label">Platforms</span>
+                <span class="dl-meta-value">macOS / Windows / Linux</span>
+              </div>
+            </div>
+            <div style="flex: 1;"></div>
+            <button class="btn-download rose" style="opacity: 0.5; cursor: not-allowed;" disabled>
+              <i data-lucide="clock" style="width: 16px; height: 16px;"></i>
+              <span>Coming Soon</span>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Terminal Verification Block -->
+        <div class="security-block reveal">
+          <div class="security-header">
+            <div class="security-dots">
+              <span class="security-dot dot-red"></span>
+              <span class="security-dot dot-yellow"></span>
+              <span class="security-dot dot-green"></span>
+            </div>
+            <span class="security-title">APK Integrity Verification</span>
+          </div>
+          <div class="security-body">
+<span class="security-comment"># Verify Helix Music APK integrity</span>
+<span class="security-cmd">sha256sum helix-music.apk</span>
+
+<span class="security-comment"># Expected output:</span>
+<span class="security-cmd">ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d  helix-music.apk</span>
+
+<span class="security-comment"># Install via ADB</span>
+<span class="security-cmd">adb install helix-music.apk</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================
+       GLOBAL FOOTER
+  ============================================ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <img src="logo.jpeg" alt="Helix Logo" style="width: 24px; height: 24px; border-radius: 6px;" />
+        <span style="font-weight: 700; color: #ffffff;">Helix Ecosystem</span>
+        <span style="color: var(--text-muted);">&mdash; Private, Sovereign Media Architecture</span>
+      </div>
+      <div style="display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap;">
+        <a href="index.html" style="color: var(--text-secondary); font-size: 0.825rem;">Home</a>
+        <a href="server.html" style="color: var(--text-secondary); font-size: 0.825rem;">Helix Server</a>
+        <a href="helix.html" style="color: var(--text-secondary); font-size: 0.825rem;">Helix</a>
+        <a href="music.html" style="color: var(--text-secondary); font-size: 0.825rem;">Helix Music</a>
+        <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" style="color: var(--brand-cyan); font-size: 0.825rem; font-weight: 600;">Releases</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

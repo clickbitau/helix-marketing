@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helix Mobile — On-the-Go Touch Cinema & Offline Travel</title>
+  <meta name="description" content="Download Helix Mobile APK (com.helix.mobile) for Android phones and tablets. Touch-optimized 4K HDR playback, single-tap offline caching, and background audio." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================
+       SUPER MINIMAL NAVBAR
+  ============================================ -->
+  <header class="site-navbar">
+    <div class="container nav-container">
+      
+      <a href="index.html" class="brand-logo-link">
+        <img src="logo.jpeg" alt="Helix Logo" class="brand-logo-img" />
+        <span class="text-gradient">Helix</span>
+      </a>
+
+      <div class="nav-center">
+        <a href="index.html" class="nav-home-link">Home</a>
+      </div>
+
+      <div>
+        <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-cta-primary">
+          <span>Get Helix</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================================
+         SECTION 1: MASSIVE APP HERO
+         Giant headline, 2-paragraph marketing intro, colossal hero image
+    ============================================ -->
+    <section class="page-hero">
+      <div class="ambient-glow glow-rose" style="top: 10%; left: 50%; transform: translateX(-50%); width: min(850px, 90vw); height: 350px;"></div>
+
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="reveal">
+          <div class="split-badge" style="color: #fb7185; border-color: rgba(244, 63, 94, 0.35);">
+            📱 Helix Mobile Edition
+          </div>
+
+          <h1 class="heading-display" style="margin-bottom: 1.25rem;">
+            On-the-Go Touch Cinema &<br />
+            <span class="text-gradient">Offline Travel</span>
+          </h1>
+
+          <div style="max-width: 780px; margin: 0 auto 2rem; text-align: center;">
+            <p class="lead-text" style="margin-bottom: 1rem;">
+              Helix Mobile unlocks personal cinema in the palm of your hand. Crafted specifically for high-density AMOLED smartphone displays and expansive tablet canvases, it combines fluid touch navigation with hardware-accelerated video decoding for an ultra-responsive viewing experience.
+            </p>
+            <p style="font-size: clamp(0.9rem, 1.8vw, 1.05rem); color: var(--text-secondary); line-height: 1.7;">
+              Whether you are riding the subway, commuting across town, or cruising at 35,000 feet, Helix Mobile keeps you connected to your home entertainment hub with automatic bandwidth scaling, background Picture-in-Picture multitasking, and smart single-tap offline downloads.
+            </p>
+          </div>
+
+          <div style="display: flex; justify-content: center;">
+            <a href="#downloads" class="btn-cta-primary" style="padding: 0.85rem 2rem; font-size: 0.975rem; background: var(--btn-rose-gradient); box-shadow: var(--btn-rose-glow);">
+              <span>Download Helix Mobile APK (v1.9.6)</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            </a>
+          </div>
+
+          <!-- Colossal Hero Image of App UI -->
+          <div class="device-frame" style="max-width: 1100px; margin: 2.5rem auto 0; border-color: rgba(244, 63, 94, 0.35);">
+            <div class="device-hud-top">
+              <span style="width:7px; height:7px; border-radius:50%; background:#f43f5e; box-shadow:0 0 8px #f43f5e; flex-shrink:0;"></span>
+              <span>HELIX MOBILE · TOUCH AMOLED 4K HDR PLAYBACK</span>
+            </div>
+            <img src="video-mockup.jpg" alt="Helix Mobile Video Player Interface Screenshot" class="device-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 2: DEEP DIVE FEATURE 1 (PERFORMANCE)
+         Dedicated to mobile speed/power (MediaCodec hardware pipeline, battery optimization).
+    ============================================ -->
+    <section class="deep-dive-section">
+      <div class="ambient-glow glow-rose" style="top: 25%; left: 5%; width: min(500px, 80vw); height: 300px;"></div>
+
+      <div class="container">
+        <div class="split-grid">
+          
+          <div class="split-content reveal">
+            <div class="split-badge" style="color: #fb7185; border-color: rgba(244, 63, 94, 0.35);">
+              ⚡ Battery & Silicon Optimization
+            </div>
+
+            <h2 class="heading-lg" style="margin-bottom: 0.85rem;">
+              Native MediaCodec & <br /><span class="text-gradient">All-Day Battery Life</span>
+            </h2>
+
+            <p class="split-desc">
+              Helix Mobile taps directly into Android hardware decoding pipelines via low-level NDK bindings. By offloading video rendering straight to the Qualcomm Snapdragon or MediaTek GPU, your phone runs noticeably cooler while sipping minimal battery power during multi-hour movie marathons.
+            </p>
+
+            <p style="font-size: clamp(0.875rem, 1.6vw, 0.95rem); color: var(--text-secondary); line-height: 1.7;">
+              Adaptive cellular throttling automatically detects fluctuating mobile data speeds, switching between pristine direct LAN stream when at home and optimized compressed streams when on 5G/LTE networks.
+            </p>
+          </div>
+
+          <div class="reveal reveal-delay-1">
+            <div class="device-frame" style="border-color: rgba(244, 63, 94, 0.3);">
+              <div class="device-hud-top">
+                <span style="width:7px; height:7px; border-radius:50%; background:#10b981; box-shadow:0 0 8px #10b981; flex-shrink:0;"></span>
+                <span>HW ACCELERATION · 10+ HOURS CONTINUOUS PLAYBACK</span>
+              </div>
+              <img src="video-mockup.jpg" alt="Helix Mobile Performance and Power Management" class="device-img" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 3: DEEP DIVE FEATURE 2 (USER EXPERIENCE)
+         Dedicated to touch gestures, PiP background multitasking, and offline caching.
+    ============================================ -->
+    <section class="deep-dive-section">
+      <div class="ambient-glow glow-purple" style="top: 25%; right: 5%; width: min(500px, 80vw); height: 300px;"></div>
+
+      <div class="container">
+        <div class="split-grid">
+          
+          <div class="split-content reveal">
+            <div class="split-badge" style="color: #fb7185; border-color: rgba(244, 63, 94, 0.35);">
+              👆 Natural Handheld Control
+            </div>
+
+            <h2 class="heading-lg" style="margin-bottom: 0.85rem;">
+              Tactile Swipe Gestures & <br /><span class="text-gradient">Offline Travel Sync</span>
+            </h2>
+
+            <p class="split-desc">
+              Adjust volume on the right screen edge and brightness on the left with intuitive vertical swipes. Drag your finger across the display to scrub smoothly through video with instant floating frame previews, letting you find the exact scene in seconds.
+            </p>
+
+            <p style="font-size: clamp(0.875rem, 1.6vw, 0.95rem); color: var(--text-secondary); line-height: 1.7;">
+              Planning a flight? Hit the download icon on any movie or TV series season. Helix Mobile caches high-definition video chunks directly to internal memory or SD card, complete with multiple subtitle tracks and audio languages.
+            </p>
+          </div>
+
+          <div class="reveal reveal-delay-1">
+            <div class="device-frame" style="border-color: rgba(244, 63, 94, 0.3);">
+              <div class="device-hud-top">
+                <span style="width:7px; height:7px; border-radius:50%; background:#f43f5e; box-shadow:0 0 8px #f43f5e; flex-shrink:0;"></span>
+                <span>SINGLE-TAP OFFLINE TRAVEL SYNC</span>
+              </div>
+              <img src="video-mockup.jpg" alt="Helix Mobile Offline Download Management" class="device-img" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 4: COMPREHENSIVE FEATURE GRID
+    ============================================ -->
+    <section class="deep-dive-section">
+      <div class="container">
+        
+        <div style="text-align: center; max-width: 720px; margin: 0 auto 2.5rem;">
+          <h2 class="heading-lg">Engineered for Mobile Power Users</h2>
+          <p class="lead-text centered" style="margin-top: 0.5rem;">
+            A complete suite of mobile-first innovations tailored for touchscreens and travel.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          
+          <div class="glass-feature-card reveal">
+            <div class="feature-icon" style="color: #f43f5e;">👆</div>
+            <h3 class="heading-sm" style="margin-bottom: 0.65rem;">Precision Swipe Gestures</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.65;">
+              Fluid edge gestures for fine volume control, display backlight scaling, and timeline scrubbing with high-resolution frame previews.
+            </p>
+          </div>
+
+          <div class="glass-feature-card reveal reveal-delay-1">
+            <div class="feature-icon" style="color: #f43f5e;">✈️</div>
+            <h3 class="heading-sm" style="margin-bottom: 0.65rem;">Smart Offline Caching</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.65;">
+              Download full 4K movies or complete multi-episode series for flights, commutes, and off-grid vacations with background downloading.
+            </p>
+          </div>
+
+          <div class="glass-feature-card reveal reveal-delay-2">
+            <div class="feature-icon" style="color: #f43f5e;">🖼️</div>
+            <h3 class="heading-sm" style="margin-bottom: 0.65rem;">Picture-in-Picture (PiP)</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.65;">
+              Keep video floating on top of other apps while browsing or texting, with full play, pause, and skip controls built into the overlay.
+            </p>
+          </div>
+
+          <div class="glass-feature-card reveal">
+            <div class="feature-icon" style="color: #f43f5e;">🔋</div>
+            <h3 class="heading-sm" style="margin-bottom: 0.65rem;">Battery Optimized HW Engine</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.65;">
+              Direct hardware acceleration bypasses CPU translation layers, minimizing thermal buildup and conserving battery power.
+            </p>
+          </div>
+
+          <div class="glass-feature-card reveal reveal-delay-1">
+            <div class="feature-icon" style="color: #f43f5e;">🔄</div>
+            <h3 class="heading-sm" style="margin-bottom: 0.65rem;">Seamless State Handoff</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.65;">
+              Automatically syncs watch progress and bookmark locations with your server the moment you connect to home Wi-Fi.
+            </p>
+          </div>
+
+          <div class="glass-feature-card reveal reveal-delay-2">
+            <div class="feature-icon" style="color: #f43f5e;">📶</div>
+            <h3 class="heading-sm" style="margin-bottom: 0.65rem;">Adaptive Cellular Streaming</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.65;">
+              Intelligently adjusts bitrates over mobile cellular networks to conserve mobile data while preserving razor-sharp image clarity.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 5: THE DOWNLOAD PORTAL
+    ============================================ -->
+    <section id="downloads" class="deep-dive-section" style="padding-bottom: 5.5rem;">
+      <div class="container">
+        
+        <div style="text-align: center; max-width: 720px; margin: 0 auto 2.5rem;">
+          <h2 class="heading-lg">Download Helix Mobile</h2>
+          <p class="lead-text centered" style="margin-top: 0.5rem;">
+            Official direct APK package for Android smartphones, phablets, and tablets.
+          </p>
+        </div>
+
+        <div style="max-width: 580px; margin: 0 auto;">
+          
+          <div class="download-card reveal" style="border-color: rgba(244, 63, 94, 0.35);">
+            <div>
+              <div class="dl-card-header">
+                <div class="dl-platform-icon" style="color: #f43f5e;">📱</div>
+                <div>
+                  <h3 class="dl-platform-title">Android (Phones & Tablets)</h3>
+                  <div class="dl-platform-subtitle">Package: com.helix.mobile</div>
+                </div>
+              </div>
+
+              <div class="dl-meta-list">
+                <div class="dl-meta-row">
+                  <span class="dl-meta-label">Package Name</span>
+                  <span class="dl-meta-value">com.helix.mobile</span>
+                </div>
+                <div class="dl-meta-row">
+                  <span class="dl-meta-label">Version</span>
+                  <span class="dl-meta-value">1.9.6</span>
+                </div>
+                <div class="dl-meta-row">
+                  <span class="dl-meta-label">File Size</span>
+                  <span class="dl-meta-value">78 MB</span>
+                </div>
+                <div class="dl-meta-row">
+                  <span class="dl-meta-label">Requirements</span>
+                  <span class="dl-meta-value">Android 8.0+ (ARM64)</span>
+                </div>
+              </div>
+
+              <div style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 0.35rem; font-weight: 600;">
+                SHA-256 Checksum:
+              </div>
+              <div class="sha256-box">
+                <span class="sha256-code">9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08</span>
+                <button class="copy-btn" onclick="copyChecksum('9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08', this)">Copy</button>
+              </div>
+            </div>
+
+            <button class="btn-cta-primary" style="width: 100%; background: var(--btn-rose-gradient); box-shadow: var(--btn-rose-glow);" onclick="triggerDownload('helix-mobile-1.9.6.apk', 'Helix Mobile')">
+              <span>Download APK</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            </button>
+          </div>
+
+          <!-- Security Block: Check an APK before installing -->
+          <div class="security-block reveal reveal-delay-1">
+            <div class="security-header">
+              <div class="security-dots">
+                <span class="security-dot dot-red"></span>
+                <span class="security-dot dot-yellow"></span>
+                <span class="security-dot dot-green"></span>
+              </div>
+              <span class="security-title">Verify APK Signature</span>
+              <button class="copy-btn" onclick="copyChecksum('apksigner verify --print-certs helix-mobile-1.9.6.apk\nkeytool -printcert -jarfile helix-mobile-1.9.6.apk', this)">Copy</button>
+            </div>
+            
+            <div class="security-body">
+              <div style="margin-bottom: 0.75rem;">
+                <span class="security-comment"># Verify APK signature using Android apksigner</span>
+                <span class="security-cmd">$ apksigner verify --print-certs helix-mobile-1.9.6.apk</span>
+              </div>
+              <div>
+                <span class="security-comment"># Verify certificate fingerprint with JDK keytool</span>
+                <span class="security-cmd">$ keytool -printcert -jarfile helix-mobile-1.9.6.apk</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>© 2026 Helix Ecosystem. 100% Self-Hosted & Private.</div>
+        <div>
+          <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary); font-weight: 600;">
+            helix-downloads.clickbit.com.au ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

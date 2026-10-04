@@ -1,5 +1,5 @@
 $port = 8080
-$folder = "c:\Users\Wafiqul Islam Aayan\Desktop\helix landing page"
+$folder = $PSScriptRoot
 $listener = New-Object System.Net.HttpListener
 $listener.Prefixes.Add("http://localhost:$port/")
 try {

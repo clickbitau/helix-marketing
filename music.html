@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Helix Music -- Audiophile Sound, Reimagined</title>
-  <meta name="description" content="A custom native audio engine with true gapless playback, dynamic synced lyrics, seamless CarPlay integration, smart radio mixes, and offline mode." />
+  <title>Helix Music — Lossless Sound, Zero Ads, Free Forever</title>
+  <meta name="description" content="Helix Music is a free audiophile-grade player: true gapless playback, synced lyrics, FLAC/ALAC lossless, CarPlay & Android Auto, smart radio, and real offline mode. No ads, no subscription." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,7 +28,7 @@
       <nav class="nav-center" aria-label="Main Navigation">
         <a href="index.html" class="nav-link-item">Home</a>
         <a href="server.html" class="nav-link-item">Helix Server</a>
-        <a href="helix.html" class="nav-link-item">Helix</a>
+        <a href="helix.html" class="nav-link-item">Helix Media</a>
         <a href="music.html" class="nav-link-item active">Helix Music</a>
       </nav>
 
@@ -45,7 +45,7 @@
 
     <div class="mobile-drawer" id="mobile-nav-drawer">
       <a href="index.html" class="mobile-nav-item">
-        <i data-lucide="home" style="width: 18px; height: 18px; color: #a855f7;"></i>
+        <i data-lucide="home" style="width: 18px; height: 18px; color: #0ea5e9;"></i>
         <span>Home</span>
       </a>
       <a href="server.html" class="mobile-nav-item">
@@ -53,8 +53,8 @@
         <span>Helix Server</span>
       </a>
       <a href="helix.html" class="mobile-nav-item">
-        <i data-lucide="film" style="width: 18px; height: 18px; color: #c084fc;"></i>
-        <span>Helix</span>
+        <i data-lucide="film" style="width: 18px; height: 18px; color: #38bdf8;"></i>
+        <span>Helix Media</span>
       </a>
       <a href="music.html" class="mobile-nav-item active">
         <i data-lucide="music" style="width: 18px; height: 18px; color: #fb7185;"></i>
@@ -65,101 +65,179 @@
 
   <main>
     <!-- ============================================
-         HERO SECTION
+         HERO — COPY LEFT + VINYL & PLAYER MOCKUP RIGHT
     ============================================ -->
-    <section class="page-hero">
-      <div class="ambient-glow glow-rose" style="top: 5%; left: 50%; transform: translateX(-50%); width: min(800px, 90vw); height: 350px;"></div>
-      <div class="ambient-glow glow-purple" style="top: 40%; left: 8%; width: min(350px, 45vw); height: 220px;"></div>
+    <section class="hero-v2" style="padding-bottom: clamp(3rem, 6vw, 5.5rem);">
+      <div class="ambient-glow glow-rose" style="top: 0%; left: 20%; width: min(750px, 90vw); height: 420px;"></div>
+      <div class="ambient-glow glow-blue" style="top: 45%; right: -5%; width: min(400px, 60vw); height: 260px;"></div>
 
       <div class="container" style="position: relative; z-index: 2;">
-        <div class="reveal">
-          <div class="split-badge" style="color: #fb7185; border-color: rgba(244, 63, 94, 0.35); background: rgba(244, 63, 94, 0.08); margin: 0 auto 1.5rem;">
-            <i data-lucide="disc" style="width: 14px; height: 14px;"></i>
-            <span>Audiophile Sound Engine</span>
+        <div class="hero-v2-grid">
+
+          <div class="hero-v2-copy reveal">
+            <div class="split-badge" style="color: #fb7185; border-color: rgba(244, 63, 94, 0.35); background: rgba(244, 63, 94, 0.08);">
+              <i data-lucide="audio-lines" style="width: 14px; height: 14px;"></i>
+              <span>Helix Music — The Audiophile Player</span>
+            </div>
+
+            <h1 class="heading-display" style="margin-bottom: 1.25rem;">
+              Hear Everything.<br />
+              <span class="text-gradient">Own It Forever.</span>
+            </h1>
+
+            <p class="lead-text" style="margin-bottom: 2.25rem; max-width: 540px;">
+              A free music player with a custom native audio engine — true gapless playback, lyrics that move to the beat, bit-perfect lossless, and your whole library in your car and your pocket. No ads. No subscription. Ever.
+            </p>
+
+            <p class="hero-cta-label">Free Download · Android 8.0+</p>
+            <div class="hero-cta-row">
+              <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-cta-primary btn-cta-lg" style="background: var(--btn-rose-gradient); box-shadow: var(--btn-rose-glow);" onclick="triggerDownload('helix-music.apk', 'Helix Music Android')">
+                <i data-lucide="download" style="width: 18px; height: 18px;"></i>
+                <span>Get Helix Music</span>
+              </a>
+              <a href="#now-playing" class="btn-explore rose" id="hero-demo-btn">
+                <i data-lucide="play" style="width: 16px; height: 16px;"></i>
+                <span>Watch It Play</span>
+              </a>
+            </div>
+
+            <div class="hero-proof-strip">
+              <span class="proof-item"><i data-lucide="shield-check" style="color: #fb7185;"></i> No ads or tracking</span>
+              <span class="proof-divider" style="background: rgba(244, 63, 94, 0.6);"></span>
+              <span class="proof-item"><i data-lucide="infinity" style="color: #fb7185;"></i> True gapless</span>
+              <span class="proof-divider" style="background: rgba(244, 63, 94, 0.6);"></span>
+              <span class="proof-item"><i data-lucide="wifi-off" style="color: #fb7185;"></i> Full offline mode</span>
+            </div>
           </div>
 
-          <h1 class="heading-display" style="margin-bottom: 1.25rem;">
-            Pure Sound.<br />
-            <span class="text-gradient">Zero Compromise.</span>
-          </h1>
+          <!-- Vinyl + player composition -->
+          <div class="vinyl-stage reveal reveal-delay-1">
+            <div class="vinyl-disc" aria-hidden="true"></div>
 
-          <p class="lead-text centered" style="margin-bottom: 2rem;">
-            A music player built from the ground up for audiophiles. Custom native audio engine, dynamic synced lyrics, and seamless integration with your car and lock screen.
-          </p>
+            <div class="device-frame" style="border-color: rgba(244, 63, 94, 0.35); position: relative; z-index: 2;">
+              <div class="device-hud-top">
+                <span class="live-dot" aria-hidden="true"></span>
+                <span>NOW PLAYING &middot; CELESTIAL DRIFT &middot; LOSSLESS</span>
+              </div>
+              <img src="music-mockup.jpg" alt="Helix Music player on a phone showing album art, lossless badge, animated waveform and a floating synced lyrics card" class="device-img" />
+              <div class="eq-bars" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+
+            <span class="float-chip chip-a" aria-hidden="true"><i data-lucide="type" style="width: 12px; height: 12px;"></i> Synced Lyrics</span>
+            <span class="float-chip chip-b" aria-hidden="true"><i data-lucide="audio-waveform" style="width: 12px; height: 12px;"></i> FLAC 24-bit</span>
+            <span class="float-chip chip-c" aria-hidden="true"><i data-lucide="infinity" style="width: 12px; height: 12px;"></i> Gapless Engine</span>
+          </div>
+
         </div>
       </div>
     </section>
 
     <!-- ============================================
-         FEATURES — STRICT 2-COLUMN GRID (6 FEATURES)
+         FORMATS MARQUEE TICKER
     ============================================ -->
-    <section class="deep-dive-section">
-      <div class="ambient-glow glow-rose" style="top: 15%; right: 5%; width: min(400px, 50vw); height: 250px;"></div>
+    <div class="marquee-strip marquee-rose" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>FLAC 24-bit</span><i class="mq-dot">&#9835;</i>
+          <span>ALAC</span><i class="mq-dot">&#9835;</i>
+          <span>Opus</span><i class="mq-dot">&#9835;</i>
+          <span>True Gapless</span><i class="mq-dot">&#9835;</i>
+          <span>Synced Lyrics</span><i class="mq-dot">&#9835;</i>
+          <span>CarPlay &amp; Auto</span><i class="mq-dot">&#9835;</i>
+          <span>Smart Radio</span><i class="mq-dot">&#9835;</i>
+          <span>Offline Mode</span><i class="mq-dot">&#9835;</i>
+          <span>Lock Screen Controls</span><i class="mq-dot">&#9835;</i>
+        </div>
+        <div class="marquee-group">
+          <span>FLAC 24-bit</span><i class="mq-dot">&#9835;</i>
+          <span>ALAC</span><i class="mq-dot">&#9835;</i>
+          <span>Opus</span><i class="mq-dot">&#9835;</i>
+          <span>True Gapless</span><i class="mq-dot">&#9835;</i>
+          <span>Synced Lyrics</span><i class="mq-dot">&#9835;</i>
+          <span>CarPlay &amp; Auto</span><i class="mq-dot">&#9835;</i>
+          <span>Smart Radio</span><i class="mq-dot">&#9835;</i>
+          <span>Offline Mode</span><i class="mq-dot">&#9835;</i>
+          <span>Lock Screen Controls</span><i class="mq-dot">&#9835;</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================
+         NOW PLAYING — INTERACTIVE PLAYER DEMO
+    ============================================ -->
+    <section id="now-playing" class="deep-dive-section">
+      <div class="ambient-glow glow-rose" style="top: 15%; left: 5%; width: min(450px, 70vw); height: 300px;"></div>
 
       <div class="container">
-        <div class="section-title-block reveal">
-          <div class="split-badge" style="color: #fb7185; border-color: rgba(244, 63, 94, 0.35); background: rgba(244, 63, 94, 0.08);">
-            <i data-lucide="headphones" style="width: 14px; height: 14px;"></i>
-            <span>Sound Capabilities</span>
-          </div>
-          <h2 class="heading-lg">Engineered for <span class="text-gradient">Audiophiles.</span></h2>
-          <p class="section-subtitle">Six pillars of premium audio crafted for listeners who hear the difference.</p>
-        </div>
+        <div class="split-grid">
 
-        <div class="feature-grid-2">
+          <div class="reveal">
+            <div class="player-card" id="demo-player">
+              <div class="pc-head">
+                <div class="vinyl-mini" aria-hidden="true"></div>
+                <div class="pc-meta">
+                  <span class="pc-track">Celestial Drift</span>
+                  <span class="pc-artist">Chromatic Echoes &middot; Ambient Electronica</span>
+                </div>
+                <span class="pc-badge"><i data-lucide="audio-lines" style="width: 12px; height: 12px;"></i> Lossless</span>
+              </div>
 
-          <!-- Feature 1: Custom Native Audio Engine -->
-          <div class="glass-feature-card accent-rose reveal" id="feature-audio-engine">
-            <div class="feature-icon" style="border-color: rgba(244, 63, 94, 0.3);">
-              <i data-lucide="music" style="width: 24px; height: 24px; color: #fb7185;"></i>
+              <div class="pc-lyrics" aria-label="Synced lyrics preview">
+                <span class="lyric-line l1">Running free, within the glow&hellip;</span>
+                <span class="lyric-line l2">Lost in dynamic echoes where the starlight goes</span>
+                <span class="lyric-line l3">Synthesizing moments, where the rhythm flows</span>
+                <span class="lyric-line l4">Geometric shadows, everything just grows</span>
+                <span class="lyric-line l5">Celestial drift &mdash; we ride the wave below</span>
+              </div>
+
+              <div class="pc-progress">
+                <span class="pc-time">1:32</span>
+                <div class="pc-bar"><div class="pc-fill"></div></div>
+                <span class="pc-time">4:18</span>
+              </div>
+
+              <div class="pc-controls">
+                <i data-lucide="shuffle" style="width: 18px; height: 18px;"></i>
+                <i data-lucide="skip-back" style="width: 20px; height: 20px;"></i>
+                <button class="pc-play-btn" id="pc-play-toggle" aria-label="Pause demo animation">
+                  <i data-lucide="pause" style="width: 22px; height: 22px;"></i>
+                </button>
+                <i data-lucide="skip-forward" style="width: 20px; height: 20px;"></i>
+                <i data-lucide="repeat" style="width: 18px; height: 18px;"></i>
+              </div>
+
+              <div class="wave-strip" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
             </div>
-            <h3 class="feature-title">Custom Native Audio Engine</h3>
-            <p class="feature-desc">Engineered from the ground up for true, uninterrupted gapless playback. Every transition between tracks is seamless -- exactly as the artist intended the album to flow.</p>
-          </div>
-
-          <!-- Feature 2: Dynamic Synced Lyrics -->
-          <div class="glass-feature-card accent-rose reveal reveal-delay-1" id="feature-synced-lyrics">
-            <div class="feature-icon" style="border-color: rgba(244, 63, 94, 0.3);">
-              <i data-lucide="type" style="width: 24px; height: 24px; color: #fb7185;"></i>
-            </div>
-            <h3 class="feature-title">Dynamic Synced Lyrics</h3>
-            <p class="feature-desc">Beautiful, real-time typography lyrics syncing to the beat of every track. Watch words come alive with smooth animations that follow the rhythm of your music.</p>
-          </div>
-
-          <!-- Feature 3: Seamless Car & Lock Screen Sync -->
-          <div class="glass-feature-card accent-rose reveal" id="feature-car-sync">
-            <div class="feature-icon" style="border-color: rgba(244, 63, 94, 0.3);">
-              <i data-lucide="car" style="width: 24px; height: 24px; color: #fb7185;"></i>
-            </div>
-            <h3 class="feature-title">Seamless Car and Lock Screen Sync</h3>
-            <p class="feature-desc">Native integration with Apple CarPlay and Android Auto for effortless in-car listening. Full lock screen controls, album art, and media session support on every device.</p>
-          </div>
-
-          <!-- Feature 4: Smart Radio & Mixes -->
-          <div class="glass-feature-card accent-rose reveal reveal-delay-1" id="feature-smart-radio">
-            <div class="feature-icon" style="border-color: rgba(244, 63, 94, 0.3);">
-              <i data-lucide="radio" style="width: 24px; height: 24px; color: #fb7185;"></i>
-            </div>
-            <h3 class="feature-title">Smart Radio and Mixes</h3>
-            <p class="feature-desc">Generate endless, personalized radio stations on demand from any track or artist. Intelligent algorithms curate the perfect listening session -- every time you hit play.</p>
           </div>
 
-          <!-- Feature 5: True Offline Mode -->
-          <div class="glass-feature-card accent-rose reveal" id="feature-offline-mode">
-            <div class="feature-icon" style="border-color: rgba(244, 63, 94, 0.3);">
-              <i data-lucide="download-cloud" style="width: 24px; height: 24px; color: #fb7185;"></i>
+          <div class="split-content reveal reveal-delay-1">
+            <div class="split-badge" style="color: #fb7185; border-color: rgba(244, 63, 94, 0.35); background: rgba(244, 63, 94, 0.08);">
+              <i data-lucide="type" style="width: 14px; height: 14px;"></i>
+              <span>Live Engine Preview</span>
             </div>
-            <h3 class="feature-title">True Offline Mode</h3>
-            <p class="feature-desc">Download entire albums and playlists locally for airplane-mode listening. Your entire music library travels with you -- no signal required, no interruptions.</p>
-          </div>
 
-          <!-- Feature 6: Lightning-Fast Search -->
-          <div class="glass-feature-card accent-rose reveal reveal-delay-1" id="feature-fast-search">
-            <div class="feature-icon" style="border-color: rgba(244, 63, 94, 0.3);">
-              <i data-lucide="search" style="width: 24px; height: 24px; color: #fb7185;"></i>
-            </div>
-            <h3 class="feature-title">Lightning-Fast Search</h3>
-            <p class="feature-desc">Instantly drill down through Artists, Albums, and Tracks with real-time results. The search index updates live as your library grows -- always fast, always accurate.</p>
+            <h2 class="heading-lg" style="margin-bottom: 0.85rem;">
+              Lyrics That Move<br /><span class="text-gradient">to the Beat.</span>
+            </h2>
+
+            <p class="split-desc">
+              This is the actual experience: our native audio engine renders typography line-by-line, synced to the waveform in real time — while gapless transitions carry you from track to track without a single seam.
+            </p>
+
+            <ul class="check-list">
+              <li><i data-lucide="check" style="color: #fb7185;"></i><span>Word-accurate sync, even offline — lyrics are cached with the track</span></li>
+              <li><i data-lucide="check" style="color: #fb7185;"></i><span>Zero-gap album playback, exactly as the artist sequenced it</span></li>
+              <li><i data-lucide="check" style="color: #fb7185;"></i><span>Bit-perfect output up to 24-bit FLAC with no resampling</span></li>
+            </ul>
+
+            <a href="#downloads" class="btn-explore rose">
+              <span>Download the Player</span>
+              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+            </a>
           </div>
 
         </div>
@@ -167,25 +245,91 @@
     </section>
 
     <!-- ============================================
-         DOWNLOADS — ANDROID CLIENT (2-COLUMN)
+         MOBILE — FANNED PHONE DUO + ON-THE-GO COPY
     ============================================ -->
     <section class="deep-dive-section">
-      <div class="ambient-glow glow-rose" style="top: 20%; left: 10%; width: min(400px, 50vw); height: 250px;"></div>
+      <div class="ambient-glow glow-rose" style="top: 20%; left: 8%; width: min(450px, 70vw); height: 300px;"></div>
+
+      <div class="container">
+        <div class="split-grid">
+
+          <div class="split-content reveal">
+            <div class="split-badge" style="color: #fb7185; border-color: rgba(244, 63, 94, 0.35); background: rgba(244, 63, 94, 0.08);">
+              <i data-lucide="smartphone" style="width: 14px; height: 14px;"></i>
+              <span>Pocket to Dashboard</span>
+            </div>
+
+            <h2 class="heading-lg" style="margin-bottom: 0.85rem;">
+              One Tap Shuffle.<br /><span class="text-gradient">Anywhere You Are.</span>
+            </h2>
+
+            <p class="split-desc">
+              Hit &ldquo;Shuffle everything&rdquo; and go. Download albums and playlists for airplane mode, take calls without losing your place, and let smart radio keep the session alive when the album ends.
+            </p>
+
+            <ul class="check-list">
+              <li><i data-lucide="check" style="color: #fb7185;"></i><span>Native CarPlay &amp; Android Auto with lock screen controls</span></li>
+              <li><i data-lucide="check" style="color: #fb7185;"></i><span>Offline downloads — whole albums, one tap</span></li>
+              <li><i data-lucide="check" style="color: #fb7185;"></i><span>Endless smart radio generated from any track or artist</span></li>
+            </ul>
+
+            <div class="cta-banner">
+              <div>
+                <strong>Ready to press play?</strong>
+                <span>Free APK &middot; SHA-256 verified</span>
+              </div>
+              <a href="#downloads" class="btn-cta-primary" style="background: var(--btn-rose-gradient); box-shadow: var(--btn-rose-glow);">
+                <i data-lucide="download" style="width: 15px; height: 15px;"></i>
+                <span>Get the APK</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="reveal reveal-delay-1">
+            <div class="phone-duo">
+              <div class="device-frame phone-frame duo-left" style="border-color: rgba(244, 63, 94, 0.3);">
+                <div class="device-hud-top">
+                  <i data-lucide="shuffle" style="width: 12px; height: 12px; color: #fb7185;"></i>
+                  <span>SHUFFLE EVERYTHING</span>
+                </div>
+                <img src="helix-music-mobile-home.jpeg" alt="Helix Music mobile home screen with shuffle everything, loved tracks and recently played albums" class="device-img" />
+              </div>
+              <div class="device-frame phone-frame duo-right" style="border-color: rgba(244, 63, 94, 0.3);">
+                <div class="device-hud-top">
+                  <i data-lucide="download-cloud" style="width: 12px; height: 12px; color: #fb7185;"></i>
+                  <span>DOWNLOADED TO THIS PHONE</span>
+                </div>
+                <img src="helix-music-mobile-library.jpeg" alt="Helix Music mobile library with album art grid filtered to downloaded music" class="device-img" />
+              </div>
+              <span class="float-chip chip-d" aria-hidden="true"><i data-lucide="car" style="width: 12px; height: 12px;"></i> CarPlay Ready</span>
+              <span class="float-chip chip-e" aria-hidden="true"><i data-lucide="plane" style="width: 12px; height: 12px;"></i> Airplane-Mode Proof</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         DOWNLOADS — ANDROID APK + VERIFICATION
+    ============================================ -->
+    <section class="deep-dive-section" id="downloads">
+      <div class="ambient-glow glow-rose" style="top: 15%; left: 10%; width: min(400px, 50vw); height: 250px;"></div>
 
       <div class="container">
         <div class="section-title-block reveal">
           <div class="split-badge" style="color: #fb7185; border-color: rgba(244, 63, 94, 0.35); background: rgba(244, 63, 94, 0.08);">
             <i data-lucide="smartphone" style="width: 14px; height: 14px;"></i>
-            <span>Mobile Release</span>
+            <span>Get the App</span>
           </div>
           <h2 class="heading-lg">Download Helix <span class="text-gradient">Music.</span></h2>
-          <p class="section-subtitle">The audiophile-grade music client for Android.</p>
+          <p class="section-subtitle">Free, direct, and checksum-verified. Install in under a minute.</p>
         </div>
 
-        <div class="downloads-grid-2">
+        <div style="max-width: 580px; margin: 0 auto;">
 
           <!-- Android Music APK -->
-          <div class="download-card reveal" id="dl-music-android">
+          <div class="download-card reveal" id="dl-music-android" style="border-color: rgba(244, 63, 94, 0.3);">
             <div class="dl-card-header">
               <div class="dl-platform-icon" style="border-color: rgba(244, 63, 94, 0.3);">
                 <i data-lucide="smartphone" style="width: 24px; height: 24px; color: #fb7185;"></i>
@@ -194,6 +338,7 @@
                 <div class="dl-platform-title">Android Mobile</div>
                 <div class="dl-platform-subtitle">Helix Music APK</div>
               </div>
+              <span class="dl-badge">Free</span>
             </div>
             <div class="dl-meta-list">
               <div class="dl-meta-row">
@@ -219,34 +364,6 @@
               <i data-lucide="download" style="width: 16px; height: 16px;"></i>
               <span>Download Music APK</span>
             </a>
-          </div>
-
-          <!-- Placeholder: Coming Soon for iOS -->
-          <div class="download-card reveal reveal-delay-1" id="dl-music-ios-soon" style="border-color: rgba(244, 63, 94, 0.15);">
-            <div class="dl-card-header">
-              <div class="dl-platform-icon" style="border-color: rgba(244, 63, 94, 0.2);">
-                <i data-lucide="laptop" style="width: 24px; height: 24px; color: #64748b;"></i>
-              </div>
-              <div>
-                <div class="dl-platform-title" style="color: var(--text-secondary);">Desktop Client</div>
-                <div class="dl-platform-subtitle">Coming Soon</div>
-              </div>
-            </div>
-            <div class="dl-meta-list">
-              <div class="dl-meta-row">
-                <span class="dl-meta-label">Status</span>
-                <span class="dl-meta-value" style="color: #fb7185;">In Development</span>
-              </div>
-              <div class="dl-meta-row">
-                <span class="dl-meta-label">Platforms</span>
-                <span class="dl-meta-value">macOS / Windows / Linux</span>
-              </div>
-            </div>
-            <div style="flex: 1;"></div>
-            <button class="btn-download rose" style="opacity: 0.5; cursor: not-allowed;" disabled>
-              <i data-lucide="clock" style="width: 16px; height: 16px;"></i>
-              <span>Coming Soon</span>
-            </button>
           </div>
 
         </div>
@@ -276,6 +393,45 @@
       </div>
     </section>
 
+    <!-- ============================================
+         FINAL CTA — CONVERSION CARD
+    ============================================ -->
+    <section class="final-cta-section" style="background: radial-gradient(ellipse 60% 50% at 50% 60%, rgba(244, 63, 94, 0.1) 0%, transparent 70%);">
+      <div class="ambient-glow glow-rose" style="top: 20%; left: 50%; transform: translateX(-50%); width: min(800px, 90vw); height: 380px;"></div>
+
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="cta-card reveal" style="border-color: rgba(244, 63, 94, 0.4); background: linear-gradient(160deg, rgba(244, 63, 94, 0.1) 0%, rgba(14, 18, 30, 0.85) 45%);">
+          <div class="cta-card-copy">
+            <div class="split-badge" style="color: #fb7185; border-color: rgba(244, 63, 94, 0.35); background: rgba(244, 63, 94, 0.08);">
+              <i data-lucide="disc" style="width: 14px; height: 14px;"></i>
+              <span>The needle drops when you do</span>
+            </div>
+            <h2 class="heading-lg" style="margin-bottom: 0.85rem;">
+              Your Music Deserves<br /><span class="text-gradient">Better Than an App.</span>
+            </h2>
+            <p class="split-desc" style="margin: 0 0 1.5rem;">
+              One free download. Lossless sound, synced lyrics, car integration, and real offline — all of it private, all of it yours.
+            </p>
+            <ul class="check-list" style="margin-bottom: 0;">
+              <li><i data-lucide="check" style="color: #fb7185;"></i><span>Free forever — no account, no ads, no tracking</span></li>
+              <li><i data-lucide="check" style="color: #fb7185;"></i><span>SHA-256 verified direct download</span></li>
+              <li><i data-lucide="check" style="color: #fb7185;"></i><span>Installed and playing in under a minute</span></li>
+            </ul>
+          </div>
+
+          <div class="cta-card-actions">
+            <p class="hero-cta-label" style="margin-bottom: 0.9rem;">Helix Music — Android</p>
+            <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-cta-primary btn-cta-lg" style="width: 100%; background: var(--btn-rose-gradient); box-shadow: var(--btn-rose-glow);" onclick="triggerDownload('helix-music.apk', 'Helix Music Android')">
+              <i data-lucide="download" style="width: 18px; height: 18px;"></i>
+              <span>Download Helix Music</span>
+            </a>
+            <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="cta-all-link" style="color: #fb7185;">View all releases <i data-lucide="arrow-up-right" style="width: 13px; height: 13px;"></i></a>
+          </div>
+        </div>
+        <p class="cta-microcopy reveal reveal-delay-1">Free APK &middot; No account required &middot; Verified checksum</p>
+      </div>
+    </section>
+
   </main>
 
   <!-- ============================================
@@ -291,13 +447,29 @@
       <div style="display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap;">
         <a href="index.html" style="color: var(--text-secondary); font-size: 0.825rem;">Home</a>
         <a href="server.html" style="color: var(--text-secondary); font-size: 0.825rem;">Helix Server</a>
-        <a href="helix.html" style="color: var(--text-secondary); font-size: 0.825rem;">Helix</a>
+        <a href="helix.html" style="color: var(--text-secondary); font-size: 0.825rem;">Helix Media</a>
         <a href="music.html" style="color: var(--text-secondary); font-size: 0.825rem;">Helix Music</a>
+        <a href="faq.html" style="color: var(--text-secondary); font-size: 0.825rem;">FAQ</a>
         <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" style="color: var(--brand-cyan); font-size: 0.825rem; font-weight: 600;">Releases</a>
       </div>
     </div>
   </footer>
 
   <script src="app.js"></script>
+  <script>
+    // Demo player: play/pause toggle freezes every animation in the card
+    document.addEventListener('DOMContentLoaded', () => {
+      const player = document.getElementById('demo-player');
+      const toggle = document.getElementById('pc-play-toggle');
+      if (!player || !toggle) return;
+      toggle.addEventListener('click', () => {
+        const paused = player.classList.toggle('is-paused');
+        const icon = toggle.querySelector('i');
+        if (icon) icon.setAttribute('data-lucide', paused ? 'play' : 'pause');
+        toggle.setAttribute('aria-label', paused ? 'Play demo animation' : 'Pause demo animation');
+        if (typeof lucide !== 'undefined' && lucide.createIcons) lucide.createIcons();
+      });
+    });
+  </script>
 </body>
 </html>

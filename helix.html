@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Helix -- The Ultimate Video Client</title>
-  <meta name="description" content="Cinematic 4K direct play with hardware-accelerated decoding, Dolby Atmos passthrough, smart binge-watching, and a premium 10-foot living room UI." />
+  <title>Helix Media — The Player Your Library Deserves</title>
+  <meta name="description" content="Helix Media plays your movies and series in original quality — hardware-accelerated 4K Dolby Vision, lossless audio passthrough, and smart binge tools — on desktop, mobile, and TV." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,7 +28,7 @@
       <nav class="nav-center" aria-label="Main Navigation">
         <a href="index.html" class="nav-link-item">Home</a>
         <a href="server.html" class="nav-link-item">Helix Server</a>
-        <a href="helix.html" class="nav-link-item active">Helix</a>
+        <a href="helix.html" class="nav-link-item active">Helix Media</a>
         <a href="music.html" class="nav-link-item">Helix Music</a>
       </nav>
 
@@ -45,7 +45,7 @@
 
     <div class="mobile-drawer" id="mobile-nav-drawer">
       <a href="index.html" class="mobile-nav-item">
-        <i data-lucide="home" style="width: 18px; height: 18px; color: #a855f7;"></i>
+        <i data-lucide="home" style="width: 18px; height: 18px; color: #0ea5e9;"></i>
         <span>Home</span>
       </a>
       <a href="server.html" class="mobile-nav-item">
@@ -53,8 +53,8 @@
         <span>Helix Server</span>
       </a>
       <a href="helix.html" class="mobile-nav-item active">
-        <i data-lucide="film" style="width: 18px; height: 18px; color: #c084fc;"></i>
-        <span>Helix</span>
+        <i data-lucide="film" style="width: 18px; height: 18px; color: #38bdf8;"></i>
+        <span>Helix Media</span>
       </a>
       <a href="music.html" class="mobile-nav-item">
         <i data-lucide="music" style="width: 18px; height: 18px; color: #fb7185;"></i>
@@ -65,119 +65,185 @@
 
   <main>
     <!-- ============================================
-         HERO SECTION
+         SECTION 1 — NOW-PLAYING TITLE-CARD HERO
+         Full-bleed cinematic backdrop, movie-metadata
+         strip, live seek bar pinned to the base
     ============================================ -->
-    <section class="page-hero">
-      <div class="ambient-glow glow-purple" style="top: 5%; left: 50%; transform: translateX(-50%); width: min(800px, 90vw); height: 350px;"></div>
-      <div class="ambient-glow glow-rose" style="top: 40%; right: 8%; width: min(350px, 45vw); height: 220px;"></div>
+    <section class="med-hero">
+      <div class="med-hero-backdrop">
+        <img src="video-mockup.jpg" alt="" />
+      </div>
 
-      <div class="container" style="position: relative; z-index: 2;">
+      <!-- Floating codec chips -->
+      <div class="med-chip mc-1" aria-hidden="true"><i data-lucide="zap"></i>Direct Play</div>
+      <div class="med-chip mc-2" aria-hidden="true"><i data-lucide="cpu"></i>HEVC Main10</div>
+      <div class="med-chip mc-3" aria-hidden="true"><i data-lucide="audio-lines"></i>Atmos Passthrough</div>
+
+      <div class="container med-hero-inner">
         <div class="reveal">
-          <div class="split-badge" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.35); background: rgba(168, 85, 247, 0.08); margin: 0 auto 1.5rem;">
-            <i data-lucide="film" style="width: 14px; height: 14px;"></i>
-            <span>Universal Video Client</span>
+          <div class="med-live"><span class="med-live-dot"></span>Now Playing</div>
+
+          <div class="split-badge" style="color: #38bdf8; border-color: rgba(14, 165, 233, 0.35); background: rgba(14, 165, 233, 0.08); margin-bottom: 1.25rem;">
+            <i data-lucide="clapperboard" style="width: 14px; height: 14px;"></i>
+            <span>Helix Media — Universal Player</span>
           </div>
 
-          <h1 class="heading-display" style="margin-bottom: 1.25rem;">
-            Cinematic Playback.<br />
-            <span class="text-gradient">Everywhere.</span>
+          <h1 class="heading-display" style="margin-bottom: 0;">
+            It Just <span class="text-gradient">Plays.</span>
           </h1>
 
-          <p class="lead-text centered" style="margin-bottom: 2rem;">
-            The premium video client built for enthusiasts who refuse to compromise. Hardware-accelerated 4K, Dolby Atmos, and a living room UI that rivals the best streaming platforms.
+          <div class="med-meta" aria-label="Playback capabilities">
+            <span class="mm-tag mm-match">100% Direct Play</span>
+            <span class="mm-tag">4K Dolby Vision</span>
+            <span class="mm-tag">HDR10+</span>
+            <span class="mm-tag">Dolby Atmos</span>
+            <span class="mm-tag">Every Codec</span>
+          </div>
+
+          <p class="lead-text">
+            The native player for your Helix Server library. Hardware-decoded 4K, bit-perfect audio, and a 10-foot UI that rivals the biggest streaming platforms — on desktop, mobile, and TV.
           </p>
+
+          <div class="hero-cta-row" style="margin-top: 1.8rem; justify-content: flex-start;">
+            <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-cta-primary btn-cta-lg" id="hero-download-btn">
+              <i data-lucide="download" style="width: 18px; height: 18px;"></i>
+              <span>Download Helix Media</span>
+            </a>
+            <a href="#downloads" class="btn-explore blue" id="hero-platforms-btn">
+              <span>All Platforms</span>
+              <i data-lucide="arrow-down" style="width: 16px; height: 16px;"></i>
+            </a>
+          </div>
         </div>
+      </div>
+
+      <!-- Animated player seek bar -->
+      <div class="med-seek" aria-hidden="true">
+        <span>01:34:57</span>
+        <div class="med-seek-rail"><div class="med-seek-fill"></div></div>
+        <span>02:22:18</span>
       </div>
     </section>
 
     <!-- ============================================
-         FEATURES — STRICT 2-COLUMN GRID (8 FEATURES)
+         FORMAT MARQUEE
+    ============================================ -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>MKV</span><i class="mq-dot">&#10022;</i>
+          <span>HEVC</span><i class="mq-dot">&#10022;</i>
+          <span>AV1</span><i class="mq-dot">&#10022;</i>
+          <span>Dolby Vision</span><i class="mq-dot">&#10022;</i>
+          <span>HDR10+</span><i class="mq-dot">&#10022;</i>
+          <span>DTS:X</span><i class="mq-dot">&#10022;</i>
+          <span>TrueHD</span><i class="mq-dot">&#10022;</i>
+          <span>FLAC</span><i class="mq-dot">&#10022;</i>
+          <span>ASS / SRT / PGS</span><i class="mq-dot">&#10022;</i>
+        </div>
+        <div class="marquee-group">
+          <span>MKV</span><i class="mq-dot">&#10022;</i>
+          <span>HEVC</span><i class="mq-dot">&#10022;</i>
+          <span>AV1</span><i class="mq-dot">&#10022;</i>
+          <span>Dolby Vision</span><i class="mq-dot">&#10022;</i>
+          <span>HDR10+</span><i class="mq-dot">&#10022;</i>
+          <span>DTS:X</span><i class="mq-dot">&#10022;</i>
+          <span>TrueHD</span><i class="mq-dot">&#10022;</i>
+          <span>FLAC</span><i class="mq-dot">&#10022;</i>
+          <span>ASS / SRT / PGS</span><i class="mq-dot">&#10022;</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================
+         SECTION 2 — PLAYBACK ENGINE BENTO
+         Asymmetric mosaic: catalog shot + animated
+         tiles for audio, skip-intro, subs, resume
     ============================================ -->
     <section class="deep-dive-section">
-      <div class="ambient-glow glow-purple" style="top: 15%; left: 5%; width: min(400px, 50vw); height: 250px;"></div>
+      <div class="ambient-glow glow-blue" style="top: 12%; right: 6%; width: min(420px, 55vw); height: 260px;"></div>
 
       <div class="container">
         <div class="section-title-block reveal">
-          <div class="split-badge" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.35); background: rgba(168, 85, 247, 0.08);">
+          <div class="split-badge" style="color: #38bdf8; border-color: rgba(14, 165, 233, 0.35); background: rgba(14, 165, 233, 0.08);">
             <i data-lucide="sparkles" style="width: 14px; height: 14px;"></i>
-            <span>Premium Features</span>
+            <span>Playback Engine</span>
           </div>
-          <h2 class="heading-lg">Built for the <span class="text-gradient">Big Screen.</span></h2>
-          <p class="section-subtitle">Eight precision-engineered capabilities for the ultimate viewing experience.</p>
+          <h2 class="heading-lg">Built to Play <span class="text-gradient">Anything.</span></h2>
+          <p class="section-subtitle">Enthusiast-grade plumbing, hidden behind an interface that just feels premium.</p>
         </div>
 
-        <div class="feature-grid-2">
+        <div class="med-bento">
 
-          <!-- Feature 1: Cinematic Direct Play -->
-          <div class="glass-feature-card accent-purple reveal" id="feature-direct-play">
-            <div class="feature-icon" style="border-color: rgba(168, 85, 247, 0.3);">
-              <i data-lucide="monitor-play" style="width: 24px; height: 24px; color: #c084fc;"></i>
+          <!-- Wide tile: unified catalog -->
+          <div class="med-bcard med-bcard--wide reveal" id="med-catalog">
+            <img src="helix-player-catalog.jpeg" alt="Helix Media catalog view streaming a poster grid of movies and series" class="med-bcard-img" />
+            <div class="med-bcard-cap">
+              <strong>One catalog. Every source.</strong>
+              <span>LIBRARY &bull; STREAMS &bull; LIVE</span>
             </div>
-            <h3 class="feature-title">Cinematic Direct Play</h3>
-            <p class="feature-desc">Hardware-accelerated decoding delivers stunning, uncompressed original-quality playback. Every frame rendered exactly as the director intended -- no re-encoding, no quality loss.</p>
           </div>
 
-          <!-- Feature 2: Lossless Audio Passthrough -->
-          <div class="glass-feature-card accent-purple reveal reveal-delay-1" id="feature-audio-passthrough">
-            <div class="feature-icon" style="border-color: rgba(168, 85, 247, 0.3);">
-              <i data-lucide="speaker" style="width: 24px; height: 24px; color: #c084fc;"></i>
+          <!-- Audio passthrough tile with live EQ -->
+          <div class="med-bcard med-bcard--side reveal reveal-delay-1" id="med-audio">
+            <h3 class="med-bcard-title">Lossless passthrough</h3>
+            <p class="med-bcard-desc">The full, uncompressed signal goes straight to your soundbar or AV receiver.</p>
+            <div class="med-eq" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
             </div>
-            <h3 class="feature-title">Lossless Audio Passthrough</h3>
-            <p class="feature-desc">Theater-grade sound with direct passthrough for Dolby Atmos, DTS:X, and TrueHD. Your soundbar and AV receiver get the full, uncompressed audio signal.</p>
+            <div class="med-codecs">
+              <span>ATMOS</span><span>DTS:X</span><span>TRUEHD</span><span>LPCM</span>
+            </div>
           </div>
 
-          <!-- Feature 3: Smart Binge-Watching -->
-          <div class="glass-feature-card accent-purple reveal" id="feature-binge-watching">
-            <div class="feature-icon" style="border-color: rgba(168, 85, 247, 0.3);">
-              <i data-lucide="skip-forward" style="width: 24px; height: 24px; color: #c084fc;"></i>
+          <!-- Skip-intro tile with animated timeline -->
+          <div class="med-bcard med-bcard--third reveal" id="med-skip">
+            <h3 class="med-bcard-title">Skip intros, automatically</h3>
+            <p class="med-bcard-desc">Detected intros and credits jump with a single tap — or none at all.</p>
+            <div class="med-skip" aria-hidden="true">
+              <span class="med-skip-badge">Intro skipped</span>
+              <div class="med-skip-rail">
+                <div class="med-skip-intro"></div>
+                <div class="med-skip-head"></div>
+              </div>
             </div>
-            <h3 class="feature-title">Smart Binge-Watching</h3>
-            <p class="feature-desc">Automatically detect and skip intros or end credits with a single tap. Marathon your favorite series without touching the remote -- the next episode is always ready.</p>
           </div>
 
-          <!-- Feature 4: Premium 10-Foot UI -->
-          <div class="glass-feature-card accent-purple reveal reveal-delay-1" id="feature-10ft-ui">
-            <div class="feature-icon" style="border-color: rgba(168, 85, 247, 0.3);">
-              <i data-lucide="tv" style="width: 24px; height: 24px; color: #c084fc;"></i>
+          <!-- Subtitles tile with cycling lines -->
+          <div class="med-bcard med-bcard--third reveal reveal-delay-1" id="med-subs">
+            <h3 class="med-bcard-title">Subtitles on demand</h3>
+            <p class="med-bcard-desc">Find and sync perfect subtitles in any language, right from the player.</p>
+            <div class="med-sub-card" aria-hidden="true">
+              <span class="med-sub-tag">EN &bull; SYNCED</span>
+              <div class="med-sub-lines">
+                <span>You really should see this.</span>
+                <span>It found them instantly.</span>
+                <span>Any language. One tap.</span>
+              </div>
             </div>
-            <h3 class="feature-title">Premium 10-Foot UI</h3>
-            <p class="feature-desc">Spatial navigation with buttery-smooth focus animations designed for the living room. Navigate effortlessly with any remote, gamepad, or voice control.</p>
           </div>
 
-          <!-- Feature 5: Seamless Quality Switching -->
-          <div class="glass-feature-card accent-purple reveal" id="feature-quality-switching">
-            <div class="feature-icon" style="border-color: rgba(168, 85, 247, 0.3);">
-              <i data-lucide="wifi" style="width: 24px; height: 24px; color: #c084fc;"></i>
+          <!-- Resume-anywhere tile with sync bars -->
+          <div class="med-bcard med-bcard--third reveal reveal-delay-2" id="med-resume">
+            <h3 class="med-bcard-title">Resume anywhere</h3>
+            <p class="med-bcard-desc">Progress follows you. Pause on the TV, pick up on your phone.</p>
+            <div class="med-sync" aria-hidden="true">
+              <div class="med-sync-row">
+                <i data-lucide="tv"></i>
+                <span class="med-sync-label">TV</span>
+                <div class="med-sync-bar"><div class="med-sync-fill" style="width: 78%;"></div></div>
+              </div>
+              <div class="med-sync-row">
+                <i data-lucide="smartphone"></i>
+                <span class="med-sync-label">Phone</span>
+                <div class="med-sync-bar"><div class="med-sync-fill" style="width: 52%;"></div></div>
+              </div>
+              <div class="med-sync-row">
+                <i data-lucide="laptop"></i>
+                <span class="med-sync-label">Laptop</span>
+                <div class="med-sync-bar"><div class="med-sync-fill" style="width: 24%;"></div></div>
+              </div>
             </div>
-            <h3 class="feature-title">Seamless Quality Switching</h3>
-            <p class="feature-desc">Intelligently adapts to changing network conditions mid-playback without buffering. Whether on fiber or mobile data, your stream never stutters.</p>
-          </div>
-
-          <!-- Feature 6: On-the-Fly Subtitles -->
-          <div class="glass-feature-card accent-purple reveal reveal-delay-1" id="feature-subtitles">
-            <div class="feature-icon" style="border-color: rgba(168, 85, 247, 0.3);">
-              <i data-lucide="message-square" style="width: 24px; height: 24px; color: #c084fc;"></i>
-            </div>
-            <h3 class="feature-title">On-the-Fly Subtitles</h3>
-            <p class="feature-desc">Integrated web search to find and sync perfect subtitles instantly in any language. No more hunting through subtitle sites -- just press a button and watch.</p>
-          </div>
-
-          <!-- Feature 7: Pro-Level Diagnostics -->
-          <div class="glass-feature-card accent-purple reveal" id="feature-diagnostics">
-            <div class="feature-icon" style="border-color: rgba(168, 85, 247, 0.3);">
-              <i data-lucide="terminal" style="width: 24px; height: 24px; color: #c084fc;"></i>
-            </div>
-            <h3 class="feature-title">Pro-Level Diagnostics</h3>
-            <p class="feature-desc">Real-time on-screen display tracking frame rates, codec details, and hardware status. Power users get full visibility into exactly what is happening under the hood.</p>
-          </div>
-
-          <!-- Feature 8: Native Hardware Integration -->
-          <div class="glass-feature-card accent-purple reveal reveal-delay-1" id="feature-hardware-integration">
-            <div class="feature-icon" style="border-color: rgba(168, 85, 247, 0.3);">
-              <i data-lucide="smartphone" style="width: 24px; height: 24px; color: #c084fc;"></i>
-            </div>
-            <h3 class="feature-title">Native Hardware Integration</h3>
-            <p class="feature-desc">Optimized for flagship mobile phones and dedicated media boxes. Platform-native rendering ensures maximum performance and battery efficiency on every device.</p>
           </div>
 
         </div>
@@ -185,267 +251,220 @@
     </section>
 
     <!-- ============================================
-         DOWNLOADS — DESKTOP RELEASES (2-COLUMN)
+         SECTION 3 — POCKET CINEMA
+         Copy + feature rows beside a 3-phone fan
     ============================================ -->
     <section class="deep-dive-section">
-      <div class="ambient-glow glow-purple" style="top: 10%; right: 10%; width: min(400px, 50vw); height: 250px;"></div>
+      <div class="ambient-glow glow-rose" style="top: 18%; left: 4%; width: min(380px, 50vw); height: 240px;"></div>
+
+      <div class="container">
+        <div class="med-pocket-grid">
+
+          <div class="reveal">
+            <div class="split-badge" style="color: #38bdf8; border-color: rgba(14, 165, 233, 0.35); background: rgba(14, 165, 233, 0.08);">
+              <i data-lucide="smartphone" style="width: 14px; height: 14px;"></i>
+              <span>Pocket Cinema</span>
+            </div>
+            <h2 class="heading-lg" style="margin-bottom: 1rem;">A Cinema That Fits<br /><span class="text-gradient">in Your Pocket.</span></h2>
+            <p class="section-subtitle" style="margin: 0 0 0.5rem; text-align: left;">
+              The same engine, shrunk for your phone and scaled for your living room. One app, every screen.
+            </p>
+
+            <div class="med-pocket-list">
+              <div class="med-pocket-item">
+                <i data-lucide="history"></i>
+                <div><strong>Progress syncs everywhere</strong><span>Finish on the couch what you started in bed.</span></div>
+              </div>
+              <div class="med-pocket-item">
+                <i data-lucide="cast"></i>
+                <div><strong>One-tap casting</strong><span>Fling anything to the big screen instantly.</span></div>
+              </div>
+              <div class="med-pocket-item">
+                <i data-lucide="gamepad-2"></i>
+                <div><strong>Remote &amp; gamepad ready</strong><span>A true 10-foot UI with spatial focus navigation.</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="med-fan reveal reveal-delay-1" aria-hidden="true">
+            <div class="fan-chip fan-chip-1 med-chip"><i data-lucide="history"></i>Synced Progress</div>
+            <div class="fan-chip fan-chip-2 med-chip"><i data-lucide="cast"></i>One-Tap Cast</div>
+
+            <div class="fan-phone fan-left">
+              <img src="helix-mobile-library.jpeg" alt="" />
+            </div>
+            <div class="fan-phone fan-mid">
+              <img src="helix-mobile-player.jpeg" alt="" />
+            </div>
+            <div class="fan-phone fan-right">
+              <img src="WhatsApp Image 2026-10-04 at 10.10.53 PM (1).jpeg" alt="" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 4 — RELEASE BOARD
+         Full-width grouped board: every platform,
+         checksums inline, verify block below
+    ============================================ -->
+    <section id="downloads" class="deep-dive-section">
+      <div class="ambient-glow glow-blue" style="top: 10%; right: 8%; width: min(400px, 50vw); height: 250px;"></div>
 
       <div class="container">
         <div class="section-title-block reveal">
-          <div class="split-badge" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.35); background: rgba(168, 85, 247, 0.08);">
-            <i data-lucide="monitor" style="width: 14px; height: 14px;"></i>
-            <span>Desktop Releases</span>
+          <div class="split-badge" style="color: #38bdf8; border-color: rgba(14, 165, 233, 0.35); background: rgba(14, 165, 233, 0.08);">
+            <i data-lucide="download" style="width: 14px; height: 14px;"></i>
+            <span>Get Helix Media</span>
           </div>
-          <h2 class="heading-lg">Download for <span class="text-gradient">Desktop.</span></h2>
-          <p class="section-subtitle">Native desktop clients for every major platform.</p>
+          <h2 class="heading-lg">Pick Your <span class="text-gradient">Platform.</span></h2>
+          <p class="section-subtitle">Free, no account needed. Every build is checksum-verified.</p>
         </div>
 
-        <div class="downloads-grid-2">
+        <div class="rel-board reveal">
+          <div class="rel-group"><i data-lucide="monitor"></i>Desktop</div>
 
           <!-- macOS -->
-          <div class="download-card reveal" id="dl-helix-mac">
-            <div class="dl-card-header">
-              <div class="dl-platform-icon" style="border-color: rgba(168, 85, 247, 0.3);">
-                <i data-lucide="laptop" style="width: 24px; height: 24px; color: #c084fc;"></i>
-              </div>
-              <div>
-                <div class="dl-platform-title">macOS</div>
-                <div class="dl-platform-subtitle">Universal Binary (Intel + Apple Silicon)</div>
-              </div>
+          <div class="rel-row" id="dl-helix-mac">
+            <div class="rel-icon"><i data-lucide="laptop"></i></div>
+            <div>
+              <div class="rel-name">macOS</div>
+              <div class="rel-sub">.dmg &bull; Universal (Intel + Apple Silicon) &bull; macOS 12+</div>
             </div>
-            <div class="dl-meta-list">
-              <div class="dl-meta-row">
-                <span class="dl-meta-label">Format</span>
-                <span class="dl-meta-value">.dmg</span>
-              </div>
-              <div class="dl-meta-row">
-                <span class="dl-meta-label">Requires</span>
-                <span class="dl-meta-value">macOS 12+</span>
-              </div>
-            </div>
-            <div class="sha256-box">
-              <code class="sha256-code">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</code>
-              <button class="copy-btn" onclick="copyChecksum('e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', this)">
+            <div class="rel-sha">
+              <code>e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</code>
+              <button class="copy-btn" onclick="copyChecksum('e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', this)" aria-label="Copy checksum">
                 <i data-lucide="copy" style="width: 13px; height: 13px;"></i>
               </button>
             </div>
-            <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-download purple" onclick="triggerDownload('Helix.dmg', 'Helix macOS')">
+            <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-download blue" onclick="triggerDownload('Helix.dmg', 'Helix Media macOS')">
               <i data-lucide="download" style="width: 16px; height: 16px;"></i>
-              <span>Download .dmg</span>
+              <span>Download</span>
             </a>
           </div>
 
           <!-- Windows -->
-          <div class="download-card reveal reveal-delay-1" id="dl-helix-windows">
-            <div class="dl-card-header">
-              <div class="dl-platform-icon" style="border-color: rgba(168, 85, 247, 0.3);">
-                <i data-lucide="monitor" style="width: 24px; height: 24px; color: #c084fc;"></i>
-              </div>
-              <div>
-                <div class="dl-platform-title">Windows</div>
-                <div class="dl-platform-subtitle">64-bit Installer</div>
-              </div>
+          <div class="rel-row" id="dl-helix-windows">
+            <div class="rel-icon"><i data-lucide="monitor"></i></div>
+            <div>
+              <div class="rel-name">Windows</div>
+              <div class="rel-sub">.exe / .msi &bull; 64-bit installer &bull; Windows 10+</div>
             </div>
-            <div class="dl-meta-list">
-              <div class="dl-meta-row">
-                <span class="dl-meta-label">Format</span>
-                <span class="dl-meta-value">.exe / .msi</span>
-              </div>
-              <div class="dl-meta-row">
-                <span class="dl-meta-label">Requires</span>
-                <span class="dl-meta-value">Windows 10+</span>
-              </div>
-            </div>
-            <div class="sha256-box">
-              <code class="sha256-code">a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a</code>
-              <button class="copy-btn" onclick="copyChecksum('a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a', this)">
+            <div class="rel-sha">
+              <code>a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a</code>
+              <button class="copy-btn" onclick="copyChecksum('a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a', this)" aria-label="Copy checksum">
                 <i data-lucide="copy" style="width: 13px; height: 13px;"></i>
               </button>
             </div>
-            <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-download purple" onclick="triggerDownload('Helix-Setup.exe', 'Helix Windows')">
+            <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-download blue" onclick="triggerDownload('Helix-Setup.exe', 'Helix Media Windows')">
               <i data-lucide="download" style="width: 16px; height: 16px;"></i>
-              <span>Download .exe</span>
+              <span>Download</span>
             </a>
           </div>
 
           <!-- Linux -->
-          <div class="download-card reveal" id="dl-helix-linux">
-            <div class="dl-card-header">
-              <div class="dl-platform-icon" style="border-color: rgba(168, 85, 247, 0.3);">
-                <i data-lucide="terminal" style="width: 24px; height: 24px; color: #c084fc;"></i>
-              </div>
-              <div>
-                <div class="dl-platform-title">Linux</div>
-                <div class="dl-platform-subtitle">AppImage / Flatpak</div>
-              </div>
+          <div class="rel-row" id="dl-helix-linux">
+            <div class="rel-icon"><i data-lucide="terminal"></i></div>
+            <div>
+              <div class="rel-name">Linux</div>
+              <div class="rel-sub">.AppImage / Flatpak &bull; glibc 2.31+</div>
             </div>
-            <div class="dl-meta-list">
-              <div class="dl-meta-row">
-                <span class="dl-meta-label">Format</span>
-                <span class="dl-meta-value">.AppImage</span>
-              </div>
-              <div class="dl-meta-row">
-                <span class="dl-meta-label">Requires</span>
-                <span class="dl-meta-value">glibc 2.31+</span>
-              </div>
-            </div>
-            <div class="sha256-box">
-              <code class="sha256-code">d7a8fbb307d7809469ca9abcb0082e4f8d5651e46d3cdb762d02d0bf37c9e592</code>
-              <button class="copy-btn" onclick="copyChecksum('d7a8fbb307d7809469ca9abcb0082e4f8d5651e46d3cdb762d02d0bf37c9e592', this)">
+            <div class="rel-sha">
+              <code>d7a8fbb307d7809469ca9abcb0082e4f8d5651e46d3cdb762d02d0bf37c9e592</code>
+              <button class="copy-btn" onclick="copyChecksum('d7a8fbb307d7809469ca9abcb0082e4f8d5651e46d3cdb762d02d0bf37c9e592', this)" aria-label="Copy checksum">
                 <i data-lucide="copy" style="width: 13px; height: 13px;"></i>
               </button>
             </div>
-            <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-download purple" onclick="triggerDownload('Helix.AppImage', 'Helix Linux')">
+            <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-download blue" onclick="triggerDownload('Helix.AppImage', 'Helix Media Linux')">
               <i data-lucide="download" style="width: 16px; height: 16px;"></i>
-              <span>Download AppImage</span>
+              <span>Download</span>
             </a>
           </div>
 
-          <!-- Debian -->
-          <div class="download-card reveal reveal-delay-1" id="dl-helix-debian">
-            <div class="dl-card-header">
-              <div class="dl-platform-icon" style="border-color: rgba(168, 85, 247, 0.3);">
-                <i data-lucide="package" style="width: 24px; height: 24px; color: #c084fc;"></i>
-              </div>
-              <div>
-                <div class="dl-platform-title">Debian / Ubuntu</div>
-                <div class="dl-platform-subtitle">Native Package</div>
-              </div>
+          <!-- Debian / Ubuntu -->
+          <div class="rel-row" id="dl-helix-debian">
+            <div class="rel-icon"><i data-lucide="package"></i></div>
+            <div>
+              <div class="rel-name">Debian / Ubuntu</div>
+              <div class="rel-sub">.deb &bull; Debian 11+ / Ubuntu 22.04+</div>
             </div>
-            <div class="dl-meta-list">
-              <div class="dl-meta-row">
-                <span class="dl-meta-label">Format</span>
-                <span class="dl-meta-value">.deb</span>
-              </div>
-              <div class="dl-meta-row">
-                <span class="dl-meta-label">Requires</span>
-                <span class="dl-meta-value">Debian 11+ / Ubuntu 22.04+</span>
-              </div>
-            </div>
-            <div class="sha256-box">
-              <code class="sha256-code">9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08</code>
-              <button class="copy-btn" onclick="copyChecksum('9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08', this)">
+            <div class="rel-sha">
+              <code>9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08</code>
+              <button class="copy-btn" onclick="copyChecksum('9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08', this)" aria-label="Copy checksum">
                 <i data-lucide="copy" style="width: 13px; height: 13px;"></i>
               </button>
             </div>
-            <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-download purple" onclick="triggerDownload('helix_amd64.deb', 'Helix Debian')">
+            <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-download blue" onclick="triggerDownload('helix_amd64.deb', 'Helix Media Debian')">
               <i data-lucide="download" style="width: 16px; height: 16px;"></i>
-              <span>Download .deb</span>
+              <span>Download</span>
             </a>
           </div>
 
-        </div>
-      </div>
-    </section>
+          <div class="rel-group"><i data-lucide="smartphone"></i>Mobile &amp; TV</div>
 
-    <!-- ============================================
-         DOWNLOADS — ANDROID RELEASES (2-COLUMN)
-    ============================================ -->
-    <section class="deep-dive-section">
-      <div class="ambient-glow glow-rose" style="top: 15%; left: 5%; width: min(380px, 50vw); height: 240px;"></div>
-
-      <div class="container">
-        <div class="section-title-block reveal">
-          <div class="split-badge" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.35); background: rgba(168, 85, 247, 0.08);">
-            <i data-lucide="smartphone" style="width: 14px; height: 14px;"></i>
-            <span>Android Releases</span>
-          </div>
-          <h2 class="heading-lg">Download for <span class="text-gradient">Android.</span></h2>
-          <p class="section-subtitle">Optimized builds for mobile phones and dedicated Android TV boxes.</p>
-        </div>
-
-        <div class="downloads-grid-2">
-
-          <!-- Android Mobile APK -->
-          <div class="download-card reveal" id="dl-helix-android-mobile">
-            <div class="dl-card-header">
-              <div class="dl-platform-icon" style="border-color: rgba(168, 85, 247, 0.3);">
-                <i data-lucide="smartphone" style="width: 24px; height: 24px; color: #c084fc;"></i>
-              </div>
-              <div>
-                <div class="dl-platform-title">Android Mobile</div>
-                <div class="dl-platform-subtitle">Phone &amp; Tablet APK</div>
-              </div>
+          <!-- Android Mobile -->
+          <div class="rel-row" id="dl-helix-android-mobile">
+            <div class="rel-icon"><i data-lucide="smartphone"></i></div>
+            <div>
+              <div class="rel-name">Android Mobile</div>
+              <div class="rel-sub">.apk &bull; Phone &amp; tablet &bull; Android 8.0+</div>
             </div>
-            <div class="dl-meta-list">
-              <div class="dl-meta-row">
-                <span class="dl-meta-label">Format</span>
-                <span class="dl-meta-value">.apk</span>
-              </div>
-              <div class="dl-meta-row">
-                <span class="dl-meta-label">Requires</span>
-                <span class="dl-meta-value">Android 8.0+</span>
-              </div>
-            </div>
-            <div class="sha256-box">
-              <code class="sha256-code">5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8</code>
-              <button class="copy-btn" onclick="copyChecksum('5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', this)">
+            <div class="rel-sha">
+              <code>5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8</code>
+              <button class="copy-btn" onclick="copyChecksum('5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', this)" aria-label="Copy checksum">
                 <i data-lucide="copy" style="width: 13px; height: 13px;"></i>
               </button>
             </div>
-            <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-download purple" onclick="triggerDownload('helix-mobile.apk', 'Helix Android Mobile')">
+            <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-download blue" onclick="triggerDownload('helix-mobile.apk', 'Helix Media Android')">
               <i data-lucide="download" style="width: 16px; height: 16px;"></i>
-              <span>Download Mobile APK</span>
+              <span>Download</span>
             </a>
           </div>
 
-          <!-- Android TV APK -->
-          <div class="download-card reveal reveal-delay-1" id="dl-helix-android-tv">
-            <div class="dl-card-header">
-              <div class="dl-platform-icon" style="border-color: rgba(168, 85, 247, 0.3);">
-                <i data-lucide="tv" style="width: 24px; height: 24px; color: #c084fc;"></i>
-              </div>
-              <div>
-                <div class="dl-platform-title">Android TV</div>
-                <div class="dl-platform-subtitle">Leanback APK for TV Boxes</div>
-              </div>
+          <!-- Android TV -->
+          <div class="rel-row" id="dl-helix-android-tv">
+            <div class="rel-icon"><i data-lucide="tv"></i></div>
+            <div>
+              <div class="rel-name">Android TV</div>
+              <div class="rel-sub">.apk &bull; Leanback build for TV boxes &bull; Android TV 9.0+</div>
             </div>
-            <div class="dl-meta-list">
-              <div class="dl-meta-row">
-                <span class="dl-meta-label">Format</span>
-                <span class="dl-meta-value">.apk</span>
-              </div>
-              <div class="dl-meta-row">
-                <span class="dl-meta-label">Requires</span>
-                <span class="dl-meta-value">Android TV 9.0+</span>
-              </div>
-            </div>
-            <div class="sha256-box">
-              <code class="sha256-code">6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b</code>
-              <button class="copy-btn" onclick="copyChecksum('6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b', this)">
+            <div class="rel-sha">
+              <code>6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b</code>
+              <button class="copy-btn" onclick="copyChecksum('6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b', this)" aria-label="Copy checksum">
                 <i data-lucide="copy" style="width: 13px; height: 13px;"></i>
               </button>
             </div>
-            <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-download purple" onclick="triggerDownload('helix-tv.apk', 'Helix Android TV')">
+            <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-download blue" onclick="triggerDownload('helix-tv.apk', 'Helix Media Android TV')">
               <i data-lucide="download" style="width: 16px; height: 16px;"></i>
-              <span>Download TV APK</span>
+              <span>Download</span>
             </a>
           </div>
-
         </div>
 
         <!-- Terminal Verification Block -->
-        <div class="security-block reveal">
+        <div class="security-block reveal" style="margin-top: 2rem;">
           <div class="security-header">
             <div class="security-dots">
               <span class="security-dot dot-red"></span>
               <span class="security-dot dot-yellow"></span>
               <span class="security-dot dot-green"></span>
             </div>
-            <span class="security-title">APK Integrity Verification</span>
+            <span class="security-title">Integrity Verification</span>
           </div>
           <div class="security-body">
-<span class="security-comment"># Verify APK integrity before installation</span>
+<span class="security-comment"># Verify your download before installing</span>
 <span class="security-cmd">sha256sum helix-mobile.apk</span>
 
-<span class="security-comment"># Compare with published checksum</span>
+<span class="security-comment"># Compare with the published checksum above</span>
 <span class="security-cmd">echo "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8  helix-mobile.apk" | sha256sum -c -</span>
-
-<span class="security-comment"># Install via ADB</span>
-<span class="security-cmd">adb install helix-mobile.apk</span>
           </div>
         </div>
 
+        <p class="cta-microcopy reveal" style="text-align: center; margin-top: 1.75rem;">
+          Requires Helix Server on your network &bull; <a href="server.html" style="color: #38bdf8; font-weight: 600;">Get Helix Server</a>
+        </p>
       </div>
     </section>
 
@@ -455,18 +474,32 @@
        GLOBAL FOOTER
   ============================================ -->
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div style="display: flex; align-items: center; gap: 0.75rem;">
-        <img src="logo.jpeg" alt="Helix Logo" style="width: 24px; height: 24px; border-radius: 6px;" />
-        <span style="font-weight: 700; color: #ffffff;">Helix Ecosystem</span>
-        <span style="color: var(--text-muted);">&mdash; Private, Sovereign Media Architecture</span>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-brand-link">
+            <img src="logo.jpeg" alt="Helix Logo" />
+            <span>Helix</span>
+          </a>
+          <p class="footer-tagline">Private, sovereign media architecture &mdash; your movies, series, and music on every screen you own.</p>
+          <span class="footer-pill"><i data-lucide="shield-check" style="width: 13px; height: 13px;"></i> Zero tracking &bull; Zero subscriptions</span>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Product</p>
+          <a href="server.html">Helix Server</a>
+          <a href="helix.html">Helix Media</a>
+          <a href="music.html">Helix Music</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Resources</p>
+          <a href="index.html">Overview</a>
+          <a href="faq.html">FAQ</a>
+          <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer">Releases <i data-lucide="arrow-up-right" style="width: 12px; height: 12px; display: inline; vertical-align: -1px;"></i></a>
+        </div>
       </div>
-      <div style="display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap;">
-        <a href="index.html" style="color: var(--text-secondary); font-size: 0.825rem;">Home</a>
-        <a href="server.html" style="color: var(--text-secondary); font-size: 0.825rem;">Helix Server</a>
-        <a href="helix.html" style="color: var(--text-secondary); font-size: 0.825rem;">Helix</a>
-        <a href="music.html" style="color: var(--text-secondary); font-size: 0.825rem;">Helix Music</a>
-        <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" style="color: var(--brand-cyan); font-size: 0.825rem; font-weight: 600;">Releases</a>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Helix Ecosystem. All rights reserved.</span>
+        <a href="#" class="back-to-top">Back to top <i data-lucide="arrow-up" style="width: 13px; height: 13px;"></i></a>
       </div>
     </div>
   </footer>

@@ -28,7 +28,7 @@
       <nav class="nav-center" aria-label="Main Navigation">
         <a href="index.html" class="nav-link-item">Home</a>
         <a href="server.html" class="nav-link-item active">Helix Server</a>
-        <a href="helix.html" class="nav-link-item">Helix</a>
+        <a href="helix.html" class="nav-link-item">Helix Media</a>
         <a href="music.html" class="nav-link-item">Helix Music</a>
       </nav>
 
@@ -45,7 +45,7 @@
 
     <div class="mobile-drawer" id="mobile-nav-drawer">
       <a href="index.html" class="mobile-nav-item">
-        <i data-lucide="home" style="width: 18px; height: 18px; color: #a855f7;"></i>
+        <i data-lucide="home" style="width: 18px; height: 18px; color: #0ea5e9;"></i>
         <span>Home</span>
       </a>
       <a href="server.html" class="mobile-nav-item active">
@@ -53,8 +53,8 @@
         <span>Helix Server</span>
       </a>
       <a href="helix.html" class="mobile-nav-item">
-        <i data-lucide="film" style="width: 18px; height: 18px; color: #c084fc;"></i>
-        <span>Helix</span>
+        <i data-lucide="film" style="width: 18px; height: 18px; color: #38bdf8;"></i>
+        <span>Helix Media</span>
       </a>
       <a href="music.html" class="mobile-nav-item">
         <i data-lucide="music" style="width: 18px; height: 18px; color: #fb7185;"></i>
@@ -65,36 +65,146 @@
 
   <main>
     <!-- ============================================
-         HERO SECTION
+         HERO — ASYMMETRIC SPLIT + DNA STRAND
     ============================================ -->
-    <section class="page-hero">
-      <div class="ambient-glow glow-cyan" style="top: 5%; left: 50%; transform: translateX(-50%); width: min(800px, 90vw); height: 350px;"></div>
-      <div class="ambient-glow glow-blue" style="top: 40%; left: 8%; width: min(350px, 45vw); height: 220px;"></div>
+    <section class="srv-hero">
+      <div class="ambient-glow glow-cyan" style="top: -6%; left: -10%; width: min(560px, 70vw); height: 380px;"></div>
+      <div class="ambient-glow glow-blue" style="top: 30%; right: -8%; width: min(480px, 60vw); height: 320px;"></div>
+      <div class="srv-geo srv-geo-a" aria-hidden="true"></div>
+      <div class="srv-geo srv-geo-b" aria-hidden="true"></div>
 
       <div class="container" style="position: relative; z-index: 2;">
-        <div class="reveal">
-          <div class="split-badge" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.35); background: rgba(56, 189, 248, 0.08); margin: 0 auto 1.5rem;">
-            <i data-lucide="server" style="width: 14px; height: 14px;"></i>
-            <span>Helix Server Engine</span>
+        <div class="srv-hero-grid">
+
+          <div class="srv-hero-copy reveal">
+            <div class="split-badge" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.35); background: rgba(56, 189, 248, 0.08);">
+              <i data-lucide="server" style="width: 14px; height: 14px;"></i>
+              <span>Helix Server Engine</span>
+            </div>
+
+            <h1 class="heading-display" style="margin-bottom: 1.25rem;">
+              The Intelligent<br />
+              <span class="text-gradient-cyan">Media Engine.</span>
+            </h1>
+
+            <p class="lead-text" style="margin-bottom: 1.9rem;">
+              Your private media command center. Helix Server automatically discovers, organizes, and streams your entire library to every device in your home -- with zero configuration.
+            </p>
+
+            <div class="hero-cta-row">
+              <a href="#deploy" class="btn-cta-primary btn-cta-lg">
+                <span>Deploy the Engine</span>
+                <i data-lucide="arrow-down" style="width: 16px; height: 16px;"></i>
+              </a>
+              <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-explore blue">
+                <span>View Releases</span>
+                <i data-lucide="external-link" style="width: 16px; height: 16px;"></i>
+              </a>
+            </div>
+
+            <div class="hero-proof-strip">
+              <div class="proof-item">
+                <i data-lucide="shield-check"></i>
+                <span>Fully private</span>
+              </div>
+              <span class="proof-divider"></span>
+              <div class="proof-item">
+                <i data-lucide="zap"></i>
+                <span>5-minute setup</span>
+              </div>
+              <span class="proof-divider"></span>
+              <div class="proof-item">
+                <i data-lucide="hard-drive"></i>
+                <span>Your hardware</span>
+              </div>
+            </div>
           </div>
 
-          <h1 class="heading-display" style="margin-bottom: 1.25rem;">
-            The Intelligent<br />
-            <span class="text-gradient">Media Engine.</span>
-          </h1>
+          <div class="srv-hero-visual reveal reveal-delay-1">
+            <!-- DNA double helix -->
+            <svg class="srv-helix-svg" viewBox="0 0 160 520" aria-hidden="true">
+              <path class="helix-strand" d="M80 10 C140 50, 140 90, 80 130 C20 170, 20 210, 80 250 C140 290, 140 330, 80 370 C20 410, 20 450, 80 490" />
+              <path class="helix-strand helix-strand-alt" d="M80 10 C20 50, 20 90, 80 130 C140 170, 140 210, 80 250 C20 290, 20 330, 80 370 C140 410, 140 450, 80 490" />
+              <path class="helix-pulse" d="M80 10 C140 50, 140 90, 80 130 C20 170, 20 210, 80 250 C140 290, 140 330, 80 370 C20 410, 20 450, 80 490" />
+              <path class="helix-pulse helix-pulse-alt" d="M80 10 C20 50, 20 90, 80 130 C140 170, 140 210, 80 250 C20 290, 20 330, 80 370 C140 410, 140 450, 80 490" />
+              <g class="helix-rungs">
+                <line x1="35" y1="70"  x2="125" y2="70" />
+                <line x1="35" y1="190" x2="125" y2="190" />
+                <line x1="35" y1="310" x2="125" y2="310" />
+                <line x1="35" y1="430" x2="125" y2="430" />
+              </g>
+              <g class="helix-nodes">
+                <circle cx="125" cy="70"  r="4" /><circle cx="35"  cy="70"  r="4" />
+                <circle cx="35"  cy="190" r="4" /><circle cx="125" cy="190" r="4" />
+                <circle cx="125" cy="310" r="4" /><circle cx="35"  cy="310" r="4" />
+                <circle cx="35"  cy="430" r="4" /><circle cx="125" cy="430" r="4" />
+                <circle cx="80"  cy="10"  r="4" /><circle cx="80"  cy="130" r="4" />
+                <circle cx="80"  cy="250" r="4" /><circle cx="80"  cy="370" r="4" />
+                <circle cx="80"  cy="490" r="4" />
+              </g>
+            </svg>
 
-          <p class="lead-text centered" style="margin-bottom: 2rem;">
-            Your private media command center. Helix Server automatically discovers, organizes, and streams your entire library to every device in your home -- with zero configuration.
-          </p>
+            <div class="device-frame srv-hero-shot">
+              <div class="device-hud-top">
+                <i data-lucide="activity" style="width: 13px; height: 13px; color: #38bdf8;"></i>
+                <span>LIVE DASHBOARD</span>
+              </div>
+              <img src="server-mockup.jpg" alt="Helix Server dashboard with system metrics, media library stats and active device connections" class="device-img" />
+            </div>
+
+            <div class="srv-chip srv-chip-1">
+              <span class="srv-chip-dot dot-online"></span>
+              <span>SERVER ONLINE</span>
+            </div>
+            <div class="srv-chip srv-chip-2">
+              <i data-lucide="cpu" style="width: 12px; height: 12px; color: #38bdf8;"></i>
+              <span>CPU 28%</span>
+            </div>
+            <div class="srv-chip srv-chip-3">
+              <i data-lucide="cast" style="width: 12px; height: 12px; color: #38bdf8;"></i>
+              <span>STREAMING &middot; 4K</span>
+            </div>
+            <div class="srv-chip srv-chip-4">
+              <i data-lucide="database" style="width: 12px; height: 12px; color: #38bdf8;"></i>
+              <span>3.4TB / 10TB</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
     <!-- ============================================
-         FEATURES — STRICT 2-COLUMN GRID
+         MARQUEE TICKER
     ============================================ -->
-    <section class="deep-dive-section">
-      <div class="ambient-glow glow-cyan" style="top: 10%; right: 5%; width: min(400px, 50vw); height: 250px;"></div>
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>Auto-Scan Engine</span><em class="mq-dot">&#9679;</em>
+          <span>Deduplication</span><em class="mq-dot">&#9679;</em>
+          <span>Live Transcode</span><em class="mq-dot">&#9679;</em>
+          <span>Metadata Enrichment</span><em class="mq-dot">&#9679;</em>
+          <span>Trakt Sync</span><em class="mq-dot">&#9679;</em>
+          <span>Multi-User Profiles</span><em class="mq-dot">&#9679;</em>
+          <span>Zero-Config</span><em class="mq-dot">&#9679;</em>
+        </div>
+        <div class="marquee-group">
+          <span>Auto-Scan Engine</span><em class="mq-dot">&#9679;</em>
+          <span>Deduplication</span><em class="mq-dot">&#9679;</em>
+          <span>Live Transcode</span><em class="mq-dot">&#9679;</em>
+          <span>Metadata Enrichment</span><em class="mq-dot">&#9679;</em>
+          <span>Trakt Sync</span><em class="mq-dot">&#9679;</em>
+          <span>Multi-User Profiles</span><em class="mq-dot">&#9679;</em>
+          <span>Zero-Config</span><em class="mq-dot">&#9679;</em>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================
+         FEATURES — DOUBLE-HELIX STRAND LADDER
+    ============================================ -->
+    <section class="deep-dive-section srv-strand-section">
+      <div class="ambient-glow glow-cyan" style="top: 12%; left: 50%; transform: translateX(-50%); width: min(420px, 60vw); height: 640px;"></div>
 
       <div class="container">
         <div class="section-title-block reveal">
@@ -102,64 +212,82 @@
             <i data-lucide="cpu" style="width: 14px; height: 14px;"></i>
             <span>Core Capabilities</span>
           </div>
-          <h2 class="heading-lg">Everything Your Server <span class="text-gradient">Needs.</span></h2>
+          <h2 class="heading-lg">Encoded Into the <span class="text-gradient-cyan">Strand.</span></h2>
           <p class="section-subtitle">Six powerful pillars engineered to make media management effortless.</p>
         </div>
 
-        <div class="feature-grid-2">
+        <div class="strand">
 
-          <!-- Feature 1: Intelligent Library Scanning -->
-          <div class="glass-feature-card accent-cyan reveal" id="feature-library-scanning">
-            <div class="feature-icon" style="border-color: rgba(56, 189, 248, 0.3);">
-              <i data-lucide="database" style="width: 24px; height: 24px; color: #38bdf8;"></i>
+          <!-- Strand 01: Intelligent Library Scanning (left) -->
+          <div class="strand-item reveal" id="feature-library-scanning">
+            <div class="glass-feature-card accent-cyan">
+              <span class="strand-index">01</span>
+              <div class="feature-icon" style="border-color: rgba(56, 189, 248, 0.3);">
+                <i data-lucide="database" style="width: 24px; height: 24px; color: #38bdf8;"></i>
+              </div>
+              <h3 class="feature-title">Intelligent Library Scanning</h3>
+              <p class="feature-desc">Automatically parses, organizes, and deduplicates your Movies, TV Shows, and Music collections. Drop in your drives and let the engine handle the rest -- no manual tagging required.</p>
             </div>
-            <h3 class="feature-title">Intelligent Library Scanning</h3>
-            <p class="feature-desc">Automatically parses, organizes, and deduplicates your Movies, TV Shows, and Music collections. Drop in your drives and let the engine handle the rest -- no manual tagging required.</p>
           </div>
 
-          <!-- Feature 2: Dynamic Stream Optimization -->
-          <div class="glass-feature-card accent-cyan reveal reveal-delay-1" id="feature-stream-optimization">
-            <div class="feature-icon" style="border-color: rgba(56, 189, 248, 0.3);">
-              <i data-lucide="activity" style="width: 24px; height: 24px; color: #38bdf8;"></i>
+          <!-- Strand 02: Dynamic Stream Optimization (right) -->
+          <div class="strand-item reveal" id="feature-stream-optimization">
+            <div class="glass-feature-card accent-cyan">
+              <span class="strand-index">02</span>
+              <div class="feature-icon" style="border-color: rgba(56, 189, 248, 0.3);">
+                <i data-lucide="activity" style="width: 24px; height: 24px; color: #38bdf8;"></i>
+              </div>
+              <h3 class="feature-title">Dynamic Stream Optimization</h3>
+              <p class="feature-desc">Real-time, on-demand video conversion ensures smooth playback on every screen. Whether you are streaming to a flagship phone or a 4K television, Helix adapts automatically.</p>
             </div>
-            <h3 class="feature-title">Dynamic Stream Optimization</h3>
-            <p class="feature-desc">Real-time, on-demand video conversion ensures smooth playback on every screen. Whether you are streaming to a flagship phone or a 4K television, Helix adapts automatically.</p>
           </div>
 
-          <!-- Feature 3: Universal Source Aggregation -->
-          <div class="glass-feature-card accent-cyan reveal" id="feature-source-aggregation">
-            <div class="feature-icon" style="border-color: rgba(56, 189, 248, 0.3);">
-              <i data-lucide="globe" style="width: 24px; height: 24px; color: #38bdf8;"></i>
+          <!-- Strand 03: Universal Source Aggregation (left) -->
+          <div class="strand-item reveal" id="feature-source-aggregation">
+            <div class="glass-feature-card accent-cyan">
+              <span class="strand-index">03</span>
+              <div class="feature-icon" style="border-color: rgba(56, 189, 248, 0.3);">
+                <i data-lucide="globe" style="width: 24px; height: 24px; color: #38bdf8;"></i>
+              </div>
+              <h3 class="feature-title">Universal Source Aggregation</h3>
+              <p class="feature-desc">Seamlessly indexes media from diverse local and web-based sources into a single, unified library. One search, one interface -- every piece of content at your fingertips.</p>
             </div>
-            <h3 class="feature-title">Universal Source Aggregation</h3>
-            <p class="feature-desc">Seamlessly indexes media from diverse local and web-based sources into a single, unified library. One search, one interface -- every piece of content at your fingertips.</p>
           </div>
 
-          <!-- Feature 4: Rich Metadata Integration -->
-          <div class="glass-feature-card accent-cyan reveal reveal-delay-1" id="feature-metadata-integration">
-            <div class="feature-icon" style="border-color: rgba(56, 189, 248, 0.3);">
-              <i data-lucide="image" style="width: 24px; height: 24px; color: #38bdf8;"></i>
+          <!-- Strand 04: Rich Metadata Integration (right) -->
+          <div class="strand-item reveal" id="feature-metadata-integration">
+            <div class="glass-feature-card accent-cyan">
+              <span class="strand-index">04</span>
+              <div class="feature-icon" style="border-color: rgba(56, 189, 248, 0.3);">
+                <i data-lucide="image" style="width: 24px; height: 24px; color: #38bdf8;"></i>
+              </div>
+              <h3 class="feature-title">Rich Metadata Integration</h3>
+              <p class="feature-desc">Automatically pulls gorgeous high-resolution posters, backdrops, and detailed cast information. Your library looks as premium as any major streaming platform.</p>
             </div>
-            <h3 class="feature-title">Rich Metadata Integration</h3>
-            <p class="feature-desc">Automatically pulls gorgeous high-resolution posters, backdrops, and detailed cast information. Your library looks as premium as any major streaming platform.</p>
           </div>
 
-          <!-- Feature 5: Secure Multi-User Profiles -->
-          <div class="glass-feature-card accent-cyan reveal" id="feature-multi-user">
-            <div class="feature-icon" style="border-color: rgba(56, 189, 248, 0.3);">
-              <i data-lucide="users" style="width: 24px; height: 24px; color: #38bdf8;"></i>
+          <!-- Strand 05: Secure Multi-User Profiles (left) -->
+          <div class="strand-item reveal" id="feature-multi-user">
+            <div class="glass-feature-card accent-cyan">
+              <span class="strand-index">05</span>
+              <div class="feature-icon" style="border-color: rgba(56, 189, 248, 0.3);">
+                <i data-lucide="users" style="width: 24px; height: 24px; color: #38bdf8;"></i>
+              </div>
+              <h3 class="feature-title">Secure Multi-User Profiles</h3>
+              <p class="feature-desc">Keep your household organized with PIN-protected profiles. Each family member gets their own personalized recommendations, watch history, and content restrictions.</p>
             </div>
-            <h3 class="feature-title">Secure Multi-User Profiles</h3>
-            <p class="feature-desc">Keep your household organized with PIN-protected profiles. Each family member gets their own personalized recommendations, watch history, and content restrictions.</p>
           </div>
 
-          <!-- Feature 6: Two-Way Trakt.tv Sync -->
-          <div class="glass-feature-card accent-cyan reveal reveal-delay-1" id="feature-trakt-sync">
-            <div class="feature-icon" style="border-color: rgba(56, 189, 248, 0.3);">
-              <i data-lucide="refresh-cw" style="width: 24px; height: 24px; color: #38bdf8;"></i>
+          <!-- Strand 06: Two-Way Trakt.tv Sync (right) -->
+          <div class="strand-item reveal" id="feature-trakt-sync">
+            <div class="glass-feature-card accent-cyan">
+              <span class="strand-index">06</span>
+              <div class="feature-icon" style="border-color: rgba(56, 189, 248, 0.3);">
+                <i data-lucide="refresh-cw" style="width: 24px; height: 24px; color: #38bdf8;"></i>
+              </div>
+              <h3 class="feature-title">Two-Way Trakt.tv Sync</h3>
+              <p class="feature-desc">Sync your watch history, ratings, and watchlists bidirectionally across all your devices. Switch platforms without losing a single episode of progress.</p>
             </div>
-            <h3 class="feature-title">Two-Way Trakt.tv Sync</h3>
-            <p class="feature-desc">Sync your watch history, ratings, and watchlists bidirectionally across all your devices. Switch platforms without losing a single episode of progress.</p>
           </div>
 
         </div>
@@ -167,124 +295,223 @@
     </section>
 
     <!-- ============================================
-         DOWNLOADS — STRICT 2-COLUMN GRID
+         PIPELINE — ANGLED STEP FLOW
     ============================================ -->
-    <section class="deep-dive-section">
-      <div class="ambient-glow glow-blue" style="top: 20%; left: 10%; width: min(400px, 50vw); height: 250px;"></div>
+    <section class="deep-dive-section srv-pipe-section">
+      <div class="ambient-glow glow-blue" style="top: 10%; right: 6%; width: min(380px, 50vw); height: 240px;"></div>
 
       <div class="container">
         <div class="section-title-block reveal">
           <div class="split-badge" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.35); background: rgba(56, 189, 248, 0.08);">
-            <i data-lucide="hard-drive-download" style="width: 14px; height: 14px;"></i>
-            <span>Deploy Helix Server</span>
+            <i data-lucide="workflow" style="width: 14px; height: 14px;"></i>
+            <span>The Pipeline</span>
           </div>
-          <h2 class="heading-lg">Get Your Server <span class="text-gradient">Running.</span></h2>
-          <p class="section-subtitle">Deploy Helix Server on your preferred platform in minutes.</p>
+          <h2 class="heading-lg">Raw Files to <span class="text-gradient-cyan">Living Room.</span></h2>
+          <p class="section-subtitle">Four stages run automatically the moment media lands on your drives.</p>
         </div>
 
-        <div class="downloads-grid-2">
-
-          <!-- Docker -->
-          <div class="download-card reveal" id="dl-server-docker">
-            <div class="dl-card-header">
-              <div class="dl-platform-icon" style="border-color: rgba(56, 189, 248, 0.3);">
-                <i data-lucide="container" style="width: 24px; height: 24px; color: #38bdf8;"></i>
-              </div>
-              <div>
-                <div class="dl-platform-title">Docker</div>
-                <div class="dl-platform-subtitle">Containerized Deployment</div>
-              </div>
-            </div>
-            <div class="dl-meta-list">
-              <div class="dl-meta-row">
-                <span class="dl-meta-label">Platform</span>
-                <span class="dl-meta-value">x86_64 / ARM64</span>
-              </div>
-              <div class="dl-meta-row">
-                <span class="dl-meta-label">Type</span>
-                <span class="dl-meta-value">Container Image</span>
-              </div>
-            </div>
-            <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-download blue" onclick="triggerDownload('docker-compose.yml', 'Helix Server Docker')">
-              <i data-lucide="download" style="width: 16px; height: 16px;"></i>
-              <span>Pull Container</span>
-            </a>
+        <div class="srv-pipe">
+          <div class="pipe-step reveal">
+            <div class="pipe-node"><span class="pipe-num">01</span></div>
+            <div class="pipe-icon"><i data-lucide="folder-search" style="width: 22px; height: 22px; color: #38bdf8;"></i></div>
+            <h3 class="pipe-title">Ingest &amp; Scan</h3>
+            <p class="pipe-desc">Watches your folders and fingerprints every file the instant it appears.</p>
           </div>
 
-          <!-- Linux -->
-          <div class="download-card reveal reveal-delay-1" id="dl-server-linux">
-            <div class="dl-card-header">
-              <div class="dl-platform-icon" style="border-color: rgba(56, 189, 248, 0.3);">
-                <i data-lucide="terminal" style="width: 24px; height: 24px; color: #38bdf8;"></i>
-              </div>
-              <div>
-                <div class="dl-platform-title">Linux</div>
-                <div class="dl-platform-subtitle">Native Binary</div>
-              </div>
-            </div>
-            <div class="dl-meta-list">
-              <div class="dl-meta-row">
-                <span class="dl-meta-label">Platform</span>
-                <span class="dl-meta-value">Ubuntu / Debian / Fedora</span>
-              </div>
-              <div class="dl-meta-row">
-                <span class="dl-meta-label">Type</span>
-                <span class="dl-meta-value">Standalone Binary</span>
-              </div>
-            </div>
-            <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-download blue" onclick="triggerDownload('helix-server-linux', 'Helix Server Linux')">
-              <i data-lucide="download" style="width: 16px; height: 16px;"></i>
-              <span>Download for Linux</span>
-            </a>
+          <div class="pipe-step reveal reveal-delay-1">
+            <div class="pipe-node"><span class="pipe-num">02</span></div>
+            <div class="pipe-icon"><i data-lucide="sparkles" style="width: 22px; height: 22px; color: #38bdf8;"></i></div>
+            <h3 class="pipe-title">Enrich</h3>
+            <p class="pipe-desc">Matches titles and pulls posters, backdrops, and full cast metadata.</p>
           </div>
 
-          <!-- Windows -->
-          <div class="download-card reveal" id="dl-server-windows">
-            <div class="dl-card-header">
-              <div class="dl-platform-icon" style="border-color: rgba(56, 189, 248, 0.3);">
-                <i data-lucide="monitor" style="width: 24px; height: 24px; color: #38bdf8;"></i>
-              </div>
-              <div>
-                <div class="dl-platform-title">Windows</div>
-                <div class="dl-platform-subtitle">Desktop Installer</div>
-              </div>
-            </div>
-            <div class="dl-meta-list">
-              <div class="dl-meta-row">
-                <span class="dl-meta-label">Platform</span>
-                <span class="dl-meta-value">Windows 10 / 11</span>
-              </div>
-              <div class="dl-meta-row">
-                <span class="dl-meta-label">Type</span>
-                <span class="dl-meta-value">MSI Installer</span>
-              </div>
-            </div>
-            <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-download blue" onclick="triggerDownload('helix-server.msi', 'Helix Server Windows')">
-              <i data-lucide="download" style="width: 16px; height: 16px;"></i>
-              <span>Download for Windows</span>
-            </a>
+          <div class="pipe-step reveal reveal-delay-2">
+            <div class="pipe-node"><span class="pipe-num">03</span></div>
+            <div class="pipe-icon"><i data-lucide="layers" style="width: 22px; height: 22px; color: #38bdf8;"></i></div>
+            <h3 class="pipe-title">Organize</h3>
+            <p class="pipe-desc">Deduplicates and structures everything into one clean unified library.</p>
           </div>
 
+          <div class="pipe-step reveal reveal-delay-3">
+            <div class="pipe-node"><span class="pipe-num">04</span></div>
+            <div class="pipe-icon"><i data-lucide="cast" style="width: 22px; height: 22px; color: #38bdf8;"></i></div>
+            <h3 class="pipe-title">Stream</h3>
+            <p class="pipe-desc">Serves optimized playback to every Helix client on your network.</p>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Terminal Verification Block -->
-        <div class="security-block reveal">
-          <div class="security-header">
-            <div class="security-dots">
-              <span class="security-dot dot-red"></span>
-              <span class="security-dot dot-yellow"></span>
-              <span class="security-dot dot-green"></span>
+    <!-- ============================================
+         DEPLOY — ASYMMETRIC DIAGONAL DECK
+    ============================================ -->
+    <section class="srv-deploy" id="deploy">
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="srv-deploy-grid">
+
+          <div class="srv-deploy-copy reveal">
+            <div class="split-badge" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.35); background: rgba(56, 189, 248, 0.08);">
+              <i data-lucide="hard-drive-download" style="width: 14px; height: 14px;"></i>
+              <span>Deploy Helix Server</span>
             </div>
-            <span class="security-title">Integrity Verification</span>
-          </div>
-          <div class="security-body">
+            <h2 class="heading-lg" style="margin-bottom: 1rem;">Get Your Server <span class="text-gradient-cyan">Running.</span></h2>
+            <p class="section-subtitle" style="margin: 0 0 2rem; max-width: 480px;">
+              Deploy Helix Server on your preferred platform in minutes. Pick a container, a native binary, or a desktop installer -- the engine handles the rest.
+            </p>
+
+            <!-- Terminal Verification Block -->
+            <div class="security-block" style="margin-top: 0;">
+              <div class="security-header">
+                <div class="security-dots">
+                  <span class="security-dot dot-red"></span>
+                  <span class="security-dot dot-yellow"></span>
+                  <span class="security-dot dot-green"></span>
+                </div>
+                <span class="security-title">Integrity Verification</span>
+              </div>
+              <div class="security-body">
 <span class="security-comment"># Verify download integrity with SHA-256</span>
 <span class="security-cmd">sha256sum helix-server-linux-x86_64.tar.gz</span>
 <span class="security-comment"># Compare the output with the checksum on the releases page</span>
 <span class="security-cmd">curl -sL https://helix-downloads.clickbit.com.au/checksums.txt | grep helix-server</span>
+              </div>
+            </div>
+
+            <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="srv-all-releases">
+              <span>Browse all releases and source tarballs</span>
+              <i data-lucide="arrow-right" style="width: 15px; height: 15px;"></i>
+            </a>
+          </div>
+
+          <div class="srv-deploy-cards">
+
+            <!-- Docker -->
+            <div class="download-card srv-dl-tilt reveal" id="dl-server-docker">
+              <div class="dl-card-header">
+                <div class="dl-platform-icon" style="border-color: rgba(56, 189, 248, 0.3);">
+                  <i data-lucide="container" style="width: 24px; height: 24px; color: #38bdf8;"></i>
+                </div>
+                <div>
+                  <div class="dl-platform-title">Docker</div>
+                  <div class="dl-platform-subtitle">Containerized Deployment</div>
+                </div>
+              </div>
+              <div class="dl-meta-list">
+                <div class="dl-meta-row">
+                  <span class="dl-meta-label">Platform</span>
+                  <span class="dl-meta-value">x86_64 / ARM64</span>
+                </div>
+                <div class="dl-meta-row">
+                  <span class="dl-meta-label">Type</span>
+                  <span class="dl-meta-value">Container Image</span>
+                </div>
+              </div>
+              <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-download blue" onclick="triggerDownload('docker-compose.yml', 'Helix Server Docker')">
+                <i data-lucide="download" style="width: 16px; height: 16px;"></i>
+                <span>Pull Container</span>
+              </a>
+            </div>
+
+            <!-- Linux -->
+            <div class="download-card srv-dl-tilt reveal reveal-delay-1" id="dl-server-linux">
+              <div class="dl-card-header">
+                <div class="dl-platform-icon" style="border-color: rgba(56, 189, 248, 0.3);">
+                  <i data-lucide="terminal" style="width: 24px; height: 24px; color: #38bdf8;"></i>
+                </div>
+                <div>
+                  <div class="dl-platform-title">Linux</div>
+                  <div class="dl-platform-subtitle">Native Binary</div>
+                </div>
+              </div>
+              <div class="dl-meta-list">
+                <div class="dl-meta-row">
+                  <span class="dl-meta-label">Platform</span>
+                  <span class="dl-meta-value">Ubuntu / Debian / Fedora</span>
+                </div>
+                <div class="dl-meta-row">
+                  <span class="dl-meta-label">Type</span>
+                  <span class="dl-meta-value">Standalone Binary</span>
+                </div>
+              </div>
+              <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-download blue" onclick="triggerDownload('helix-server-linux', 'Helix Server Linux')">
+                <i data-lucide="download" style="width: 16px; height: 16px;"></i>
+                <span>Download for Linux</span>
+              </a>
+            </div>
+
+            <!-- Windows -->
+            <div class="download-card srv-dl-tilt reveal reveal-delay-2" id="dl-server-windows">
+              <div class="dl-card-header">
+                <div class="dl-platform-icon" style="border-color: rgba(56, 189, 248, 0.3);">
+                  <i data-lucide="monitor" style="width: 24px; height: 24px; color: #38bdf8;"></i>
+                </div>
+                <div>
+                  <div class="dl-platform-title">Windows</div>
+                  <div class="dl-platform-subtitle">Desktop Installer</div>
+                </div>
+              </div>
+              <div class="dl-meta-list">
+                <div class="dl-meta-row">
+                  <span class="dl-meta-label">Platform</span>
+                  <span class="dl-meta-value">Windows 10 / 11</span>
+                </div>
+                <div class="dl-meta-row">
+                  <span class="dl-meta-label">Type</span>
+                  <span class="dl-meta-value">MSI Installer</span>
+                </div>
+              </div>
+              <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-download blue" onclick="triggerDownload('helix-server.msi', 'Helix Server Windows')">
+                <i data-lucide="download" style="width: 16px; height: 16px;"></i>
+                <span>Download for Windows</span>
+              </a>
+            </div>
+
           </div>
         </div>
+      </div>
+    </section>
 
+    <!-- ============================================
+         FINAL CTA
+    ============================================ -->
+    <section class="final-cta-section">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div>
+            <div class="split-badge" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.35); background: rgba(56, 189, 248, 0.08);">
+              <i data-lucide="server" style="width: 14px; height: 14px;"></i>
+              <span>Own Your Media</span>
+            </div>
+            <h2 class="heading-lg">Your library. <span class="text-gradient">Your rules.</span></h2>
+            <p class="section-subtitle" style="margin: 0.75rem 0 0; max-width: 460px;">
+              Spin up Helix Server today and stream to every Helix client in your home -- movies, shows, and music, all from hardware you control.
+            </p>
+          </div>
+          <div class="cta-card-actions">
+            <a href="#deploy" class="btn-cta-primary btn-cta-lg" style="width: 100%;">
+              <span>Deploy Helix Server</span>
+              <i data-lucide="arrow-up" style="width: 16px; height: 16px;"></i>
+            </a>
+            <div class="cta-os-grid">
+              <a href="#dl-server-docker" class="cta-os-btn">
+                <i data-lucide="container"></i>
+                <span>Docker</span>
+              </a>
+              <a href="#dl-server-linux" class="cta-os-btn">
+                <i data-lucide="terminal"></i>
+                <span>Linux</span>
+              </a>
+              <a href="#dl-server-windows" class="cta-os-btn">
+                <i data-lucide="monitor"></i>
+                <span>Windows</span>
+              </a>
+            </div>
+            <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="cta-all-link">
+              <span>See every release</span>
+              <i data-lucide="arrow-right" style="width: 13px; height: 13px;"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -294,18 +521,32 @@
        GLOBAL FOOTER
   ============================================ -->
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div style="display: flex; align-items: center; gap: 0.75rem;">
-        <img src="logo.jpeg" alt="Helix Logo" style="width: 24px; height: 24px; border-radius: 6px;" />
-        <span style="font-weight: 700; color: #ffffff;">Helix Ecosystem</span>
-        <span style="color: var(--text-muted);">&mdash; Private, Sovereign Media Architecture</span>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-brand-link">
+            <img src="logo.jpeg" alt="Helix Logo" />
+            <span>Helix</span>
+          </a>
+          <p class="footer-tagline">Private, sovereign media architecture &mdash; your movies, series, and music on every screen you own.</p>
+          <span class="footer-pill"><i data-lucide="shield-check" style="width: 13px; height: 13px;"></i> Zero tracking &bull; Zero subscriptions</span>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Product</p>
+          <a href="server.html">Helix Server</a>
+          <a href="helix.html">Helix Media</a>
+          <a href="music.html">Helix Music</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Resources</p>
+          <a href="index.html">Overview</a>
+          <a href="faq.html">FAQ</a>
+          <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer">Releases <i data-lucide="arrow-up-right" style="width: 12px; height: 12px; display: inline; vertical-align: -1px;"></i></a>
+        </div>
       </div>
-      <div style="display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap;">
-        <a href="index.html" style="color: var(--text-secondary); font-size: 0.825rem;">Home</a>
-        <a href="server.html" style="color: var(--text-secondary); font-size: 0.825rem;">Helix Server</a>
-        <a href="helix.html" style="color: var(--text-secondary); font-size: 0.825rem;">Helix</a>
-        <a href="music.html" style="color: var(--text-secondary); font-size: 0.825rem;">Helix Music</a>
-        <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" style="color: var(--brand-cyan); font-size: 0.825rem; font-weight: 600;">Releases</a>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Helix Ecosystem. All rights reserved.</span>
+        <a href="#" class="back-to-top">Back to top <i data-lucide="arrow-up" style="width: 13px; height: 13px;"></i></a>
       </div>
     </div>
   </footer>

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Helix -- One Ecosystem. Infinite Entertainment.</title>
-  <meta name="description" content="Your movies, series, and audiophile music collection privately orchestrated across all your screens with original quality and zero subscriptions." />
+  <title>Helix — Your Media. Everywhere. Privately.</title>
+  <meta name="description" content="Helix is a private media ecosystem: one server streams your movies, series, and audiophile music to every screen you own — in original quality, with zero subscriptions." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,21 +21,18 @@
   <header class="site-navbar">
     <div class="container nav-container">
 
-      <!-- Left: Logo -->
       <a href="index.html" class="brand-logo-link" id="nav-brand-logo">
         <img src="logo.jpeg" alt="Helix Logo" class="brand-logo-img" />
         <span class="text-gradient">Helix</span>
       </a>
 
-      <!-- Center: Desktop Nav Links -->
       <nav class="nav-center" aria-label="Main Navigation">
         <a href="index.html" class="nav-link-item active">Home</a>
         <a href="server.html" class="nav-link-item">Helix Server</a>
-        <a href="helix.html" class="nav-link-item">Helix</a>
+        <a href="helix.html" class="nav-link-item">Helix Media</a>
         <a href="music.html" class="nav-link-item">Helix Music</a>
       </nav>
 
-      <!-- Right: CTA + Mobile Toggle -->
       <div style="display: flex; align-items: center;">
         <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-cta-primary" id="nav-get-helix-btn">
           <span>Get Helix</span>
@@ -49,10 +46,9 @@
 
     </div>
 
-    <!-- Mobile Drawer Menu -->
     <div class="mobile-drawer" id="mobile-nav-drawer">
       <a href="index.html" class="mobile-nav-item active">
-        <i data-lucide="home" style="width: 18px; height: 18px; color: #a855f7;"></i>
+        <i data-lucide="home" style="width: 18px; height: 18px; color: #38bdf8;"></i>
         <span>Home</span>
       </a>
       <a href="server.html" class="mobile-nav-item">
@@ -60,11 +56,11 @@
         <span>Helix Server</span>
       </a>
       <a href="helix.html" class="mobile-nav-item">
-        <i data-lucide="film" style="width: 18px; height: 18px; color: #c084fc;"></i>
-        <span>Helix</span>
+        <i data-lucide="film" style="width: 18px; height: 18px; color: #38bdf8;"></i>
+        <span>Helix Media</span>
       </a>
       <a href="music.html" class="mobile-nav-item">
-        <i data-lucide="music" style="width: 18px; height: 18px; color: #fb7185;"></i>
+        <i data-lucide="music" style="width: 18px; height: 18px; color: #38bdf8;"></i>
         <span>Helix Music</span>
       </a>
     </div>
@@ -72,204 +68,277 @@
 
   <main>
     <!-- ============================================
-         CINEMATIC HERO SECTION
+         HERO — LEFT COPY + FANNED PRODUCT CARDS
     ============================================ -->
-    <section class="home-hero-section">
-      <div class="ambient-glow glow-purple" style="top: 8%; left: 50%; transform: translateX(-50%); width: min(850px, 90vw); height: 350px;"></div>
-      <div class="ambient-glow glow-cyan" style="top: 30%; left: 5%; width: min(450px, 50vw); height: 260px;"></div>
-      <div class="ambient-glow glow-rose" style="top: 30%; right: 5%; width: min(450px, 50vw); height: 260px;"></div>
+    <section class="hero-v2">
+      <div class="ambient-glow glow-blue" style="top: 0%; left: 30%; width: min(750px, 90vw); height: 400px;"></div>
 
       <div class="container" style="position: relative; z-index: 2;">
-        <div class="reveal">
-          <div class="split-badge" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.35); background: rgba(168, 85, 247, 0.08); margin: 0 auto 1.5rem;">
+        <div class="hero-v2-grid">
+
+          <div class="hero-v2-copy reveal">
+            <div class="split-badge" style="color: #7dd3fc; border-color: rgba(2, 132, 199, 0.35); background: rgba(2, 132, 199, 0.08);">
+              <i data-lucide="sparkles" style="width: 14px; height: 14px;"></i>
+              <span>The Private Entertainment Ecosystem</span>
+            </div>
+
+            <h1 class="heading-display" style="margin-bottom: 1.25rem;">
+              Your Media.<br />
+              <span class="text-gradient">Everywhere.</span>
+            </h1>
+
+            <p class="lead-text" style="margin-bottom: 2.25rem; max-width: 520px;">
+              One server on hardware you own streams your movies, series, and music to every screen — original quality, zero subscriptions.
+            </p>
+
+            <p class="hero-cta-label">Download Helix Now</p>
+            <div class="hero-cta-row">
+              <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-cta-primary btn-cta-lg" id="hero-download-btn">
+                <i data-lucide="download" style="width: 18px; height: 18px;"></i>
+                <span>Download Helix</span>
+              </a>
+              <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-explore" id="hero-other-downloads-btn">
+                <span>Other Downloads</span>
+              </a>
+            </div>
+
+            <div class="hero-proof-strip">
+              <span class="proof-item"><i data-lucide="monitor-play"></i> 4K Dolby Vision</span>
+              <span class="proof-divider"></span>
+              <span class="proof-item"><i data-lucide="audio-lines"></i> Lossless Audio</span>
+              <span class="proof-divider"></span>
+              <span class="proof-item"><i data-lucide="shield-check"></i> Private by Design</span>
+            </div>
+          </div>
+
+          <!-- Bento grid of product shots -->
+          <div class="hero-bento reveal reveal-delay-1" aria-hidden="true">
+            <div class="bento-tile bento-tall">
+              <img src="helix-mobile-player.jpeg" alt="" />
+              <span class="bento-tag"><i data-lucide="play" style="width: 11px; height: 11px;"></i> Player</span>
+            </div>
+            <div class="bento-tile bento-top">
+              <img src="helix-music-mobile-home.jpeg" alt="" />
+              <span class="bento-tag"><i data-lucide="music" style="width: 11px; height: 11px;"></i> Music</span>
+            </div>
+            <div class="bento-tile bento-bottom">
+              <img src="helix-music-mobile-library.jpeg" alt="" />
+              <span class="bento-tag"><i data-lucide="library" style="width: 11px; height: 11px;"></i> Library</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         MARQUEE TICKER
+    ============================================ -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>4K Dolby Vision</span><i class="mq-dot">&#10022;</i>
+          <span>Lossless Audio</span><i class="mq-dot">&#10022;</i>
+          <span>Zero Subscriptions</span><i class="mq-dot">&#10022;</i>
+          <span>Private by Design</span><i class="mq-dot">&#10022;</i>
+          <span>Every Device</span><i class="mq-dot">&#10022;</i>
+          <span>Direct Play</span><i class="mq-dot">&#10022;</i>
+          <span>Synced Lyrics</span><i class="mq-dot">&#10022;</i>
+          <span>Your Hardware</span><i class="mq-dot">&#10022;</i>
+        </div>
+        <div class="marquee-group">
+          <span>4K Dolby Vision</span><i class="mq-dot">&#10022;</i>
+          <span>Lossless Audio</span><i class="mq-dot">&#10022;</i>
+          <span>Zero Subscriptions</span><i class="mq-dot">&#10022;</i>
+          <span>Private by Design</span><i class="mq-dot">&#10022;</i>
+          <span>Every Device</span><i class="mq-dot">&#10022;</i>
+          <span>Direct Play</span><i class="mq-dot">&#10022;</i>
+          <span>Synced Lyrics</span><i class="mq-dot">&#10022;</i>
+          <span>Your Hardware</span><i class="mq-dot">&#10022;</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================
+         ECOSYSTEM — TABBED PILLARS (auto-rotating)
+    ============================================ -->
+    <section class="split-section eco-section">
+      <div class="ambient-glow glow-blue" style="top: 20%; left: 50%; transform: translateX(-50%); width: min(700px, 90vw); height: 400px;"></div>
+
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="section-title-block reveal" style="margin-bottom: 3rem;">
+          <div class="split-badge" style="color: #7dd3fc; border-color: rgba(2, 132, 199, 0.35); background: rgba(2, 132, 199, 0.08);">
             <i data-lucide="layers" style="width: 14px; height: 14px;"></i>
-            <span>The Unified Entertainment Ecosystem</span>
+            <span>Three apps &middot; One ecosystem</span>
+          </div>
+          <h2 class="heading-lg">One Hub. <span class="text-gradient">Everything Plugs In.</span></h2>
+          <p class="section-subtitle">Helix Server is the hub &mdash; required for everything. The apps connect to it.</p>
+        </div>
+
+        <div class="eco-tabs reveal">
+          <div class="eco-tab-list" role="tablist" aria-label="Helix products">
+            <button class="eco-tab active" data-tab="server" role="tab" aria-selected="true">
+              <i data-lucide="server"></i>
+              <span class="eco-tab-text"><strong>Helix Server</strong><small>The hub &mdash; indexes &amp; streams your drives</small></span>
+            </button>
+            <button class="eco-tab" data-tab="media" role="tab" aria-selected="false">
+              <i data-lucide="film"></i>
+              <span class="eco-tab-text"><strong>Helix Media</strong><small>Movies &amp; series in cinematic 4K</small></span>
+            </button>
+            <button class="eco-tab" data-tab="music" role="tab" aria-selected="false">
+              <i data-lucide="music"></i>
+              <span class="eco-tab-text"><strong>Helix Music</strong><small>Bit-perfect audio, synced lyrics</small></span>
+            </button>
           </div>
 
-          <h1 class="heading-display" style="margin-bottom: 1.25rem;">
-            One Ecosystem.<br />
-            <span class="text-gradient">Infinite Entertainment.</span>
-          </h1>
+          <div class="eco-stage">
+            <div class="eco-panels">
+              <div class="device-frame eco-panel active" data-panel="server">
+                <div class="device-hud-top">
+                  <i data-lucide="server" style="width: 14px; height: 14px; color: #38bdf8;"></i>
+                  <span>Helix Server &bull; The Hub &bull; Required</span>
+                </div>
+                <img src="helix-server-library.jpeg" alt="Helix Server media library dashboard displaying movie and series collections" class="device-img" />
+              </div>
+              <div class="device-frame eco-panel" data-panel="media">
+                <div class="device-hud-top">
+                  <i data-lucide="play" style="width: 14px; height: 14px; color: #38bdf8;"></i>
+                  <span>Helix &bull; Direct Stream &bull; 4K Dolby Vision</span>
+                </div>
+                <img src="helix-player-catalog.jpeg" alt="Helix media player streaming catalog and series episode browser" class="device-img" />
+              </div>
+              <div class="device-frame eco-panel" data-panel="music">
+                <div class="device-hud-top">
+                  <i data-lucide="headphones" style="width: 14px; height: 14px; color: #38bdf8;"></i>
+                  <span>Helix Music &bull; Lossless &bull; Gapless</span>
+                </div>
+                <img src="helix-music-library.jpeg" alt="Helix audiophile music library and artist discography overview" class="device-img" />
+                <div class="eq-bars" aria-hidden="true">
+                  <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
 
-          <p class="lead-text centered" style="margin-bottom: 2.25rem;">
-            Your movies, series, and audiophile music collection privately orchestrated across all your screens with original quality and zero subscriptions.
-          </p>
-
-          <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-            <a href="#server-pillar" class="btn-explore" style="background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.25);" id="hero-scroll-btn">
-              <span>Explore Ecosystem</span>
-              <i data-lucide="arrow-down" style="width: 16px; height: 16px;"></i>
-            </a>
+            <div class="eco-links">
+              <a href="server.html" class="eco-link active" data-panel="server">Explore Helix Server <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i></a>
+              <a href="helix.html" class="eco-link" data-panel="media">Explore Helix <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i></a>
+              <a href="music.html" class="eco-link" data-panel="music">Explore Helix Music <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i></a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ============================================
-         PILLAR 1: HELIX SERVER
+         WHY HELIX — BENEFIT-LED FEATURE GRID
     ============================================ -->
-    <section id="server-pillar" class="split-section">
-      <div class="ambient-glow glow-cyan" style="top: 20%; left: 5%; width: min(500px, 80vw); height: 300px;"></div>
-
+    <section class="split-section">
       <div class="container">
-        <div class="split-grid">
-
-          <!-- Text Content -->
-          <div class="split-content reveal">
-            <div class="split-badge" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.35); background: rgba(56, 189, 248, 0.08);">
-              <i data-lucide="server" style="width: 14px; height: 14px;"></i>
-              <span>Helix Server Engine</span>
-            </div>
-
-            <h2 class="heading-lg" style="margin-bottom: 0.85rem;">
-              The Central <span class="text-gradient">Hub.</span>
-            </h2>
-
-            <p class="split-desc">
-              The intelligent backend engine that powers your home theater. Helix Server indexes your local drives and streams zero-buffering media to all your devices.
-            </p>
-
-            <div style="display: flex; flex-wrap: wrap; gap: 0.65rem; margin-bottom: 2rem;">
-              <span class="split-badge" style="font-size: 0.72rem; color: #94a3b8; margin-bottom: 0;">
-                <i data-lucide="folder-sync" style="width: 13px; height: 13px; color: #38bdf8;"></i> Intelligent Scanning
-              </span>
-              <span class="split-badge" style="font-size: 0.72rem; color: #94a3b8; margin-bottom: 0;">
-                <i data-lucide="zap" style="width: 13px; height: 13px; color: #38bdf8;"></i> Stream Optimization
-              </span>
-              <span class="split-badge" style="font-size: 0.72rem; color: #94a3b8; margin-bottom: 0;">
-                <i data-lucide="shield-check" style="width: 13px; height: 13px; color: #38bdf8;"></i> Multi-User Security
-              </span>
-            </div>
-
-            <a href="server.html" class="btn-explore blue" id="explore-server-btn">
-              <span>Explore Helix Server</span>
-              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
-            </a>
+        <div class="section-title-block reveal">
+          <div class="split-badge" style="color: #7dd3fc; border-color: rgba(2, 132, 199, 0.35); background: rgba(2, 132, 199, 0.08);">
+            <i data-lucide="badge-check" style="width: 14px; height: 14px;"></i>
+            <span>Why Helix</span>
           </div>
+          <h2 class="heading-lg">Streaming Services Rent.<br /><span class="text-gradient">Helix Lets You Own.</span></h2>
+          <p class="section-subtitle">Stop paying monthly for access to media that disappears. Your collection stays yours — forever.</p>
+        </div>
 
-          <!-- UI Showcase -->
-          <div class="reveal reveal-delay-1">
-            <div class="device-frame" style="border-color: rgba(56, 189, 248, 0.25);">
-              <div class="device-hud-top">
-                <i data-lucide="server" style="width: 14px; height: 14px; color: #38bdf8;"></i>
-                <span>Helix Server Core Online &bull; Direct Stream Ready</span>
-              </div>
-              <img src="WhatsApp Image 2026-10-04 at 10.10.54 PM.jpeg" alt="Helix Server media library dashboard displaying movie and series collections" class="device-img" />
-            </div>
+        <div class="stats-row reveal">
+          <div class="stat">
+            <span class="stat-num" data-count="3">0</span>
+            <span class="stat-label">Connected Apps</span>
           </div>
+          <div class="stat">
+            <span class="stat-num" data-count="6">0</span>
+            <span class="stat-label">Supported Platforms</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="0">0</span>
+            <span class="stat-label">Subscriptions</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="100" data-suffix="%">0%</span>
+            <span class="stat-label">Your Data, Your Hardware</span>
+          </div>
+        </div>
 
+        <div class="feature-grid-3">
+          <div class="glass-feature-card reveal">
+            <div class="feature-icon"><i data-lucide="lock" style="width: 24px; height: 24px; color: #38bdf8;"></i></div>
+            <h3 class="feature-title">Private by Design</h3>
+            <p class="feature-desc">Your library never leaves your network.</p>
+          </div>
+          <div class="glass-feature-card reveal reveal-delay-1">
+            <div class="feature-icon"><i data-lucide="gem" style="width: 24px; height: 24px; color: #38bdf8;"></i></div>
+            <h3 class="feature-title">Original Quality</h3>
+            <p class="feature-desc">4K Dolby Vision and lossless audio — no compression.</p>
+          </div>
+          <div class="glass-feature-card reveal reveal-delay-2">
+            <div class="feature-icon"><i data-lucide="wallet" style="width: 24px; height: 24px; color: #38bdf8;"></i></div>
+            <h3 class="feature-title">Zero Subscriptions</h3>
+            <p class="feature-desc">No monthly fees. No feature paywalls.</p>
+          </div>
+          <div class="glass-feature-card reveal">
+            <div class="feature-icon"><i data-lucide="refresh-ccw" style="width: 24px; height: 24px; color: #38bdf8;"></i></div>
+            <h3 class="feature-title">Synced Everywhere</h3>
+            <p class="feature-desc">Pause on the TV, resume on your phone.</p>
+          </div>
+          <div class="glass-feature-card reveal reveal-delay-1">
+            <div class="feature-icon"><i data-lucide="timer" style="width: 24px; height: 24px; color: #38bdf8;"></i></div>
+            <h3 class="feature-title">Set Up in Minutes</h3>
+            <p class="feature-desc">Install the server, point it at your drives, play.</p>
+          </div>
+          <div class="glass-feature-card reveal reveal-delay-2">
+            <div class="feature-icon"><i data-lucide="users" style="width: 24px; height: 24px; color: #38bdf8;"></i></div>
+            <h3 class="feature-title">Built for the Family</h3>
+            <p class="feature-desc">Per-user profiles and libraries for everyone.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ============================================
-         PILLAR 2: HELIX (VIDEO) MEDIA PLAYER
+         FINAL CTA — CONVERSION CARD
     ============================================ -->
-    <section id="helix-pillar" class="split-section">
-      <div class="ambient-glow glow-purple" style="top: 25%; right: 5%; width: min(500px, 80vw); height: 320px;"></div>
+    <section class="final-cta-section">
+      <div class="ambient-glow glow-blue" style="top: 20%; left: 50%; transform: translateX(-50%); width: min(800px, 90vw); height: 380px;"></div>
 
-      <div class="container">
-        <div class="split-grid">
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="cta-card reveal">
 
-          <!-- Text Content -->
-          <div class="split-content reveal">
-            <div class="split-badge" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.35); background: rgba(168, 85, 247, 0.08);">
-              <i data-lucide="film" style="width: 14px; height: 14px;"></i>
-              <span>Universal Video Client</span>
+          <div class="cta-card-copy">
+            <div class="split-badge" style="color: #7dd3fc; border-color: rgba(2, 132, 199, 0.35); background: rgba(2, 132, 199, 0.08);">
+              <i data-lucide="rocket" style="width: 14px; height: 14px;"></i>
+              <span>Ready when you are</span>
             </div>
-
             <h2 class="heading-lg" style="margin-bottom: 0.85rem;">
-              Helix Media <span class="text-gradient">Player.</span>
+              Take Back <span class="text-gradient">Your Media.</span>
             </h2>
-
-            <p class="split-desc">
-              Cinematic 4K playback for Desktop, Mobile, and TV.
+            <p class="split-desc" style="margin: 0 0 1.5rem;">
+              One download. Every screen. Your collection stays on your hardware — private, original quality, zero subscriptions.
             </p>
+            <ul class="check-list" style="margin-bottom: 0;">
+              <li><i data-lucide="check"></i><span>Free to download — no account needed</span></li>
+              <li><i data-lucide="check"></i><span>Runs on hardware you already own</span></li>
+              <li><i data-lucide="check"></i><span>Up and streaming in minutes</span></li>
+            </ul>
+          </div>
 
-            <div style="display: flex; flex-wrap: wrap; gap: 0.65rem; margin-bottom: 2rem;">
-              <span class="split-badge" style="font-size: 0.72rem; color: #94a3b8; margin-bottom: 0;">
-                <i data-lucide="play-circle" style="width: 13px; height: 13px; color: #c084fc;"></i> Cinematic Direct Play
-              </span>
-              <span class="split-badge" style="font-size: 0.72rem; color: #94a3b8; margin-bottom: 0;">
-                <i data-lucide="speaker" style="width: 13px; height: 13px; color: #c084fc;"></i> Lossless Passthrough
-              </span>
-              <span class="split-badge" style="font-size: 0.72rem; color: #94a3b8; margin-bottom: 0;">
-                <i data-lucide="tv" style="width: 13px; height: 13px; color: #c084fc;"></i> Premium 10-Foot UI
-              </span>
-            </div>
-
-            <a href="helix.html" class="btn-explore purple" id="explore-helix-btn">
-              <span>Explore Helix Media</span>
-              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+          <div class="cta-card-actions">
+            <p class="hero-cta-label" style="margin-bottom: 0.9rem;">Get Helix</p>
+            <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-cta-primary btn-cta-lg" id="cta-download-btn" style="width: 100%;">
+              <i data-lucide="download" style="width: 18px; height: 18px;"></i>
+              <span>Download Helix</span>
             </a>
-          </div>
-
-          <!-- UI Showcase -->
-          <div class="reveal reveal-delay-1">
-            <div class="device-frame" style="border-color: rgba(168, 85, 247, 0.25);">
-              <div class="device-hud-top">
-                <i data-lucide="play" style="width: 14px; height: 14px; color: #c084fc;"></i>
-                <span>4K Dolby Vision Playback &bull; Direct Stream</span>
-              </div>
-              <img src="WhatsApp Image 2026-10-04 at 10.10.54 PM (2).jpeg" alt="Helix media player streaming catalog and series episode browser" class="device-img" />
+            <div class="cta-os-grid">
+              <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="cta-os-btn"><i data-lucide="monitor"></i>Windows</a>
+              <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="cta-os-btn"><i data-lucide="laptop"></i>macOS</a>
+              <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="cta-os-btn"><i data-lucide="terminal"></i>Linux</a>
+              <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="cta-os-btn"><i data-lucide="smartphone"></i>Mobile</a>
+              <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="cta-os-btn"><i data-lucide="tv"></i>Android TV</a>
+              <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="cta-os-btn"><i data-lucide="car"></i>Car</a>
             </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================
-         PILLAR 3: HELIX MUSIC
-    ============================================ -->
-    <section id="music-pillar" class="split-section" style="border-bottom: none;">
-      <div class="ambient-glow glow-rose" style="top: 25%; left: 5%; width: min(500px, 80vw); height: 320px;"></div>
-
-      <div class="container">
-        <div class="split-grid">
-
-          <!-- Text Content -->
-          <div class="split-content reveal">
-            <div class="split-badge" style="color: #fb7185; border-color: rgba(244, 63, 94, 0.35); background: rgba(244, 63, 94, 0.08);">
-              <i data-lucide="disc" style="width: 14px; height: 14px;"></i>
-              <span>Audiophile Sound Engine</span>
-            </div>
-
-            <h2 class="heading-lg" style="margin-bottom: 0.85rem;">
-              Helix <span class="text-gradient">Music.</span>
-            </h2>
-
-            <p class="split-desc">
-              Pure bit-perfect audiophile sound with dynamic real-time lyrics.
-            </p>
-
-            <div style="display: flex; flex-wrap: wrap; gap: 0.65rem; margin-bottom: 2rem;">
-              <span class="split-badge" style="font-size: 0.72rem; color: #94a3b8; margin-bottom: 0;">
-                <i data-lucide="disc" style="width: 13px; height: 13px; color: #fb7185;"></i> Custom Native Engine
-              </span>
-              <span class="split-badge" style="font-size: 0.72rem; color: #94a3b8; margin-bottom: 0;">
-                <i data-lucide="type" style="width: 13px; height: 13px; color: #fb7185;"></i> Dynamic Synced Lyrics
-              </span>
-              <span class="split-badge" style="font-size: 0.72rem; color: #94a3b8; margin-bottom: 0;">
-                <i data-lucide="car" style="width: 13px; height: 13px; color: #fb7185;"></i> CarPlay &amp; Android Auto
-              </span>
-            </div>
-
-            <a href="music.html" class="btn-explore rose" id="explore-music-btn">
-              <span>Explore Helix Music</span>
-              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
-            </a>
-          </div>
-
-          <!-- UI Showcase -->
-          <div class="reveal reveal-delay-1">
-            <div class="device-frame" style="border-color: rgba(244, 63, 94, 0.25);">
-              <div class="device-hud-top">
-                <i data-lucide="headphones" style="width: 14px; height: 14px; color: #fb7185;"></i>
-                <span>Audiophile Master Quality &bull; Gapless Output</span>
-              </div>
-              <img src="WhatsApp Image 2026-10-04 at 10.10.54 PM (1).jpeg" alt="Helix audiophile music library and artist discography overview" class="device-img" />
-            </div>
+            <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="cta-all-link">View all releases <i data-lucide="arrow-up-right" style="width: 13px; height: 13px;"></i></a>
           </div>
 
         </div>
@@ -282,19 +351,32 @@
        GLOBAL FOOTER
   ============================================ -->
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div style="display: flex; align-items: center; gap: 0.75rem;">
-        <img src="logo.jpeg" alt="Helix Logo" style="width: 24px; height: 24px; border-radius: 6px;" />
-        <span style="font-weight: 700; color: #ffffff;">Helix Ecosystem</span>
-        <span style="color: var(--text-muted);">&mdash; Private, Sovereign Media Architecture</span>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-brand-link">
+            <img src="logo.jpeg" alt="Helix Logo" />
+            <span>Helix</span>
+          </a>
+          <p class="footer-tagline">Private, sovereign media architecture &mdash; your movies, series, and music on every screen you own.</p>
+          <span class="footer-pill"><i data-lucide="shield-check" style="width: 13px; height: 13px;"></i> Zero tracking &bull; Zero subscriptions</span>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Product</p>
+          <a href="server.html">Helix Server</a>
+          <a href="helix.html">Helix Media</a>
+          <a href="music.html">Helix Music</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Resources</p>
+          <a href="index.html">Overview</a>
+          <a href="faq.html">FAQ</a>
+          <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer">Releases <i data-lucide="arrow-up-right" style="width: 12px; height: 12px; display: inline; vertical-align: -1px;"></i></a>
+        </div>
       </div>
-
-      <div style="display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap;">
-        <a href="index.html" style="color: var(--text-secondary); font-size: 0.825rem;">Home</a>
-        <a href="server.html" style="color: var(--text-secondary); font-size: 0.825rem;">Helix Server</a>
-        <a href="helix.html" style="color: var(--text-secondary); font-size: 0.825rem;">Helix</a>
-        <a href="music.html" style="color: var(--text-secondary); font-size: 0.825rem;">Helix Music</a>
-        <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" style="color: var(--brand-cyan); font-size: 0.825rem; font-weight: 600;">Releases</a>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Helix Ecosystem. All rights reserved.</span>
+        <a href="#" class="back-to-top">Back to top <i data-lucide="arrow-up" style="width: 13px; height: 13px;"></i></a>
       </div>
     </div>
   </footer>

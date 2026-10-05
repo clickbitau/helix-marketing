@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helix — Frequently Asked Questions</title>
+  <meta name="description" content="Everything about the Helix ecosystem — setup, apps, devices, and privacy. Start with Helix Server, then add the apps." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- ============================================
+       GLOBAL NAVBAR
+  ============================================ -->
+  <header class="site-navbar">
+    <div class="container nav-container">
+
+      <a href="index.html" class="brand-logo-link" id="nav-brand-logo">
+        <img src="logo.jpeg" alt="Helix Logo" class="brand-logo-img" />
+        <span class="text-gradient">Helix</span>
+      </a>
+
+      <nav class="nav-center" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link-item">Home</a>
+        <a href="server.html" class="nav-link-item">Helix Server</a>
+        <a href="helix.html" class="nav-link-item">Helix Media</a>
+        <a href="music.html" class="nav-link-item">Helix Music</a>
+      </nav>
+
+      <div style="display: flex; align-items: center;">
+        <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-cta-primary" id="nav-get-helix-btn">
+          <span>Get Helix</span>
+          <i data-lucide="download" style="width: 15px; height: 15px;"></i>
+        </a>
+
+        <button class="mobile-nav-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <i data-lucide="menu" style="width: 20px; height: 20px;"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <div class="mobile-drawer" id="mobile-nav-drawer">
+      <a href="index.html" class="mobile-nav-item">
+        <i data-lucide="home" style="width: 18px; height: 18px; color: #38bdf8;"></i>
+        <span>Home</span>
+      </a>
+      <a href="server.html" class="mobile-nav-item">
+        <i data-lucide="server" style="width: 18px; height: 18px; color: #38bdf8;"></i>
+        <span>Helix Server</span>
+      </a>
+      <a href="helix.html" class="mobile-nav-item">
+        <i data-lucide="film" style="width: 18px; height: 18px; color: #38bdf8;"></i>
+        <span>Helix Media</span>
+      </a>
+      <a href="music.html" class="mobile-nav-item">
+        <i data-lucide="music" style="width: 18px; height: 18px; color: #38bdf8;"></i>
+        <span>Helix Music</span>
+      </a>
+      <a href="faq.html" class="mobile-nav-item active">
+        <i data-lucide="message-circle-question" style="width: 18px; height: 18px; color: #38bdf8;"></i>
+        <span>FAQ</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================================
+         PAGE HERO
+    ============================================ -->
+    <section class="page-hero">
+      <div class="ambient-glow glow-blue" style="top: 5%; left: 50%; transform: translateX(-50%); width: min(700px, 90vw); height: 320px;"></div>
+
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="reveal">
+          <div class="split-badge" style="color: #7dd3fc; border-color: rgba(2, 132, 199, 0.35); background: rgba(2, 132, 199, 0.08); margin: 0 auto 1.5rem;">
+            <i data-lucide="message-circle-question" style="width: 14px; height: 14px;"></i>
+            <span>Help Center</span>
+          </div>
+          <h1 class="heading-display" style="margin-bottom: 1.25rem;">
+            Questions,<br /><span class="text-gradient">Answered.</span>
+          </h1>
+          <p class="lead-text centered">
+            Everything about the Helix ecosystem — setup, apps, devices, and privacy.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         GROUP: GETTING STARTED
+    ============================================ -->
+    <section class="faq-group">
+      <div class="container">
+        <div class="faq-group-grid">
+
+          <div class="faq-group-side reveal">
+            <div class="faq-group-icon"><i data-lucide="rocket"></i></div>
+            <h2 class="faq-group-title">Getting Started</h2>
+            <p class="faq-group-desc">What Helix is, what you need, and how the pieces fit together.</p>
+          </div>
+
+          <div class="faq-list reveal reveal-delay-1">
+            <details class="faq-item" open>
+              <summary>
+                <span>What is Helix?</span>
+                <i data-lucide="chevron-down" class="faq-chevron"></i>
+              </summary>
+              <div class="faq-answer">
+                Three products, one system: Helix Server streams your local collection, Helix plays movies and series, Helix Music plays audio. Start with the Server — the apps connect to it.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span>Do I need all three apps?</span>
+                <i data-lucide="chevron-down" class="faq-chevron"></i>
+              </summary>
+              <div class="faq-answer">
+                Only Helix Server is required — it's the hub. Then install Helix for video, Helix Music for audio, or both. Use whichever apps fit your screens.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span>Do I need to be technical to set it up?</span>
+                <i data-lucide="chevron-down" class="faq-chevron"></i>
+              </summary>
+              <div class="faq-answer">
+                No. Install Helix Server on any always-on computer or NAS, point it at your media folders, and install the apps on your devices. Indexing, metadata, and artwork are handled automatically.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span>Does Helix require a subscription?</span>
+                <i data-lucide="chevron-down" class="faq-chevron"></i>
+              </summary>
+              <div class="faq-answer">
+                No subscriptions. Helix runs on hardware you own, with your own media — grab the latest release from the downloads page and it's yours.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span>How is Helix different from streaming services?</span>
+                <i data-lucide="chevron-down" class="faq-chevron"></i>
+              </summary>
+              <div class="faq-answer">
+                Streaming services rent you a catalog that changes monthly. Helix streams media you own, from hardware you own — nothing disappears, nothing gets compressed, no monthly fee.
+              </div>
+            </details>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         GROUP: APPS & DEVICES
+    ============================================ -->
+    <section class="faq-group">
+      <div class="container">
+        <div class="faq-group-grid">
+
+          <div class="faq-group-side reveal">
+            <div class="faq-group-icon"><i data-lucide="monitor-smartphone"></i></div>
+            <h2 class="faq-group-title">Apps &amp; Devices</h2>
+            <p class="faq-group-desc">Where Helix runs and how your screens stay in sync.</p>
+          </div>
+
+          <div class="faq-list reveal reveal-delay-1">
+            <details class="faq-item">
+              <summary>
+                <span>What devices does Helix support?</span>
+                <i data-lucide="chevron-down" class="faq-chevron"></i>
+              </summary>
+              <div class="faq-answer">
+                Windows, macOS, and Linux on desktop; Android and iOS on mobile; Android TV in the living room; CarPlay and Android Auto for music on the road.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span>Can I cast to my TV?</span>
+                <i data-lucide="chevron-down" class="faq-chevron"></i>
+              </summary>
+              <div class="faq-answer">
+                Yes — the mobile app casts to the big screen in one tap, and the dedicated Android TV app gives you a full 10-foot interface designed for the couch.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span>Does my progress sync across devices?</span>
+                <i data-lucide="chevron-down" class="faq-chevron"></i>
+              </summary>
+              <div class="faq-answer">
+                Yes. Pause on the TV, resume on your phone. Watch progress, playlists, and libraries stay in sync through your Helix Server.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span>What quality does playback support?</span>
+                <i data-lucide="chevron-down" class="faq-chevron"></i>
+              </summary>
+              <div class="faq-answer">
+                Helix direct-plays your files in original quality — up to 4K Dolby Vision and HDR video, and bit-perfect lossless audio with gapless output in Helix Music.
+              </div>
+            </details>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         GROUP: PRIVACY & OWNERSHIP
+    ============================================ -->
+    <section class="faq-group">
+      <div class="container">
+        <div class="faq-group-grid">
+
+          <div class="faq-group-side reveal">
+            <div class="faq-group-icon"><i data-lucide="shield-check"></i></div>
+            <h2 class="faq-group-title">Privacy &amp; Ownership</h2>
+            <p class="faq-group-desc">Where your media lives and who can see it.</p>
+          </div>
+
+          <div class="faq-list reveal reveal-delay-1">
+            <details class="faq-item">
+              <summary>
+                <span>Is my media collection private?</span>
+                <i data-lucide="chevron-down" class="faq-chevron"></i>
+              </summary>
+              <div class="faq-answer">
+                Yes. Your files stay on your hardware and stream over your own network. Helix is built around sovereign media architecture — your library and viewing habits belong to you.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span>Where are my files stored?</span>
+                <i data-lucide="chevron-down" class="faq-chevron"></i>
+              </summary>
+              <div class="faq-answer">
+                Exactly where you put them — your drives, your NAS, your machine. Helix indexes them in place; nothing is uploaded to a cloud.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span>Can my family use it too?</span>
+                <i data-lucide="chevron-down" class="faq-chevron"></i>
+              </summary>
+              <div class="faq-answer">
+                Yes. Multi-user profiles give everyone their own library, watch progress, and permissions — all managed from your Helix Server.
+              </div>
+            </details>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         BOTTOM CTA
+    ============================================ -->
+    <section class="split-section" style="border-top: 1px solid var(--glass-border);">
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="cta-card reveal">
+
+          <div class="cta-card-copy">
+            <div class="split-badge" style="color: #7dd3fc; border-color: rgba(2, 132, 199, 0.35); background: rgba(2, 132, 199, 0.08);">
+              <i data-lucide="sparkles" style="width: 14px; height: 14px;"></i>
+              <span>Ready when you are</span>
+            </div>
+            <h2 class="heading-lg" style="margin-bottom: 0.85rem;">
+              The Best Answer Is <span class="text-gradient">Trying It.</span>
+            </h2>
+            <p class="split-desc" style="margin: 0;">
+              Install Helix Server, add an app, press play. If it's not for you, nothing was rented and nothing was shared.
+            </p>
+          </div>
+
+          <div class="cta-card-actions" style="display: flex; flex-direction: column; justify-content: center;">
+            <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer" class="btn-cta-primary btn-cta-lg" id="cta-download-btn" style="width: 100%;">
+              <i data-lucide="download" style="width: 18px; height: 18px;"></i>
+              <span>Download Helix</span>
+            </a>
+            <a href="index.html" class="cta-all-link" style="align-self: center;">Back to overview <i data-lucide="arrow-right" style="width: 13px; height: 13px;"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================
+       GLOBAL FOOTER
+  ============================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-brand-link">
+            <img src="logo.jpeg" alt="Helix Logo" />
+            <span>Helix</span>
+          </a>
+          <p class="footer-tagline">Private, sovereign media architecture &mdash; your movies, series, and music on every screen you own.</p>
+          <span class="footer-pill"><i data-lucide="shield-check" style="width: 13px; height: 13px;"></i> Zero tracking &bull; Zero subscriptions</span>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Product</p>
+          <a href="server.html">Helix Server</a>
+          <a href="helix.html">Helix Media</a>
+          <a href="music.html">Helix Music</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Resources</p>
+          <a href="index.html">Overview</a>
+          <a href="faq.html">FAQ</a>
+          <a href="https://helix-downloads.clickbit.com.au" target="_blank" rel="noopener noreferrer">Releases <i data-lucide="arrow-up-right" style="width: 12px; height: 12px; display: inline; vertical-align: -1px;"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Helix Ecosystem. All rights reserved.</span>
+        <a href="#" class="back-to-top">Back to top <i data-lucide="arrow-up" style="width: 13px; height: 13px;"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

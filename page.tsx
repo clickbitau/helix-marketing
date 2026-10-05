@@ -150,8 +150,8 @@ export default function HelixLandingPage() {
       hudStat1: 'Lossless Studio Master',
       hudStat2: 'Synced Lyrics Active',
       hudStat3: 'Bit-Perfect',
-      hudColor: '#c084fc',
-      accentColor: 'from-purple-500 to-fuchsia-500',
+      hudColor: '#38bdf8',
+      accentColor: 'from-sky-500 to-blue-500',
       bullets: [
         {
           title: 'Bit-Perfect Lossless Stream',
@@ -188,7 +188,7 @@ export default function HelixLandingPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#070709] text-white selection:bg-purple-500/30 selection:text-purple-200">
+    <div className="min-h-screen bg-[#070709] text-white selection:bg-sky-500/30 selection:text-sky-200">
       
       {/* ============================================
           NAVBAR
@@ -201,9 +201,9 @@ export default function HelixLandingPage() {
             <img
               src="/logo.jpeg"
               alt="Helix Logo"
-              className="w-9 h-9 rounded-xl object-contain shadow-lg shadow-purple-500/20 group-hover:scale-105 transition-transform"
+              className="w-9 h-9 rounded-xl object-contain shadow-lg shadow-sky-500/20 group-hover:scale-105 transition-transform"
             />
-            <span className="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+            <span className="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-cyan-400 via-sky-500 to-pink-500 bg-clip-text text-transparent">
               Helix
             </span>
           </a>
@@ -228,7 +228,7 @@ export default function HelixLandingPage() {
               href="#helix-music"
               className="px-4 py-1.5 text-xs font-semibold text-zinc-300 hover:text-white hover:bg-white/10 rounded-full transition-all flex items-center gap-2"
             >
-              <span className="w-2 h-2 rounded-full bg-purple-500 shadow-[0_0_8px_rgba(168,85,247,0.8)]" />
+              <span className="w-2 h-2 rounded-full bg-sky-500 shadow-[0_0_8px_rgba(14, 165, 233,0.8)]" />
               Helix Music
             </a>
           </div>
@@ -246,7 +246,7 @@ export default function HelixLandingPage() {
             {/* High-Contrast Conversion CTA */}
             <a
               href="#download"
-              className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold tracking-wide uppercase bg-gradient-to-r from-purple-600 via-fuchsia-600 to-rose-600 text-white shadow-[0_0_25px_rgba(168,85,247,0.5)] hover:shadow-[0_0_35px_rgba(168,85,247,0.8)] hover:scale-105 active:scale-95 transition-all duration-300"
+              className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold tracking-wide uppercase bg-gradient-to-r from-sky-600 via-blue-600 to-rose-600 text-white shadow-[0_0_25px_rgba(14, 165, 233,0.5)] hover:shadow-[0_0_35px_rgba(14, 165, 233,0.8)] hover:scale-105 active:scale-95 transition-all duration-300"
             >
               Download Helix ↓
             </a>
@@ -287,14 +287,14 @@ export default function HelixLandingPage() {
             <a
               href="#helix-music"
               onClick={() => setMobileMenuOpen(false)}
-              className="block text-lg font-semibold text-zinc-200 hover:text-purple-400"
+              className="block text-lg font-semibold text-zinc-200 hover:text-sky-400"
             >
               Helix Music (Audiophile)
             </a>
             <a
               href="#download"
               onClick={() => setMobileMenuOpen(false)}
-              className="block w-full py-3 text-center text-sm font-bold rounded-full bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white shadow-lg"
+              className="block w-full py-3 text-center text-sm font-bold rounded-full bg-gradient-to-r from-sky-600 to-blue-600 text-white shadow-lg"
             >
               Download Helix Now ↓
             </a>
@@ -308,21 +308,21 @@ export default function HelixLandingPage() {
       <section id="hero" className="relative pt-12 pb-24 md:pt-20 md:pb-32 overflow-hidden">
         
         {/* Ambient Backlight Glows */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-gradient-to-tr from-purple-600/20 via-cyan-500/15 to-transparent blur-[120px] pointer-events-none rounded-full" />
-        <div className="absolute top-1/3 right-10 w-[500px] h-[350px] bg-fuchsia-600/15 blur-[100px] pointer-events-none rounded-full" />
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-gradient-to-tr from-sky-600/20 via-cyan-500/15 to-transparent blur-[120px] pointer-events-none rounded-full" />
+        <div className="absolute top-1/3 right-10 w-[500px] h-[350px] bg-blue-600/15 blur-[100px] pointer-events-none rounded-full" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           
           {/* Punchy Hero Headline */}
           <div className="text-center max-w-3xl mx-auto mb-10">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-purple-500/30 bg-purple-500/10 text-purple-300 text-xs font-bold uppercase tracking-wider mb-6">
-              <span className="w-2 h-2 rounded-full bg-fuchsia-500 animate-ping" />
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-sky-500/30 bg-sky-500/10 text-sky-300 text-xs font-bold uppercase tracking-wider mb-6">
+              <span className="w-2 h-2 rounded-full bg-blue-500 animate-ping" />
               The Complete Entertainment Ecosystem
             </div>
 
             <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-[1.1] mb-5">
               One Ecosystem.<br />
-              <span className="bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-cyan-400 via-sky-500 to-pink-500 bg-clip-text text-transparent">
                 Infinite Entertainment.
               </span>
             </h1>
@@ -347,7 +347,7 @@ export default function HelixLandingPage() {
                         ? 'bg-gradient-to-r from-cyan-500/30 to-sky-500/20 text-cyan-300 border border-cyan-400/40 shadow-[0_0_20px_rgba(34,211,238,0.3)]'
                         : tabKey === 'media'
                         ? 'bg-gradient-to-r from-rose-500/30 to-red-500/20 text-rose-300 border border-rose-400/40 shadow-[0_0_20px_rgba(244,63,94,0.3)]'
-                        : 'bg-gradient-to-r from-purple-500/30 to-fuchsia-500/20 text-purple-300 border border-purple-400/40 shadow-[0_0_20px_rgba(168,85,247,0.3)]'
+                        : 'bg-gradient-to-r from-sky-500/30 to-blue-500/20 text-sky-300 border border-sky-400/40 shadow-[0_0_20px_rgba(14, 165, 233,0.3)]'
                       : 'text-zinc-400 hover:text-white hover:bg-white/[0.04]'
                   }`}
                 >
@@ -460,7 +460,7 @@ export default function HelixLandingPage() {
                   <div className="pt-4 flex flex-wrap items-center gap-3">
                     <button
                       onClick={() => openDownloadModal(currentTab.label)}
-                      className="px-7 py-3 rounded-full text-sm font-bold bg-gradient-to-r from-purple-600 via-fuchsia-600 to-rose-600 text-white shadow-[0_0_25px_rgba(168,85,247,0.55)] hover:shadow-[0_0_40px_rgba(168,85,247,0.85)] hover:scale-105 active:scale-95 transition-all"
+                      className="px-7 py-3 rounded-full text-sm font-bold bg-gradient-to-r from-sky-600 via-blue-600 to-rose-600 text-white shadow-[0_0_25px_rgba(14, 165, 233,0.55)] hover:shadow-[0_0_40px_rgba(14, 165, 233,0.85)] hover:scale-105 active:scale-95 transition-all"
                     >
                       Download {currentTab.label} ↓
                     </button>
@@ -509,7 +509,7 @@ export default function HelixLandingPage() {
             </div>
 
             <div className="p-6 rounded-2xl bg-white/[0.02] border border-white/10 backdrop-blur-xl flex flex-col gap-3">
-              <div className="w-10 h-10 rounded-xl bg-purple-500/15 border border-purple-500/30 flex items-center justify-center text-xl text-purple-400">
+              <div className="w-10 h-10 rounded-xl bg-sky-500/15 border border-sky-500/30 flex items-center justify-center text-xl text-sky-400">
                 🎵
               </div>
               <h3 className="text-base font-bold text-white">3. Helix Music (Audiophile)</h3>
@@ -567,7 +567,7 @@ export default function HelixLandingPage() {
 
           <button
             onClick={() => openDownloadModal('Helix Server')}
-            className="px-8 py-3.5 rounded-full text-sm font-bold bg-gradient-to-r from-purple-600 via-fuchsia-600 to-rose-600 text-white shadow-[0_0_25px_rgba(168,85,247,0.5)] hover:scale-105 transition-transform"
+            className="px-8 py-3.5 rounded-full text-sm font-bold bg-gradient-to-r from-sky-600 via-blue-600 to-rose-600 text-white shadow-[0_0_25px_rgba(14, 165, 233,0.5)] hover:scale-105 transition-transform"
           >
             Download Helix Server for Your PC ↓
           </button>
@@ -604,7 +604,7 @@ export default function HelixLandingPage() {
 
           <button
             onClick={() => openDownloadModal('Helix Media')}
-            className="px-8 py-3.5 rounded-full text-sm font-bold bg-gradient-to-r from-purple-600 via-fuchsia-600 to-rose-600 text-white shadow-[0_0_25px_rgba(168,85,247,0.5)] hover:scale-105 transition-transform"
+            className="px-8 py-3.5 rounded-full text-sm font-bold bg-gradient-to-r from-sky-600 via-blue-600 to-rose-600 text-white shadow-[0_0_25px_rgba(14, 165, 233,0.5)] hover:scale-105 transition-transform"
           >
             Download Helix Media Client ↓
           </button>
@@ -622,7 +622,7 @@ export default function HelixLandingPage() {
             
             {/* High-Res Music Mockup */}
             <div className="lg:col-span-6">
-              <div className="rounded-3xl p-3 bg-white/[0.03] border border-purple-500/25 backdrop-blur-2xl shadow-[0_30px_100px_rgba(0,0,0,0.8)]">
+              <div className="rounded-3xl p-3 bg-white/[0.03] border border-sky-500/25 backdrop-blur-2xl shadow-[0_30px_100px_rgba(0,0,0,0.8)]">
                 <img
                   src="/music-mockup.jpg"
                   alt="Helix Music Audiophile App UI"
@@ -633,12 +633,12 @@ export default function HelixLandingPage() {
 
             {/* Music Copy */}
             <div className="lg:col-span-6 space-y-6 text-left">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-purple-500/10 border border-purple-500/30 text-purple-300">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-500/10 border border-sky-500/30 text-sky-300">
                 Studio Sound Experience
               </div>
 
               <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-                Helix <span className="bg-gradient-to-r from-purple-400 to-fuchsia-500 bg-clip-text text-transparent">Music</span>: Studio Sound in Your Pocket
+                Helix <span className="bg-gradient-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent">Music</span>: Studio Sound in Your Pocket
               </h2>
 
               <p className="text-sm sm:text-base text-zinc-400 leading-relaxed">
@@ -652,7 +652,7 @@ export default function HelixLandingPage() {
                   { icon: '📶', title: 'Offline Vault', desc: 'Take your favorite playlists on planes or road trips without data.' }
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-full bg-purple-500/15 border border-purple-500/30 flex items-center justify-center text-sm flex-shrink-0 mt-0.5">
+                    <div className="w-8 h-8 rounded-full bg-sky-500/15 border border-sky-500/30 flex items-center justify-center text-sm flex-shrink-0 mt-0.5">
                       {item.icon}
                     </div>
                     <div>
@@ -666,7 +666,7 @@ export default function HelixLandingPage() {
               <div className="pt-4">
                 <button
                   onClick={() => openDownloadModal('Helix Music')}
-                  className="px-8 py-3.5 rounded-full text-sm font-bold bg-gradient-to-r from-purple-600 via-fuchsia-600 to-rose-600 text-white shadow-[0_0_25px_rgba(168,85,247,0.5)] hover:scale-105 transition-transform"
+                  className="px-8 py-3.5 rounded-full text-sm font-bold bg-gradient-to-r from-sky-600 via-blue-600 to-rose-600 text-white shadow-[0_0_25px_rgba(14, 165, 233,0.5)] hover:scale-105 transition-transform"
                 >
                   Download Helix Music App ↓
                 </button>
@@ -683,17 +683,17 @@ export default function HelixLandingPage() {
           CONVERSION SECTION & DOWNLOAD MATRIX
       ============================================ */}
       <section id="download" className="py-24 relative overflow-hidden bg-gradient-to-b from-[#070709] via-[#0c0b14] to-[#070709]">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-purple-600/15 blur-[120px] pointer-events-none rounded-full" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-sky-600/15 blur-[120px] pointer-events-none rounded-full" />
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-purple-500/15 border border-purple-500/35 text-purple-300 mb-6">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-500/15 border border-sky-500/35 text-sky-300 mb-6">
             ⚡ Instant Setup · Zero Subscriptions
           </div>
 
           <h2 className="text-4xl sm:text-6xl font-extrabold text-white tracking-tight mb-4">
             Own Your Entertainment.<br />
-            <span className="bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-cyan-400 via-sky-500 to-pink-500 bg-clip-text text-transparent">
               Get Started in Seconds.
             </span>
           </h2>
@@ -725,7 +725,7 @@ export default function HelixLandingPage() {
               </div>
               <button
                 onClick={() => openDownloadModal('Helix Server')}
-                className="w-full py-3 rounded-full text-xs font-bold tracking-wide uppercase bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white shadow-lg shadow-purple-600/30 hover:scale-105 transition-transform"
+                className="w-full py-3 rounded-full text-xs font-bold tracking-wide uppercase bg-gradient-to-r from-sky-600 to-blue-600 text-white shadow-lg shadow-sky-600/30 hover:scale-105 transition-transform"
               >
                 Download Server (v2.4) ↓
               </button>
@@ -758,9 +758,9 @@ export default function HelixLandingPage() {
             </div>
 
             {/* CARD 3: MUSIC */}
-            <div className="p-8 rounded-3xl bg-white/[0.03] border border-purple-500/30 backdrop-blur-2xl flex flex-col justify-between gap-6 hover:scale-102 transition-transform shadow-[0_20px_50px_rgba(0,0,0,0.6)]">
+            <div className="p-8 rounded-3xl bg-white/[0.03] border border-sky-500/30 backdrop-blur-2xl flex flex-col justify-between gap-6 hover:scale-102 transition-transform shadow-[0_20px_50px_rgba(0,0,0,0.6)]">
               <div className="space-y-4">
-                <div className="w-12 h-12 rounded-2xl bg-purple-500/15 border border-purple-500/30 flex items-center justify-center text-2xl text-purple-400">
+                <div className="w-12 h-12 rounded-2xl bg-sky-500/15 border border-sky-500/30 flex items-center justify-center text-2xl text-sky-400">
                   🎵
                 </div>
                 <h3 className="text-xl font-bold text-white">Helix Music</h3>
@@ -777,7 +777,7 @@ export default function HelixLandingPage() {
               </div>
               <button
                 onClick={() => openDownloadModal('Helix Music')}
-                className="w-full py-3 rounded-full text-xs font-bold tracking-wide uppercase bg-white/[0.08] hover:bg-white/[0.14] text-white border border-purple-500/40 transition-all"
+                className="w-full py-3 rounded-full text-xs font-bold tracking-wide uppercase bg-white/[0.08] hover:bg-white/[0.14] text-white border border-sky-500/40 transition-all"
               >
                 Download Music App ↓
               </button>

@@ -1,9 +1,53 @@
 const http = require('http');
+const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
 const PORT = parseInt(process.env.PORT || '8080', 10);
 const PUBLIC_DIR = __dirname;
+
+// The downloads page and its platform JSONs live in the helix-downloads R2
+// bucket; this server proxies them (DockBit's cd-helix-downloads used to).
+const R2_BASE = (process.env.HELIX_DOWNLOADS_R2 || 'https://pub-780a08894a6741e49581879e17f7784e.r2.dev').replace(/\/+$/, '');
+const SITE = 'https://helix.clickbit.com.au';
+const PLATFORM_JSON = /^\/(desktop|android)\/platforms\/[A-Za-z0-9._-]+\.json$/;
+const OLD_PLATFORM_JSON = /^\/platforms\/(mac|windows|linux|linux-deb)\.json$/;
+
+// The R2 object for a request path, or null when the path isn't proxied.
+function r2Key(pathname, oldDownloadsHost) {
+  if (PLATFORM_JSON.test(pathname)) return pathname;
+  if (oldDownloadsHost && OLD_PLATFORM_JSON.test(pathname)) return '/desktop' + pathname;
+  if (!oldDownloadsHost && pathname.startsWith('/downloads/')) {
+    return pathname.endsWith('/') ? pathname + 'index.html' : pathname;
+  }
+  return null;
+}
+
+function proxyR2(req, res, key) {
+  const upstream = (R2_BASE.startsWith('http:') ? http : https).get(R2_BASE + key, (up) => {
+    const headers = { 'Cache-Control': key.endsWith('.json') ? 'no-store' : 'no-cache' };
+    for (const h of ['content-type', 'content-length', 'etag', 'last-modified']) {
+      if (up.headers[h]) headers[h] = up.headers[h];
+    }
+    res.writeHead(up.statusCode === 200 ? 200 : up.statusCode === 404 ? 404 : 502, headers);
+    if (req.method === 'HEAD') {
+      up.resume();
+      res.end();
+    } else {
+      up.pipe(res);
+    }
+  });
+  upstream.setTimeout(15000, () => upstream.destroy(new Error('timeout')));
+  upstream.on('error', () => {
+    if (!res.headersSent) res.writeHead(502, { 'Content-Type': 'text/plain' });
+    res.end('Bad Gateway');
+  });
+}
+
+function redirect(res, location) {
+  res.writeHead(301, { Location: location });
+  res.end();
+}
 
 const MIME_TYPES = {
   '.html': 'text/html; charset=utf-8',
@@ -46,7 +90,35 @@ const server = http.createServer((req, res) => {
     return;
   }
 
-  let pathname = decodeURIComponent(parsedUrl.pathname);
+  let pathname;
+  try {
+    pathname = decodeURIComponent(parsedUrl.pathname);
+  } catch (e) {
+    res.writeHead(400, { 'Content-Type': 'text/plain' });
+    res.end('Bad Request');
+    return;
+  }
+
+  const host = String(req.headers.host || '').toLowerCase().replace(/:\d+$/, '');
+  const oldDownloadsHost = host === 'helix-downloads.clickbit.com.au';
+  const key = r2Key(parsedUrl.pathname, oldDownloadsHost);
+  if (key) {
+    proxyR2(req, res, key);
+    return;
+  }
+  if (oldDownloadsHost) {
+    redirect(res, SITE + '/downloads' + parsedUrl.pathname + parsedUrl.search);
+    return;
+  }
+  if (host === 'helix-landing.clickbit.com.au') {
+    redirect(res, SITE + parsedUrl.pathname + parsedUrl.search);
+    return;
+  }
+  if (pathname === '/downloads') {
+    redirect(res, '/downloads/' + parsedUrl.search);
+    return;
+  }
+
   if (pathname === '/' || pathname === '') {
     pathname = '/index.html';
   }

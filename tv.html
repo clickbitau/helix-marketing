@@ -69,7 +69,7 @@
 
           <div style="display: flex; justify-content: center;">
             <a href="#downloads" class="btn-cta-primary" style="padding: 0.85rem 2rem; font-size: 0.975rem; background: linear-gradient(135deg, #ff6b81 0%, #ff4757 100%); box-shadow: 0 0 25px rgba(255, 71, 87, 0.45);">
-              <span>Download Helix TV APK (v1.2.6)</span>
+              <span>Download Helix TV APK</span>
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
             </a>
           </div>
@@ -270,7 +270,7 @@
                 </div>
                 <div class="dl-meta-row">
                   <span class="dl-meta-label">Version</span>
-                  <span class="dl-meta-value">1.2.6</span>
+                  <span class="dl-meta-value">Latest</span>
                 </div>
                 <div class="dl-meta-row">
                   <span class="dl-meta-label">File Size</span>
@@ -283,18 +283,14 @@
               </div>
 
               <div style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 0.35rem; font-weight: 600;">
-                SHA-256 Checksum:
-              </div>
-              <div class="sha256-box">
-                <span class="sha256-code">4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a</span>
-                <button class="copy-btn" onclick="copyChecksum('4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a', this)">Copy</button>
+                SHA-256 on the downloads page
               </div>
             </div>
 
-            <button class="btn-cta-primary" style="width: 100%; background: linear-gradient(135deg, #ff6b81 0%, #ff4757 100%);" onclick="triggerDownload('helix-tv-1.2.6-universal.apk', 'Helix TV')">
+            <a href="https://helix.clickbit.com.au/downloads/" class="btn-cta-primary" style="width: 100%; background: linear-gradient(135deg, #ff6b81 0%, #ff4757 100%);">
               <span>Download APK</span>
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
-            </button>
+            </a>
           </div>
 
           <!-- Security Block: Check an APK before installing -->
@@ -306,17 +302,17 @@
                 <span class="security-dot dot-green"></span>
               </div>
               <span class="security-title">Verify APK Signature</span>
-              <button class="copy-btn" onclick="copyChecksum('apksigner verify --print-certs helix-tv-1.2.6.apk\nkeytool -printcert -jarfile helix-tv-1.2.6.apk', this)">Copy</button>
+              <button class="copy-btn" onclick="copyChecksum('apksigner verify --print-certs helix-tv-*.apk\nkeytool -printcert -jarfile helix-tv-*.apk', this)">Copy</button>
             </div>
             
             <div class="security-body">
               <div style="margin-bottom: 0.75rem;">
                 <span class="security-comment"># Verify APK signature using Android apksigner</span>
-                <span class="security-cmd">$ apksigner verify --print-certs helix-tv-1.2.6.apk</span>
+                <span class="security-cmd">$ apksigner verify --print-certs helix-tv-*.apk</span>
               </div>
               <div>
                 <span class="security-comment"># Verify certificate fingerprint with JDK keytool</span>
-                <span class="security-cmd">$ keytool -printcert -jarfile helix-tv-1.2.6.apk</span>
+                <span class="security-cmd">$ keytool -printcert -jarfile helix-tv-*.apk</span>
               </div>
             </div>
           </div>
@@ -349,11 +345,12 @@
           <p class="footer-col-title">Resources</p>
           <a href="index.html">Overview</a>
           <a href="faq.html">FAQ</a>
+          <a href="https://clickbit.com.au/privacy/helix" target="_blank" rel="noopener noreferrer">Privacy</a>
           <a href="https://helix.clickbit.com.au/downloads/" target="_blank" rel="noopener noreferrer">Releases <i data-lucide="arrow-up-right" style="width: 12px; height: 12px; display: inline; vertical-align: -1px;"></i></a>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>&copy; 2026 Helix Ecosystem. All rights reserved.</span>
+        <span>&copy; 2026 ClickBIT</span>
         <a href="#" class="back-to-top">Back to top <i data-lucide="arrow-up" style="width: 13px; height: 13px;"></i></a>
       </div>
     </div>

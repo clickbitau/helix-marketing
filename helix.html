@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/lucide@1.50.0/dist/umd/lucide.min.js"></script>
 </head>
 <body>
 
@@ -331,15 +331,12 @@
             <div class="rel-icon"><i data-lucide="laptop"></i></div>
             <div>
               <div class="rel-name">macOS</div>
-              <div class="rel-sub">.dmg &bull; Universal (Intel + Apple Silicon) &bull; macOS 12+</div>
+              <div class="rel-sub">.zip &bull; Apple silicon &bull; Signed and notarized</div>
             </div>
             <div class="rel-sha">
-              <code>e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</code>
-              <button class="copy-btn" onclick="copyChecksum('e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', this)" aria-label="Copy checksum">
-                <i data-lucide="copy" style="width: 13px; height: 13px;"></i>
-              </button>
+              <span>SHA-256 on the downloads page</span>
             </div>
-            <a href="https://helix.clickbit.com.au/downloads/" target="_blank" rel="noopener noreferrer" class="btn-download blue" onclick="triggerDownload('Helix.dmg', 'Helix Media macOS')">
+            <a href="https://helix.clickbit.com.au/downloads/" target="_blank" rel="noopener noreferrer" class="btn-download blue">
               <i data-lucide="download" style="width: 16px; height: 16px;"></i>
               <span>Download</span>
             </a>
@@ -350,15 +347,12 @@
             <div class="rel-icon"><i data-lucide="monitor"></i></div>
             <div>
               <div class="rel-name">Windows</div>
-              <div class="rel-sub">.exe / .msi &bull; 64-bit installer &bull; Windows 10+</div>
+              <div class="rel-sub">.zip &bull; 64-bit (x86-64)</div>
             </div>
             <div class="rel-sha">
-              <code>a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a</code>
-              <button class="copy-btn" onclick="copyChecksum('a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a', this)" aria-label="Copy checksum">
-                <i data-lucide="copy" style="width: 13px; height: 13px;"></i>
-              </button>
+              <span>SHA-256 on the downloads page</span>
             </div>
-            <a href="https://helix.clickbit.com.au/downloads/" target="_blank" rel="noopener noreferrer" class="btn-download blue" onclick="triggerDownload('Helix-Setup.exe', 'Helix Media Windows')">
+            <a href="https://helix.clickbit.com.au/downloads/" target="_blank" rel="noopener noreferrer" class="btn-download blue">
               <i data-lucide="download" style="width: 16px; height: 16px;"></i>
               <span>Download</span>
             </a>
@@ -369,15 +363,12 @@
             <div class="rel-icon"><i data-lucide="terminal"></i></div>
             <div>
               <div class="rel-name">Linux</div>
-              <div class="rel-sub">.AppImage / Flatpak &bull; glibc 2.31+</div>
+              <div class="rel-sub">.AppImage &bull; x86-64</div>
             </div>
             <div class="rel-sha">
-              <code>d7a8fbb307d7809469ca9abcb0082e4f8d5651e46d3cdb762d02d0bf37c9e592</code>
-              <button class="copy-btn" onclick="copyChecksum('d7a8fbb307d7809469ca9abcb0082e4f8d5651e46d3cdb762d02d0bf37c9e592', this)" aria-label="Copy checksum">
-                <i data-lucide="copy" style="width: 13px; height: 13px;"></i>
-              </button>
+              <span>SHA-256 on the downloads page</span>
             </div>
-            <a href="https://helix.clickbit.com.au/downloads/" target="_blank" rel="noopener noreferrer" class="btn-download blue" onclick="triggerDownload('Helix.AppImage', 'Helix Media Linux')">
+            <a href="https://helix.clickbit.com.au/downloads/" target="_blank" rel="noopener noreferrer" class="btn-download blue">
               <i data-lucide="download" style="width: 16px; height: 16px;"></i>
               <span>Download</span>
             </a>
@@ -388,15 +379,12 @@
             <div class="rel-icon"><i data-lucide="package"></i></div>
             <div>
               <div class="rel-name">Debian / Ubuntu</div>
-              <div class="rel-sub">.deb &bull; Debian 11+ / Ubuntu 22.04+</div>
+              <div class="rel-sub">.deb &bull; x86-64</div>
             </div>
             <div class="rel-sha">
-              <code>9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08</code>
-              <button class="copy-btn" onclick="copyChecksum('9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08', this)" aria-label="Copy checksum">
-                <i data-lucide="copy" style="width: 13px; height: 13px;"></i>
-              </button>
+              <span>SHA-256 on the downloads page</span>
             </div>
-            <a href="https://helix.clickbit.com.au/downloads/" target="_blank" rel="noopener noreferrer" class="btn-download blue" onclick="triggerDownload('helix_amd64.deb', 'Helix Media Debian')">
+            <a href="https://helix.clickbit.com.au/downloads/" target="_blank" rel="noopener noreferrer" class="btn-download blue">
               <i data-lucide="download" style="width: 16px; height: 16px;"></i>
               <span>Download</span>
             </a>
@@ -412,12 +400,9 @@
               <div class="rel-sub">.apk &bull; Phone &amp; tablet &bull; Android 8.0+</div>
             </div>
             <div class="rel-sha">
-              <code>5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8</code>
-              <button class="copy-btn" onclick="copyChecksum('5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', this)" aria-label="Copy checksum">
-                <i data-lucide="copy" style="width: 13px; height: 13px;"></i>
-              </button>
+              <span>SHA-256 on the downloads page</span>
             </div>
-            <a href="https://helix.clickbit.com.au/downloads/" target="_blank" rel="noopener noreferrer" class="btn-download blue" onclick="triggerDownload('helix-mobile.apk', 'Helix Media Android')">
+            <a href="https://helix.clickbit.com.au/downloads/" target="_blank" rel="noopener noreferrer" class="btn-download blue">
               <i data-lucide="download" style="width: 16px; height: 16px;"></i>
               <span>Download</span>
             </a>
@@ -428,15 +413,12 @@
             <div class="rel-icon"><i data-lucide="tv"></i></div>
             <div>
               <div class="rel-name">Android TV</div>
-              <div class="rel-sub">.apk &bull; Leanback build for TV boxes &bull; Android TV 9.0+</div>
+              <div class="rel-sub">.apk &bull; Android TV &amp; Google TV &bull; Android TV 8.0+</div>
             </div>
             <div class="rel-sha">
-              <code>6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b</code>
-              <button class="copy-btn" onclick="copyChecksum('6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b', this)" aria-label="Copy checksum">
-                <i data-lucide="copy" style="width: 13px; height: 13px;"></i>
-              </button>
+              <span>SHA-256 on the downloads page</span>
             </div>
-            <a href="https://helix.clickbit.com.au/downloads/" target="_blank" rel="noopener noreferrer" class="btn-download blue" onclick="triggerDownload('helix-tv.apk', 'Helix Media Android TV')">
+            <a href="https://helix.clickbit.com.au/downloads/" target="_blank" rel="noopener noreferrer" class="btn-download blue">
               <i data-lucide="download" style="width: 16px; height: 16px;"></i>
               <span>Download</span>
             </a>
@@ -455,15 +437,14 @@
           </div>
           <div class="security-body">
 <span class="security-comment"># Verify your download before installing</span>
-<span class="security-cmd">sha256sum helix-mobile.apk</span>
+<span class="security-cmd">sha256sum helix-*.apk</span>
 
-<span class="security-comment"># Compare with the published checksum above</span>
-<span class="security-cmd">echo "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8  helix-mobile.apk" | sha256sum -c -</span>
+<span class="security-comment"># Compare it with the SHA-256 listed on helix.clickbit.com.au/downloads/</span>
           </div>
         </div>
 
         <p class="cta-microcopy reveal" style="text-align: center; margin-top: 1.75rem;">
-          Requires Helix Server on your network &bull; <a href="server.html" style="color: #38bdf8; font-weight: 600;">Get Helix Server</a>
+          Requires Helix Server on your network &bull; <a href="server.html" style="color: #38bdf8; font-weight: 600;">About Helix Server</a>
         </p>
       </div>
     </section>
@@ -494,11 +475,12 @@
           <p class="footer-col-title">Resources</p>
           <a href="index.html">Overview</a>
           <a href="faq.html">FAQ</a>
+          <a href="https://clickbit.com.au/privacy/helix" target="_blank" rel="noopener noreferrer">Privacy</a>
           <a href="https://helix.clickbit.com.au/downloads/" target="_blank" rel="noopener noreferrer">Releases <i data-lucide="arrow-up-right" style="width: 12px; height: 12px; display: inline; vertical-align: -1px;"></i></a>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>&copy; 2026 Helix Ecosystem. All rights reserved.</span>
+        <span>&copy; 2026 ClickBIT</span>
         <a href="#" class="back-to-top">Back to top <i data-lucide="arrow-up" style="width: 13px; height: 13px;"></i></a>
       </div>
     </div>

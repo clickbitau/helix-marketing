@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/lucide@1.50.0/dist/umd/lucide.min.js"></script>
 </head>
 <body>
 
@@ -34,7 +34,7 @@
 
       <div style="display: flex; align-items: center;">
         <a href="https://helix.clickbit.com.au/downloads/" target="_blank" rel="noopener noreferrer" class="btn-cta-primary" id="nav-get-helix-btn">
-          <span>Get Helix</span>
+          <span>Get the Apps</span>
           <i data-lucide="download" style="width: 15px; height: 15px;"></i>
         </a>
         <button class="mobile-nav-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
@@ -93,11 +93,11 @@
 
             <div class="hero-cta-row">
               <a href="#deploy" class="btn-cta-primary btn-cta-lg">
-                <span>Deploy the Engine</span>
+                <span>Server Platforms</span>
                 <i data-lucide="arrow-down" style="width: 16px; height: 16px;"></i>
               </a>
               <a href="https://helix.clickbit.com.au/downloads/" target="_blank" rel="noopener noreferrer" class="btn-explore blue">
-                <span>View Releases</span>
+                <span>View App Releases</span>
                 <i data-lucide="external-link" style="width: 16px; height: 16px;"></i>
               </a>
             </div>
@@ -352,32 +352,15 @@
           <div class="srv-deploy-copy reveal">
             <div class="split-badge" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.35); background: rgba(56, 189, 248, 0.08);">
               <i data-lucide="hard-drive-download" style="width: 14px; height: 14px;"></i>
-              <span>Deploy Helix Server</span>
+              <span>Server Platforms</span>
             </div>
             <h2 class="heading-lg" style="margin-bottom: 1rem;">Get Your Server <span class="text-gradient-cyan">Running.</span></h2>
             <p class="section-subtitle" style="margin: 0 0 2rem; max-width: 480px;">
-              Deploy Helix Server on your preferred platform in minutes. Pick a container, a native binary, or a desktop installer -- the engine handles the rest.
+              Helix Server builds for Docker, Linux and Windows are coming soon. They are not on the downloads page yet.
             </p>
 
-            <!-- Terminal Verification Block -->
-            <div class="security-block" style="margin-top: 0;">
-              <div class="security-header">
-                <div class="security-dots">
-                  <span class="security-dot dot-red"></span>
-                  <span class="security-dot dot-yellow"></span>
-                  <span class="security-dot dot-green"></span>
-                </div>
-                <span class="security-title">Integrity Verification</span>
-              </div>
-              <div class="security-body">
-<span class="security-comment"># Verify download integrity with SHA-256</span>
-<span class="security-cmd">sha256sum helix-server-linux-x86_64.tar.gz</span>
-<span class="security-comment"># Compare it with the SHA-256 listed on helix.clickbit.com.au/downloads/</span>
-              </div>
-            </div>
-
             <a href="https://helix.clickbit.com.au/downloads/" target="_blank" rel="noopener noreferrer" class="srv-all-releases">
-              <span>Browse all releases and source tarballs</span>
+              <span>Browse the Helix app releases</span>
               <i data-lucide="arrow-right" style="width: 15px; height: 15px;"></i>
             </a>
           </div>
@@ -405,10 +388,10 @@
                   <span class="dl-meta-value">Container Image</span>
                 </div>
               </div>
-              <a href="https://helix.clickbit.com.au/downloads/" target="_blank" rel="noopener noreferrer" class="btn-download blue" onclick="triggerDownload('docker-compose.yml', 'Helix Server Docker')">
-                <i data-lucide="download" style="width: 16px; height: 16px;"></i>
-                <span>Pull Container</span>
-              </a>
+              <span class="btn-download blue" aria-disabled="true" style="opacity: 0.55; cursor: default; pointer-events: none;">
+                <i data-lucide="timer" style="width: 16px; height: 16px;"></i>
+                <span>Coming soon</span>
+              </span>
             </div>
 
             <!-- Linux -->
@@ -432,10 +415,10 @@
                   <span class="dl-meta-value">Standalone Binary</span>
                 </div>
               </div>
-              <a href="https://helix.clickbit.com.au/downloads/" target="_blank" rel="noopener noreferrer" class="btn-download blue" onclick="triggerDownload('helix-server-linux', 'Helix Server Linux')">
-                <i data-lucide="download" style="width: 16px; height: 16px;"></i>
-                <span>Download for Linux</span>
-              </a>
+              <span class="btn-download blue" aria-disabled="true" style="opacity: 0.55; cursor: default; pointer-events: none;">
+                <i data-lucide="timer" style="width: 16px; height: 16px;"></i>
+                <span>Coming soon</span>
+              </span>
             </div>
 
             <!-- Windows -->
@@ -459,10 +442,10 @@
                   <span class="dl-meta-value">MSI Installer</span>
                 </div>
               </div>
-              <a href="https://helix.clickbit.com.au/downloads/" target="_blank" rel="noopener noreferrer" class="btn-download blue" onclick="triggerDownload('helix-server.msi', 'Helix Server Windows')">
-                <i data-lucide="download" style="width: 16px; height: 16px;"></i>
-                <span>Download for Windows</span>
-              </a>
+              <span class="btn-download blue" aria-disabled="true" style="opacity: 0.55; cursor: default; pointer-events: none;">
+                <i data-lucide="timer" style="width: 16px; height: 16px;"></i>
+                <span>Coming soon</span>
+              </span>
             </div>
 
           </div>
@@ -483,12 +466,12 @@
             </div>
             <h2 class="heading-lg">Your library. <span class="text-gradient">Your rules.</span></h2>
             <p class="section-subtitle" style="margin: 0.75rem 0 0; max-width: 460px;">
-              Spin up Helix Server today and stream to every Helix client in your home -- movies, shows, and music, all from hardware you control.
+              Helix Server is coming soon. It will stream to every Helix client in your home -- movies, shows, and music, all from hardware you control.
             </p>
           </div>
           <div class="cta-card-actions">
             <a href="#deploy" class="btn-cta-primary btn-cta-lg" style="width: 100%;">
-              <span>Deploy Helix Server</span>
+              <span>Server Platforms</span>
               <i data-lucide="arrow-up" style="width: 16px; height: 16px;"></i>
             </a>
             <div class="cta-os-grid">
@@ -506,7 +489,7 @@
               </a>
             </div>
             <a href="https://helix.clickbit.com.au/downloads/" target="_blank" rel="noopener noreferrer" class="cta-all-link">
-              <span>See every release</span>
+              <span>See the app releases</span>
               <i data-lucide="arrow-right" style="width: 13px; height: 13px;"></i>
             </a>
           </div>
@@ -540,11 +523,12 @@
           <p class="footer-col-title">Resources</p>
           <a href="index.html">Overview</a>
           <a href="faq.html">FAQ</a>
+          <a href="https://clickbit.com.au/privacy/helix" target="_blank" rel="noopener noreferrer">Privacy</a>
           <a href="https://helix.clickbit.com.au/downloads/" target="_blank" rel="noopener noreferrer">Releases <i data-lucide="arrow-up-right" style="width: 12px; height: 12px; display: inline; vertical-align: -1px;"></i></a>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>&copy; 2026 Helix Ecosystem. All rights reserved.</span>
+        <span>&copy; 2026 ClickBIT</span>
         <a href="#" class="back-to-top">Back to top <i data-lucide="arrow-up" style="width: 13px; height: 13px;"></i></a>
       </div>
     </div>

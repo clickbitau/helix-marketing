@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Helix Mobile — On-the-Go Touch Cinema & Offline Travel</title>
-  <meta name="description" content="Download Helix Mobile APK (com.helix.mobile) for Android phones and tablets. Touch-optimized 4K HDR playback, single-tap offline caching, and background audio." />
+  <meta name="description" content="Download Helix Mobile APK (com.clickbit.helix) for Android phones and tablets. Touch-optimized 4K HDR playback, single-tap offline caching, and background audio." />
   
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -69,7 +69,7 @@
 
           <div style="display: flex; justify-content: center;">
             <a href="#downloads" class="btn-cta-primary" style="padding: 0.85rem 2rem; font-size: 0.975rem; background: var(--btn-rose-gradient); box-shadow: var(--btn-rose-glow);">
-              <span>Download Helix Mobile APK (v1.9.6)</span>
+              <span>Download Helix Mobile APK</span>
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
             </a>
           </div>
@@ -259,18 +259,18 @@
                 <div class="dl-platform-icon" style="color: #f43f5e;">📱</div>
                 <div>
                   <h3 class="dl-platform-title">Android (Phones & Tablets)</h3>
-                  <div class="dl-platform-subtitle">Package: com.helix.mobile</div>
+                  <div class="dl-platform-subtitle">Package: com.clickbit.helix</div>
                 </div>
               </div>
 
               <div class="dl-meta-list">
                 <div class="dl-meta-row">
                   <span class="dl-meta-label">Package Name</span>
-                  <span class="dl-meta-value">com.helix.mobile</span>
+                  <span class="dl-meta-value">com.clickbit.helix</span>
                 </div>
                 <div class="dl-meta-row">
                   <span class="dl-meta-label">Version</span>
-                  <span class="dl-meta-value">1.9.6</span>
+                  <span class="dl-meta-value">Latest</span>
                 </div>
                 <div class="dl-meta-row">
                   <span class="dl-meta-label">File Size</span>
@@ -283,18 +283,14 @@
               </div>
 
               <div style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 0.35rem; font-weight: 600;">
-                SHA-256 Checksum:
-              </div>
-              <div class="sha256-box">
-                <span class="sha256-code">9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08</span>
-                <button class="copy-btn" onclick="copyChecksum('9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08', this)">Copy</button>
+                SHA-256 on the downloads page
               </div>
             </div>
 
-            <button class="btn-cta-primary" style="width: 100%; background: var(--btn-rose-gradient); box-shadow: var(--btn-rose-glow);" onclick="triggerDownload('helix-mobile-1.9.6.apk', 'Helix Mobile')">
+            <a href="https://helix.clickbit.com.au/downloads/" class="btn-cta-primary" style="width: 100%; background: var(--btn-rose-gradient); box-shadow: var(--btn-rose-glow);">
               <span>Download APK</span>
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
-            </button>
+            </a>
           </div>
 
           <!-- Security Block: Check an APK before installing -->
@@ -306,17 +302,17 @@
                 <span class="security-dot dot-green"></span>
               </div>
               <span class="security-title">Verify APK Signature</span>
-              <button class="copy-btn" onclick="copyChecksum('apksigner verify --print-certs helix-mobile-1.9.6.apk\nkeytool -printcert -jarfile helix-mobile-1.9.6.apk', this)">Copy</button>
+              <button class="copy-btn" onclick="copyChecksum('apksigner verify --print-certs helix-*.apk\nkeytool -printcert -jarfile helix-*.apk', this)">Copy</button>
             </div>
             
             <div class="security-body">
               <div style="margin-bottom: 0.75rem;">
                 <span class="security-comment"># Verify APK signature using Android apksigner</span>
-                <span class="security-cmd">$ apksigner verify --print-certs helix-mobile-1.9.6.apk</span>
+                <span class="security-cmd">$ apksigner verify --print-certs helix-*.apk</span>
               </div>
               <div>
                 <span class="security-comment"># Verify certificate fingerprint with JDK keytool</span>
-                <span class="security-cmd">$ keytool -printcert -jarfile helix-mobile-1.9.6.apk</span>
+                <span class="security-cmd">$ keytool -printcert -jarfile helix-*.apk</span>
               </div>
             </div>
           </div>
@@ -349,11 +345,12 @@
           <p class="footer-col-title">Resources</p>
           <a href="index.html">Overview</a>
           <a href="faq.html">FAQ</a>
+          <a href="https://clickbit.com.au/privacy/helix" target="_blank" rel="noopener noreferrer">Privacy</a>
           <a href="https://helix.clickbit.com.au/downloads/" target="_blank" rel="noopener noreferrer">Releases <i data-lucide="arrow-up-right" style="width: 12px; height: 12px; display: inline; vertical-align: -1px;"></i></a>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>&copy; 2026 Helix Ecosystem. All rights reserved.</span>
+        <span>&copy; 2026 ClickBIT</span>
         <a href="#" class="back-to-top">Back to top <i data-lucide="arrow-up" style="width: 13px; height: 13px;"></i></a>
       </div>
     </div>

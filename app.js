@@ -1,5 +1,5 @@
 /**
- * Helix Ecosystem Global Interactivity, Scroll Reveal & Mobile Navigation
+ * Helix Global Interactivity, Scroll Reveal & Mobile Navigation
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let osLabel = '';
   if (/Windows/i.test(ua)) osLabel = 'Windows';
   else if (/Android/i.test(ua)) osLabel = 'Android';
-  else if (/iPhone|iPad|iPod/i.test(ua)) osLabel = 'iOS';
+  else if (/iPhone|iPad|iPod/i.test(ua)) osLabel = ''; // no iOS build on the downloads page
   else if (/Macintosh|Mac OS X/i.test(ua)) osLabel = 'macOS';
   else if (/Linux/i.test(ua)) osLabel = 'Linux';
 
@@ -141,11 +141,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-
-  // Download Trigger Handler
-  window.triggerDownload = function (filename, appName) {
-    showToast(`Starting download: ${appName} (${filename})...`);
-  };
 
   // Navbar scroll state — floating capsule deepens on scroll
   const navbar = document.querySelector('.site-navbar');
